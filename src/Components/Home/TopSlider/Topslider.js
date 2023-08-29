@@ -31,6 +31,7 @@ const Topslider = () => {
         slidesToShow: 6,
         slidesToScroll: 1,
         rows: 2,
+       
         nextArrow: <ArrowRight />,
         prevArrow: <ArrowLeft />,
         responsive: [

@@ -5,8 +5,8 @@
 
 .i-dest{
    
-    width: 1300px !important;
-    height: 600px;
+    width: 81.25em !important;
+    height: 37.5em;
     text-align: center;
     margin-left:auto;
     margin-right:auto;
@@ -19,12 +19,12 @@
 }
 .i-dest-t1 {
     padding-top: 1.875em;
-    font-size: 28px;
+    font-size: 1.75em;
     font-family: "Mansalva";
     color: #FCB418;
 }
 .i-dest-t2 {
-    font-size: 40px;
+    font-size: 2.5em;
     color: white;
     /* color: rgb(214, 162, 48); */
 }
@@ -33,71 +33,71 @@
     flex-direction: row;
     justify-content: center;
     /* padding-left: 250px; */
-    padding-top: 60px; 
+    padding-top: 3.75em; 
 }
 .i-dest-card{
-    height:320px;
-    width: 200px !important;
+    height:20em;
+    width: 12.5em !important;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 1.25em;
     float: left;
 }
 .i-dest-card img{
-    border-radius: 20px 20px  0px 0px;
-    height: 230px;
-    width: 200px;
+    border-radius: 1.25em 1.25em  0em 0em;
+    height: 14.375em;
+    width: 12.5em;
 }
 .card-name{
-    padding-top: 10px;
+    padding-top: 0.625em;
     font-weight: bold;
 }
 .card-name1{
     float: left;
-    padding-left: 10px;
+    padding-left: 0.625em;
 }
 .card-name2{
-    margin-left: 120px !important;
+    margin-left: 7.5em !important;
     display: flex;
     align-items: center;
 }
 .card-name3{
-    margin-top: 15px;
-    margin-left: 12px !important;
+    margin-top: 0.938em;
+    margin-left: 0.75em !important;
     display: flex;
     align-items: center;
     float: left;
 }
 .card-name33{
     /* margin-top: 15px; */
-    margin-left: 12px !important;
+    margin-left: 0.75em !important;
     float: left;
     /* margin-right: 60px; */
 }
 .i-dest-card1{
-    height:320px;
-    width: 200px !important;
+    height:20em;
+    width: 12.5em !important;
     background-color: white;
-    border-radius: 20px;
-    margin-left: 10px;
+    border-radius: 1.25em;
+    margin-left: 0.625em;
     float:left;
 }
 .i-dest-card1 img{
-    border-radius: 20px 20px  0px 0px;
-    height: 230px;
-    width: 200px;
+    border-radius: 1.25em 1.25em  0px 0px;
+    height: 14.375em;
+    width: 12.5em;
 }
 .i-dest-card2{
-    height:320px;
-    width: 200px !important;
+    height:20em;
+    width: 12.5em !important;
     background-color: white;
-    border-radius: 20px;
-    margin-left: 20px;
+    border-radius: 1.25em;
+    margin-left: 1.25em;
     float:left;
 }
 .i-dest-card2 img{
-    border-radius: 20px 20px  0px 0px;
-    height: 230px;
-    width: 200px;
+    border-radius: 1.25em 1.25em  0em 0em;
+    height: 14.375em;
+    width: 12.5em;
 }
 .i-dest-prev{
     border: none;

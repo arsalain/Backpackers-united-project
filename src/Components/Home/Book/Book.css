@@ -2,8 +2,9 @@
     /* padding-left: 100px; */
     /* margin-top: 150px; */
     height: 100%;
-    width: 1300px;
+    width: 81.25em;
     /* text-align: center; */
+    font-size: 16px;
     margin-left:auto;
     margin-right:auto;
     display: flex;
@@ -25,41 +26,41 @@
     align-items: flex-start;
 }
 .b-name{
-    padding-left: 50px;
-    font-size: 28px;
+    padding-left: 3.125em;
+    font-size: 1.75em;
     font-family: 'Mansalva';
     color: #FCB418;
     font-weight: bold;
 }
 .b-title{
-    padding-left: 50px;
-    font-size: 40px;
+    padding-left: 3.125em;
+    font-size: 2.5em;
     font-weight: bold;
 }
 .b-title1{
-    padding-left: 50px;
-    font-size: 40px;
+    padding-left: 3.125em;
+    font-size: 2.5em;
     font-weight: bold;
-    padding-bottom: 30px;
+    padding-bottom: 1.875em;
 }
 .b-left-body{
-    padding-left: 50px;
-    height: 100px;
-    width: 700px;
+    padding-left: 3.125em;
+    height: 6.25em;
+    width: 43.75em;
     background-color: white;
     display: flex;
     flex-direction: row;
 }
 .b-box{
-    height: 50px;
-    width: 50px;
+    height: 3.125em;
+    width: 3.125em;
     background-color: rgb(192, 177, 45);
-    border-radius: 10px;
-    margin-top: 20px !important;
+    border-radius: 0.625em;
+    margin-top: 1.25em !important;
 }
 .b-box-des{
-    padding-left: 20px;
-    padding-top: 13px;
+    padding-left: 1.25em;
+    padding-top: 0.813em;
     float: left;
     display: flex;
     flex-direction: column;
@@ -69,21 +70,21 @@
     font-weight:bold;
 }
 .b-box-para{
-    width:450px;
+    width:28.125em;
 }
 .b-box1{
-    height: 50px;
-    width: 50px;
+    height: 3.125em;
+    width: 3.125em;
     background-color: rgb(185, 84, 34);
-    border-radius: 10px;
-    margin-top: 20px !important;
+    border-radius: 0.625em;
+    margin-top: 1.25em !important;
 }
 .b-box2{
-    height: 50px;
-    width: 50px;
+    height: 3.125em;
+    width: 3.125em;
     background-color: rgb(34, 37, 185);
-    border-radius: 10px;
-    margin-top: 20px !important;
+    border-radius: 0.625em;
+    margin-top: 1.25em !important;
 }
 .b-right{
     float: right;
@@ -92,41 +93,41 @@
 }
 .b-card {
    
-    height: 470px;
-    width: 410px;
-    border-radius: 20px;
-    box-shadow: 10px 10px  20px  #FCB418;
+    height: 29.375em;
+    width: 25.625em;
+    border-radius: 1.25em;
+    box-shadow: 0.625em 0.625em  1.25em  #FCB418;
 }
 
 
 .b-card-name{
     /* padding-right: 160px; */
-    padding-top: 30px;
-    padding-left: 25px;
-    font-size: 20px;
+    padding-top: 1.875em;
+    padding-left: 1.563em;
+    font-size: 1.25em;
     font-weight: bold;
 
 }
 .b-card-img{
-    margin-top: 20px;
-    margin-left: 25px;
+    margin-top: 1.25em;
+    margin-left: 1.563em;
 }
 .b-card-img1{
-    border-radius: 20px;
-    width: 360px ;
-    height: 200px;
+    border-radius: 1.25em;
+    width: 22.5em ;
+    height: 12.5em;
 }
 .b-card-name1{
     /* padding-right: 120px; */
-    padding-left: 25px;
-    padding-top: 20px;
-    font-size: 20px;
+    padding-left: 1.563em;
+    padding-top: 1.25em;
+    font-size: 1.25em;
 }
 .b-card-dot {
-    margin-top: 20px;
-    margin-left: 25px;
-    height: 50px;
-    width: 50px;
+    margin-top: 1.25em;
+    margin-left: 1.563em;
+    height: 3.125em;
+    width: 3.125em;
     background-color: #bbb;
     border-radius: 50%;
     float: left;
@@ -136,10 +137,10 @@
     /* display: inline-block; */
   }
   .b-card-dot1 {
-    margin-top: 20px;
-    margin-left: 30px;
-    height: 50px;
-    width: 50px;
+    margin-top: 1.25em;
+    margin-left: 1.875em;
+    height: 3.125em;
+    width: 3.125em;
     background-color: #bbb;
     border-radius: 50%;
     float: left;
@@ -148,11 +149,11 @@
     justify-content: center;
   }
   .b-card-dot2 {
-    margin-top: 20px;
-    margin-left: 30px;
-    margin-right: 140px;
-    height: 50px;
-    width: 50px;
+    margin-top: 1.25em;
+    margin-left: 1.875em;
+    margin-right: 8.75em;
+    height: 3.125em;
+    width: 3.125em;
     background-color: #bbb;
     border-radius: 50%;
     float: left;
@@ -162,20 +163,20 @@
   }
   .b-card-build{
     float: left;
-    font-size: 20px;
-    padding-left: 30px;
-    padding-top: 20px;
+    font-size: 1.25em;
+    padding-left: 1.875em;
+    padding-top: 1.25em;
   }
   .b-card-icon{
-    font-size: 20px;
+    font-size: 1.25em;
   }
   .b-card-icon1{
-    font-size: 20px;
-    margin-right: 10px;
+    font-size: 1.25em;
+    margin-right: 0.625em;
   }
   .b-card-icon2{
-    font-size: 25px;
-    margin-left: 100px;
+    font-size: 1.563em;
+    margin-left: 6.25em;
   }
   @media only screen and  (min-width:500px) and (max-width: 999px) {
     .b-body {

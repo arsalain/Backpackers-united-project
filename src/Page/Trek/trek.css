@@ -1,38 +1,33 @@
+
 .trek{
-        display: flex;
+        margin: 0;
+        width: 100vw;
         height: 100%;
-        width: 1300px;
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: center;
-        flex-direction: column;
-        align-self: center;
-        align-items: center;
-}
-
-.trek-body {
-        background: url(../../Images/trek3.jpg) ;
-        background-size:cover;
-        background-repeat:no-repeat;
-        background-position: center center;
+        position: relative;
         display: flex;
         flex-direction: column;
-        margin-left: auto;
-        margin-right: auto;
-
-        /* padding-top: 100px; */
-
-}
+    }
+    .trek-body{
+        /* width: 100%;
+        height: 300px; */
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+ .trekimg{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+ }
+.slick-disabled {
+        display: none !important;
+      }
 
 .trek-search{
-        height: 400px;
-        width: 1300px;
-        margin-left: auto;
-        margin-right: auto;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+     
+        top: 40%;
+        left: 35%;
+        position: absolute;
 }
 .trek-search-bar{
         display: flex;
@@ -56,10 +51,10 @@ width: 330px;
 
         border: none;
         background-color: white;
-        margin-left: 20px;
+        margin-left: -5px;
 }
 .trek-search-icon{
-        padding-top: 8px;
+        padding-top: 5px;
         font-size: 30px;
 }
 .trek-search-field{
@@ -78,13 +73,34 @@ width: 330px;
 }
 .trek-recom{
         padding-top: 50px;
-        margin-left: auto;
-        margin-right: auto;
+        /* margin-left: auto;
+        margin-right: auto; */
         display: flex;
-        justify-content: center;
-        flex-direction: column;
-        width: 1200px;
+        flex-direction: column; 
+         max-width: 1100px;
+         margin-left: 80px;
+         position: relative;
+       
 }
+        
+
+.trek-slide-prev{
+        border: none;
+        font-size: 3.125em;
+        position: absolute;
+        top: 40%;
+        left: -60px;
+        z-index: 1;
+        background: none;
+    }
+    .trek-slide-next{
+        border: none;
+        font-size: 3.125em;
+        position: absolute;
+        top: 40%;
+        right: -5px;
+        background: none;
+    }
 .trek-recom-title{
         margin-bottom: 40px;
         font-size: 30px;
@@ -96,70 +112,4 @@ width: 330px;
 }
 .trek-but-icon{
         font-size: 30px ;
-}
-button.rec-dot {
-        display: none;
-}
-.trek-card{
-        display:flex;
-        flex-direction: column;
-        height: 370px;
-        width: 250px;
-        border: 1px solid rgb(220, 213, 213);
-        border-radius: 20px;
-}
-.trek-card-body{
-        min-height: 100px !important;
-}
-.trek-card-img{
-        display: flex;
-        justify-content: center;
-        align-self: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        border-radius: 20px;
-        width: 220px;
-        height: 170px;
-}
-.trek-card-title{
-        padding-left: 20px;
-        padding-bottom: 10px;
-        font-weight: bold;
-}
-.trek-card-loca1{
-        padding-left: 20px;
-        padding-bottom: 10px;
-        display: flex;
-        flex-direction: row;
-}
-.trek-card-loca-icon{
-        margin-top: 1px;
-}
-.trek-card-day{
-        margin-left: 50px;
-        display: flex;
-        flex-direction: row;
-}
-.trek-card-date{
-        font-size: 13px;
-        font-weight: bold;
-        padding-left: 20px;
-        padding-bottom: 10px;
-}
-.trek-card-total{
-        display: flex;
-        flex-direction: row;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 10px;
-        padding-top: 10px;
-        border-top: 1px solid rgb(220, 213, 213);
-}
-.trek-card-amount{
-        padding-left: 60px;
-        display: flex;
-        flex-direction: row;
-}
-.trek-card-amount-icon{
-        padding-top: 2px;
 }
