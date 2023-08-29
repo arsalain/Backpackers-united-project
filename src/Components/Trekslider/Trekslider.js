@@ -6,7 +6,7 @@ import {GrLocation} from "react-icons/gr"
 import {CiClock2} from "react-icons/ci"
 import {BiRupee} from "react-icons/bi"
 const Trekslider = ({slides}) => {
-    const [currentIndex, setCurrentIndex] = useState()
+    const [currentIndex, setCurrentIndex] = useState([])
     const ArrowLeft = (props) => (
         <button
             {...props}
@@ -57,23 +57,25 @@ const Trekslider = ({slides}) => {
     <div>
         
        <Slider {...settings} useRef={sliderRef} >
+       {slides.map((index)=>(
  <div className='trek-card'>
      
-        <img className='trek-card-img' src={slides.imgSrc} ></img>
+        <img className='trek-card-img' src={index.imgSrc} ></img>
         <div className='trek-card-body' >
-        <div className='trek-card-title'>{slides.name} </div>
+        <div className='trek-card-title'>{index.name} </div>
         <div className='trek-card-loca'>
-          <div className='trek-card-loca1'><div className='trek-card-loca-icon' ><GrLocation className='trek-card-loca-icon'/>{slides.state}</div>
-          <div  className='trek-card-day'><div className='trek-card-loca-icon' ><CiClock2 /></div>{slides.day}</div>
+          <div className='trek-card-loca1'><div className='trek-card-loca-icon' ><GrLocation className='trek-card-loca-icon'/>{index.state}</div>
+          <div  className='trek-card-day'><div className='trek-card-loca-icon' ><CiClock2 /></div>{index.day}</div>
           </div>
         </div>
-        <div className='trek-card-date'>{slides.date}</div>
+        <div className='trek-card-date'>{index.date}</div>
         </div>
         <div className='trek-card-total' >
-          <div className='trek-card-person'>{slides.person}</div>
-          <div className='trek-card-amount'><div className='trek-card-amount-icon'><BiRupee /></div>{slides.amount}</div>
+          <div className='trek-card-person'>{index.person}</div>
+          <div className='trek-card-amount'><div className='trek-card-amount-icon'><BiRupee /></div>{index.amount}</div>
         </div>
       </div>
+       ))}
       </Slider>
     </div>
   )

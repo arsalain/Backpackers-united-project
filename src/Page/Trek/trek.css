@@ -84,23 +84,7 @@ width: 330px;
 }
         
 
-.trek-slide-prev{
-        border: none;
-        font-size: 3.125em;
-        position: absolute;
-        top: 40%;
-        left: -60px;
-        z-index: 1;
-        background: none;
-    }
-    .trek-slide-next{
-        border: none;
-        font-size: 3.125em;
-        position: absolute;
-        top: 40%;
-        right: -5px;
-        background: none;
-    }
+
 .trek-recom-title{
         margin-bottom: 40px;
         font-size: 30px;

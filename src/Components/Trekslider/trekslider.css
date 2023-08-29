@@ -1,4 +1,20 @@
-
+.trek-slide-prev{
+    border: none;
+    font-size: 3.125em;
+    position: absolute;
+    top: 40%;
+    left: -60px;
+    z-index: 1;
+    background: none;
+}
+.trek-slide-next{
+    border: none;
+    font-size: 3.125em;
+    position: absolute;
+    top: 40%;
+    right: -20px;
+    background: none;
+}
 .trek-card{
     display:flex;
     flex-direction: column;
