@@ -5,6 +5,8 @@ import {MdKeyboardArrowRight,MdKeyboardArrowLeft} from "react-icons/md"
 import {GrLocation} from "react-icons/gr"
 import {CiClock2} from "react-icons/ci"
 import {BiRupee} from "react-icons/bi"
+import {Link} from "react-router-dom";
+
 const Trekslider = ({slides}) => {
     const [currentIndex, setCurrentIndex] = useState([])
     const ArrowLeft = (props) => (
@@ -19,7 +21,7 @@ const Trekslider = ({slides}) => {
     )
     const sliderRef = React.useRef<Slider>(null);
     const settings = {
-      // infinite: false,
+      infinite: true,
       speed: 500,
       slidesToShow: 4,
       slidesToScroll: 1,
@@ -58,6 +60,7 @@ const Trekslider = ({slides}) => {
         
        <Slider {...settings} useRef={sliderRef} >
        {slides.map((index)=>(
+        <Link to={index.link} className='trek-card-link' >
  <div className='trek-card'>
      
         <img className='trek-card-img' src={index.imgSrc} ></img>
@@ -75,6 +78,7 @@ const Trekslider = ({slides}) => {
           <div className='trek-card-amount'><div className='trek-card-amount-icon'><BiRupee /></div>{index.amount}</div>
         </div>
       </div>
+      </Link>
        ))}
       </Slider>
     </div>

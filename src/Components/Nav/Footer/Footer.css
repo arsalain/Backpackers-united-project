@@ -49,6 +49,8 @@ padding-left: 10px;
         display: flex;
         flex-direction: column;
         width: 190px;
+        padding-left: 5px;
+        padding-top: 5px;
       }
       .f-name1{
         text-align: center;
@@ -106,9 +108,9 @@ padding-left: 10px;
   text-align: center;
   display: flex;
   justify-content: center;
+  padding-top: 50px;
 }
   .f-dot {
-    margin-top: 15px;
     color: #FCB418;
     float: left;
     display: flex;
@@ -117,7 +119,6 @@ padding-left: 10px;
     /* display: inline-block; */
   }
   .f-dot1 {
-    margin-top: 15px;
     margin-left: 30px;
     float: left;
     display: flex;
@@ -146,6 +147,53 @@ padding-left: 10px;
   .f-dot-icon{
     font-size: 26px;
    
+  }
+  .f-form{
+    padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+  }
+  .f-form-title{
+    font-size: 30px;
+    font-weight: bold;
+   color: #FCB418;
+    display: flex;
+    justify-content: center;
+  }
+  .f-form-input{
+    background: #000;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+    border: 1px solid white;
+  }
+  .f-form-input::placeholder {
+    color: white;
+    opacity: 0.75; /* Firefox */
+  }
+ 
+  .f-form-input-body{
+    padding-top: 10px;
+  }
+  .f-form-but-body{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .f-form-but{
+    width: 100px;
+    height: 30px;
+    background-color: #FCB418;
+    color: black;
+    font-weight: bold;
+    border: 1px solid #FCB418;
+    border-radius: 10px;
+  }
+  .f-form-but:hover {
+    /* color: #FCB418; */
+    background-color: white;
+    border: 1px solid white;
   }
   @media only screen and  (min-width:500px) and (max-width: 999px) {
     .f-head{

@@ -150,7 +150,7 @@ const Navbar2 = () =>{
             </li>
             
             <li className="n-right-drophead"> 
-              <Link to="/dest" style={{ textDecoration: 'none' , color: "white"}} >
+              <Link to="/tour" style={{ textDecoration: 'none' , color: "white"}} >
                 Tours
               </Link>
             </li> 

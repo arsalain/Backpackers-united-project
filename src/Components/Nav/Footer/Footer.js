@@ -35,25 +35,42 @@ return (
                 <div className="f-mid-sub"> <Link to="/about"style={{ textDecoration: 'none' , color: "white"}} >
                 About
         </Link></div>
-                <div className="f-mid-sub"><Link to='/' style={{ textDecoration: 'none' , color: "white"}}  >Careers</Link></div>
-                <div className="f-mid-sub">Mobile</div>
+                <div className="f-mid-sub"><Link to='/' style={{ textDecoration: 'none' , color: "white"}}  >Destinations</Link></div>
+                <div className="f-mid-sub">Careers</div>
                 </div>
                 <div className="f-mid">
                 <div className="f-mid-name">Contact</div>
                 <div className="f-mid-sub"><Link to='/' style={{ textDecoration: 'none' , color: "white"}}  >Help/FAQ</Link></div>
-                <div className="f-mid-sub"><Link to='/' style={{ textDecoration: 'none' , color: "white"}} >Press</Link></div>
-                <div className="f-mid-sub"><Link to='/' style={{ textDecoration: 'none' , color: "white"}}  >Affilates</Link></div>
+                <div className="f-mid-sub"><Link to='/' style={{ textDecoration: 'none' , color: "white"}} >Contact Us</Link></div>
+                <div className="f-mid-sub"><Link to='/' style={{ textDecoration: 'none' , color: "white"}}  >Partner With Us</Link></div>
                 </div>
                 <div className="f-mid">
                 <div className="f-mid-name">More</div>
-                <div className="f-mid-sub"><Link to='/' style={{ textDecoration: 'none' , color: "white"}} >Blogs</Link></div>
-                <div className="f-mid-sub"><Link to='/' style={{ textDecoration: 'none' , color: "white"}} >Careers</Link></div>
-                <div className="f-mid-sub"><Link to='/contact' style={{ textDecoration: 'none' , color: "white"}}  >Contact Us</Link></div>
+                <div className="f-mid-sub"><Link to='/' style={{ textDecoration: 'none' , color: "white"}} >Privacy Policy</Link></div>
+                <div className="f-mid-sub"><Link to='/' style={{ textDecoration: 'none' , color: "white"}} >Terms and Condition</Link></div>
+                <div className="f-mid-sub"><Link to='/contact' style={{ textDecoration: 'none' , color: "white"}}  >Copyright Policy</Link></div>
+                </div>
+                <div className="f-form">
+                  <form >
+                    <div className="f-form-title">Get in Touch</div>
+                    <div className="f-form-input-body" >
+                      <input className="f-form-input" name="name" placeholder="Enter your Name"/>
+                    </div>
+                    <div className="f-form-input-body" >
+                      <input className="f-form-input" name="name" placeholder="Enter your Phone No."/>
+                    </div>
+                    <div className="f-form-input-body" >
+                      <input className="f-form-input" name="name" placeholder="Where you want to go"/>
+                    </div>
+                    <div className="f-form-but-body" >
+                      <button className="f-form-but" type="submit">Submit</button>
+                      </div>
+                  </form>
                 </div>
                 </div>
               
       </div>
-      <div className="f-end"> All rights reserved@<div className="f-end-name">backpackers</div><div className="f-end-name1">united.</div>in</div>
+      <div className="f-end"> All rights reserved@backpackersunited.in</div>
         </div>
 
 )

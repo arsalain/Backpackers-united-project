@@ -19,9 +19,6 @@
         height: 400px;
         object-fit: cover;
  }
-.slick-disabled {
-        display: none !important;
-      }
 
 .trek-search{
      

@@ -3,6 +3,8 @@ import './App.css';
 import Home from './Page/Home/Home';
 import Trek from './Page/Trek/Trek'
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
+import Kudremukh from './Page/TreKPages/Kudremukh';
+import Tour from './Page/Tour/Tour';
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
   
   <Route path='/' element={<Home /> }/>
    <Route path='/trek' element={<Trek /> }/>
+   <Route path='/trek/kudremukha' element={<Kudremukh /> }/>
+   <Route path='/tour' element={<Tour/> }/>
   {/*<Route path='/about' element={<About /> }/>
   <Route path='/contact' element={<Contact /> }/>
   <Route path='/dest' element={<Product /> }/>
