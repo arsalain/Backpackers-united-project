@@ -255,55 +255,80 @@ const Tour = () => {
         {
           id:1,
           imgSrc: Trekhome,
-          name: "Best of Vietnam ",
+          name: "Best of Vietnam(5D/4N)",
           state: "Vietnam ",
           day: "5D/4N"
         },
         {
           id:2,
           imgSrc: Trekhome,
-          name: "PHUKET PHI PHI ISLAND TRIP ",
+          name: "PHUKET PHI PHI ISLAND TRIP(4D/3N) ",
           state: "Thailand",
           day: "4D/3N"
         },
         {
           id:3,
           imgSrc: Trekhome,
-          name: "PATTAYA - PHUKET TOUR",
+          name: "PATTAYA - PHUKET TOUR(5D/4N)",
           state: "Thailand",
           day: "5D/4N"
         },
         {
           id:4,
           imgSrc: Trekhome,
-          name: "PHUKET - KRABI TOUR",
-          state: "Karnataka",
+          name: "PHUKET - KRABI TOUR(6D/5N)",
+          state: "Thailand",
           day: "6D/5N"
         },
         {
           id:5,
           imgSrc: Trekhome,
-          name: "Wayanad Backpacking Tour",
-          state: "Kerala",
-          day: "3D/2N",
-          date: "July 21,2023(Friday)",
-          person:"Per Person",
-          amount: "7999"
+          name: "PHUKET AND KRABI TOUR(6D/5N)",
+          state: "Thailand",
+          day: "6D/5N"
         },
         {
           id:6,
           imgSrc: Trekhome,
-          name: "Coorg - Mysore Backpacking Tour",
-          state: "Karnataka",
-          day: "3D/2N"
+          name: "BANGKOK - PATTAYA - PHUKET TOUR(6D/5N)",
+          state: "Thailand",
+          day: "6D/5N"
+        
         },
         {
           id:7,
           imgSrc: Trekhome,
-          name: "Chikmagalur Backpacking Tour",
-          link: "/",
-          state: "Karnataka",
-          day: "3D/2N"
+          name: "BEST OF BANGKOK - (4D/3N)",
+          state: "Thailand",
+          day: "4D/3N"
+        },
+        {
+          id:8,
+          imgSrc: Trekhome,
+          name: "BANGKOK TEMPLE TOUR - PATTAYA CORAL ISLAND (5D/4N)",
+          state: "Thailand",
+          day: "5D/4N"
+        },
+        {
+          id:9,
+          imgSrc: Trekhome,
+          name: "Best Of Phuket And Krabi Tour Package -(6D/5N)",
+          state: "Thailand",
+          day: "6D/5N"
+        },
+        {
+          id:10,
+          imgSrc: Trekhome,
+          name: "PATTAYA - BANGKOK TOUR (5D/4N)",
+          state: "Thailand",
+          day: "5D/4N"
+        },
+        {
+          id:11,
+          imgSrc: Trekhome,
+          name: "Thailand Backpacking Tour (4D/3N )",
+          state: "Thailand",
+          day: "4D/3N"
         },
       ]
   return (
@@ -348,7 +373,7 @@ const Tour = () => {
       <div className='tour-recom'>
           <div className='tour-recom-title'>International Tours</div>
        
-          <IntTours slides={recommendedtours} />
+          <IntTours slides={internationaltours} />
           
       </div>
       <Footer />

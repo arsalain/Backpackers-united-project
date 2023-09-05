@@ -21,7 +21,7 @@ import Footer from "../../Components/Nav/Footer/Footer"
 
 import Gallery from '../../Components/Product/Galeery/Gallery'
 import Productfaq from '../../Components/Product/Faq/Productfaq'
-const Kudremukh = () => {
+const Kurinjal = () => {
     const [toggleState, setToggleState] = useState(1);
     const [show,setShow] = useState(false)
     const [show1,setShow1] = useState(false)
@@ -61,50 +61,50 @@ const Kudremukh = () => {
       {
         id:1,
         Gimg: jeepride,
-        Gname: "Jeep Ride",
-        Gpara: "Experience the thrill of a jeep ride in Kudremukh's rugged terrain. Enjoy stunning views, off-road excitement, and the untouched beauty of misty hills and lush forests. It's an adventure you won't forget!"
+        Gname: "deserunt mollit ",
+        Gpara: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo"
       },
       {
         id:2,
         Gimg: jeepride,
         Gname: "Jeep Ride",
-        Gpara: "Experience the thrill of a jeep ride in Kudremukh's rugged terrain. Enjoy stunning views, off-road excitement, and the untouched beauty of misty hills and lush forests. It's an adventure you won't forget!"
+        Gpara: "laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae"
       },
       {
         id:3,
         Gimg: jeepride,
-        Gname: "Jeep Ride",
-        Gpara: "Experience the thrill of a jeep ride in Kudremukh's rugged terrain. Enjoy stunning views, off-road excitement, and the untouched beauty of misty hills and lush forests. It's an adventure you won't forget!"
+        Gname: "deserunt mollit ",
+        Gpara: "dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit "
       },
       {
         id:4,
         Gimg: jeepride,
-        Gname: "Jeep Ride",
-        Gpara: "Experience the thrill of a jeep ride in Kudremukh's rugged terrain. Enjoy stunning views, off-road excitement, and the untouched beauty of misty hills and lush forests. It's an adventure you won't forget!"
+        Gname: "deserunt mollit ",
+        Gpara: "sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro"
       },
       {
         id:5,
         Gimg: jeepride,
-        Gname: "Jeep Ride",
-        Gpara: "Experience the thrill of a jeep ride in Kudremukh's rugged terrain. Enjoy stunning views, off-road excitement, and the untouched beauty of misty hills and lush forests. It's an adventure you won't forget!"
+        Gname: "deserunt mollit ",
+        Gpara: "quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed "
       },
       {
-        id:5,
+        id:6,
         Gimg: jeepride,
-        Gname: "Jeep Ride",
-        Gpara: "Experience the thrill of a jeep ride in Kudremukh's rugged terrain. Enjoy stunning views, off-road excitement, and the untouched beauty of misty hills and lush forests. It's an adventure you won't forget!"
+        Gname: "deserunt mollit ",
+        Gpara: "quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, "
       },
       {
-        id:5,
+        id:7,
         Gimg: jeepride,
-        Gname: "Jeep Ride",
-        Gpara: "Experience the thrill of a jeep ride in Kudremukh's rugged terrain. Enjoy stunning views, off-road excitement, and the untouched beauty of misty hills and lush forests. It's an adventure you won't forget!"
+        Gname: "deserunt mollit ",
+        Gpara: "quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea "
       },
       {
-        id:5,
+        id:8,
         Gimg: jeepride,
-        Gname: "Jeep Ride",
-        Gpara: "Experience the thrill of a jeep ride in Kudremukh's rugged terrain. Enjoy stunning views, off-road excitement, and the untouched beauty of misty hills and lush forests. It's an adventure you won't forget!"
+        Gname: "deserunt mollit",
+        Gpara: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque"
       },
     ]
     const toggleTab = (index) => {
@@ -130,9 +130,9 @@ const Kudremukh = () => {
         <Navbar2 />
         <div className='product-title-body' >
           <div className='product-body-contain'>
-        <div className='product-img-title' >Ethina Bhuja Trek</div>
+        <div className='product-img-title' >Kurinjal Trek </div>
         <div className='product-title-time' ><FaLocationDot className='product-title-icon' ></FaLocationDot><div >Karnataka</div>
-        <LuClock9 className='product-title-icon1'></LuClock9><div >2 Days 1 Night</div>
+        <LuClock9 className='product-title-icon1'></LuClock9><div >2 Days 2 Night</div>
         <GiLevelThree className='product-title-icon1'></GiLevelThree><div >Difficulty - Easy</div></div>
         <div className='prodeuct-title-para' >"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
@@ -234,7 +234,7 @@ const Kudremukh = () => {
                   </div>
 </div>
                   { show2 ?  <div className='product-iternary-left-day0-body'><div className='product-iternary-left-day0-title'>
-                     Kudremukh Trek
+                  Bramagiri Trek
                       </div>
                       <div className='product-iternary-left-day0-point'>
                  <TbPointFilled className='product-iternary-left-day0-point-icon' >
@@ -461,7 +461,7 @@ We have certified trek leads (Male/Female) accompanying the participants at all 
         </div>
         <div className='product-gal'>
           <div className='product-gal-head-title'>Travel Plan</div>
-          <div className='product-gal-head-title1'>A weekend in Kudremukh</div>
+          <div className='product-gal-head-title1'>A weekend in Kurinjal</div>
       
           
         {/* <Slider {...settings} useRef={sliderRef}> */}
@@ -472,7 +472,7 @@ We have certified trek leads (Male/Female) accompanying the participants at all 
         <div className='similar-body-intro-line'></div>
             <div className='similar-intro'>
               <div className='similar-intro-title' >
-                Kudremukh Inspiration
+              Kurinjal Inspiration
               </div>
               <div className='similar-intro-line'></div>
               <div className='similar-intro-para'>Everyone likes to travel in their own way and we brace it but 
@@ -528,4 +528,4 @@ We have certified trek leads (Male/Female) accompanying the participants at all 
   )
 }
 
-export default Kudremukh
+export default Kurinjal

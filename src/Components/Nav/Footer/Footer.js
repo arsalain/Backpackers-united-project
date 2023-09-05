@@ -47,7 +47,7 @@ return (
                 <div className="f-mid">
                 <div className="f-mid-name">More</div>
                 <div className="f-mid-sub"><Link to='/' style={{ textDecoration: 'none' , color: "white"}} >Privacy Policy</Link></div>
-                <div className="f-mid-sub"><Link to='/' style={{ textDecoration: 'none' , color: "white"}} >Terms and Condition</Link></div>
+                <div className="f-mid-sub"><Link to='/terms&condition' style={{ textDecoration: 'none' , color: "white"}} >Terms and Condition</Link></div>
                 <div className="f-mid-sub"><Link to='/contact' style={{ textDecoration: 'none' , color: "white"}}  >Copyright Policy</Link></div>
                 </div>
                 <div className="f-form">
