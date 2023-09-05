@@ -12,16 +12,16 @@ const Points = () => {
 >
 <div className="p-card-log">
 <div className="p-card-nam"><BiSolidLocationPlus className="p-card-nam-icon"/></div>
-                    <div className="p-num-log">50<BiPlusMedical   className="p-num-icon"/></div>
+                    <div className="p-num-log">50<BiPlusMedical   className="p-num-icon-dest"/></div>
     
-    <div className="p-card-nam1">Destination</div>
+    <div className="p-card-nam-dest">Destinations</div>
                 </div>
 <div className="p-left-box1" >
 <div className="p-card-nam1">
     <div className="p-card-logo"><MdOutlineRouter  className="p-num-icon"/></div>
-                    <div className="p-num-log1">200<BiPlusMedical   className="p-num-icon"/></div>
+                    <div className="p-num-log1">200<BiPlusMedical   className="p-num-icon1"/></div>
                     </div> 
-    <div className="p-card-nam2">Employees</div>
+    <div className="p-card-nam-emp">Employees</div>
               
 </div>
             {/* <Image src={dest} width={400} height={600}/>  */}

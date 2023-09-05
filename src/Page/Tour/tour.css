@@ -22,7 +22,7 @@
 
 .tour-search{
  
-    top: 40%;
+    top: 45%;
     left: 35%;
     position: absolute;
 }
@@ -70,12 +70,12 @@ width: 330px;
 }
 .tour-recom{
     padding-top: 50px;
-    /* margin-left: auto;
-    margin-right: auto; */
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column; 
      max-width: 1100px;
-     margin-left: 80px;
+     padding-left: 50px;
      position: relative;
    
 }

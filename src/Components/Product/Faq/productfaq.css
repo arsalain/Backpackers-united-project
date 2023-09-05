@@ -1,0 +1,21 @@
+
+.productfaq {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  
+  .productfaq-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+  }
+  
+  
+  .productfaq-content {
+    padding: 10px;
+    background-color: #fff;
+  }

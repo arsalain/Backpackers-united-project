@@ -70,7 +70,7 @@
     font-size: 1.25em;
     font-weight: bold;
     padding-top: 0.625em;
-    padding-left: 1.875em;
+    padding-left: 1.475em;
 }
 .test-card-name1
 {
@@ -87,20 +87,22 @@
     position: absolute; 
     z-index: -1;
      left: 2.5em;
-     top: 5em;
+     top: 3em;
     /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
     border: 0.063em solid rgb(220, 213, 213);
 }
 .text-card1-name{
-    padding-top: 13.125em;
-    padding-left: 1.875em;
+    padding-top: 10.525em;
+    padding-left: 1.475em;
     font-size: 1.25em;
     font-weight: bold;
+    /* margin-top: -3.24em */
 }
 .text-card1-name1{
     padding-left: 1.875em;
     font-size: 1em;
     padding-bottom: 1.25em;
+    margin-top: -0.24em;
 }
 .test-arrows{
     padding-left: 3.75em;

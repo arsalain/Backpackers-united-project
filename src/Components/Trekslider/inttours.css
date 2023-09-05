@@ -1,0 +1,109 @@
+.int-card-link{
+    text-decoration: none !important;
+    color: black;
+    }
+    .int-slide-prev{
+        border: none;
+        font-size: 3.125em;
+        position: absolute;
+        top: 40%;
+        left: -60px;
+        z-index: 1;
+        background: none;
+    }
+    .int-slide-prev1{
+        border: none;
+        font-size: 3.125em;
+        position: absolute;
+        top: 40%;
+        left: -60px;
+        z-index: 1;
+        background: none;
+        color: lightgrey;
+    }
+    .int-slide-next{
+        border: none;
+        font-size: 3.125em;
+        position: absolute;
+        top: 40%;
+        right: -20px;
+        background: none;
+    }
+    .int-slide-next1{
+        border: none;
+        font-size: 3.125em;
+        position: absolute;
+        top: 40%;
+        right: -20px;
+        background: none;
+        color: lightgrey;
+    }
+    .int-card{
+        display:flex;
+        flex-direction: column;
+        height: 320px;
+        width: 240px !important;
+        border: 1px solid rgb(220, 213, 213);
+        border-radius: 20px;
+    }
+    .int-card-body{
+        min-height: 100px !important;
+    }
+    .int-card-img{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        border-radius: 20px;
+        width: 200px;
+        height: 170px;
+        object-fit: cover;
+    }
+    .int-card-title{
+        padding-left: 20px;
+        padding-bottom: 10px;
+        font-weight: bold;
+    }
+    .int-card-loca1{
+        padding-left: 20px;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+    .int-card-loca-icon{
+        margin-top: 1px;
+    }
+    .int-card-day{
+        margin-left: 50px;
+        display: flex;
+        flex-direction: row;
+    }
+    .int-card-date{
+        font-size: 13px;
+        font-weight: bold;
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+    .int-card-total{
+        display: flex;
+        flex-direction: row;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px solid rgb(220, 213, 213);
+    }
+    .int-card-amount{
+        padding-left: 60px;
+        display: flex;
+        flex-direction: row;
+    }
+    .int-card-amount-icon{
+        padding-top: 2px;
+    }
+    
+    
+      /* .slick-disabled {
+        opacity: 0;
+        pointer-events:none !important;
+        display: none !important;
+    } */

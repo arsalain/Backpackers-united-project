@@ -18,6 +18,7 @@ import tandiamol from "../../Images/thandiamol.jpg"
 import gokarna from "../../Images/gokarna.jpg"
 import Review from '../../Components/Product/Reviews/Review'
 import Footer from "../../Components/Nav/Footer/Footer"
+
 import Gallery from '../../Components/Product/Galeery/Gallery'
 import Productfaq from '../../Components/Product/Faq/Productfaq'
 const Kudremukh = () => {
@@ -34,26 +35,26 @@ const Kudremukh = () => {
       {
         id:1,
         imgSrc: view,
-        title: "Enma's Story",
-        para: "Emma was under pressure to bring together the ideal trip for her family with only six weeks to go the clock was ticking, she chose Epic to help her because of their responsiveness and pragmatism."
+        title: "dolor sit amet",
+        para: "Suspendisse semper felis et massa feugiat, sed scelerisque velit cursus"
       },
       {
         id:2,
         imgSrc: KudremukhSight,
-        title: "Gary Story",
-        para: "Discover Gary’s Transformational Travel experience."
+        title: "consectetur ",
+        para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
       },
       {
         id:3,
         imgSrc: jeepride,
-        title: "Erin's Story",
-        para: "Discover how Erin fell in love with Morocco. "
+        title: "adipiscing",
+        para: "Donec sed tellus nec metus consequat pharetra. "
       },
       {
         id:4,
         imgSrc: kudremukh,
-        title: "Olivia's Story",
-        para: "Travelling with her favourite pooch. Discover Olivia’s story here. "
+        title: "Sed gravida",
+        para: "Sed gravida sapien hendrerit maximus efficitur. "
       }
     ]
     const Gdata = [
@@ -129,16 +130,15 @@ const Kudremukh = () => {
         <Navbar2 />
         <div className='product-title-body' >
           <div className='product-body-contain'>
-        <div className='product-img-title' >Kudremukha Trek</div>
+        <div className='product-img-title' >Ethina Bhuja Trek</div>
         <div className='product-title-time' ><FaLocationDot className='product-title-icon' ></FaLocationDot><div >Karnataka</div>
         <LuClock9 className='product-title-icon1'></LuClock9><div >2 Days 1 Night</div>
-        <GiLevelThree className='product-title-icon1'></GiLevelThree><div >Difficulty - Moderate</div></div>
-        <div className='prodeuct-title-para' >The name Kuduremukha literally means "horse-faced" in Kannada and refers
-         to a particular picturesque view of a side of the mountain that resembles a horse's face.Located at a distance 
-         of 96 km from the district of Chikmagalur, this Kudremukh trekking would let you explore the forests
-          which are spread over an area of 600 sq km. Hike to reach an altitude of 6,207ft. above sea level 
-          and witness the unbounded natural scenes that adorn Kudremukh. This fun-filled Kudremukh trek 
-          begins with an overnight journey from Bangalore.</div>
+        <GiLevelThree className='product-title-icon1'></GiLevelThree><div >Difficulty - Easy</div></div>
+        <div className='prodeuct-title-para' >"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+        sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
           <div className='product-iternary-left-but'><button className='product-iternary-left-but-bt'>Dowload PDF</button></div>
           </div>
         </div>

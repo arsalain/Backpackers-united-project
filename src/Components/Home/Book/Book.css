@@ -17,31 +17,28 @@
     flex: 1; */
 }
 .b-left-head{
-   
-    /* min-height: 200px; */
-    /* background-color: red; */
     display: flex;
     flex-direction: column;
     float: left;
     align-items: flex-start;
 }
 .b-name{
-    padding-left: 3.125em;
+    padding-left: 1.8em;
     font-size: 1.75em;
     font-family: 'Mansalva';
     color: #FCB418;
     font-weight: bold;
 }
 .b-title{
-    padding-left: 3.125em;
+    padding-left: 1.25em;
     font-size: 2.5em;
     font-weight: bold;
 }
 .b-title1{
-    padding-left: 3.125em;
+    padding-left: 1.25em;
     font-size: 2.5em;
     font-weight: bold;
-    padding-bottom: 1.875em;
+    padding-bottom: 1.475em;
 }
 .b-left-body{
     padding-left: 3.125em;
@@ -56,11 +53,11 @@
     width: 3.125em;
     background-color: rgb(192, 177, 45);
     border-radius: 0.625em;
-    margin-top: 1.25em !important;
+    margin-top: 0.80em !important;
 }
 .b-box-des{
     padding-left: 1.25em;
-    padding-top: 0.813em;
+    padding-top: 0.413em;
     float: left;
     display: flex;
     flex-direction: column;
@@ -77,14 +74,14 @@
     width: 3.125em;
     background-color: rgb(185, 84, 34);
     border-radius: 0.625em;
-    margin-top: 1.25em !important;
+    margin-top: 0.80em !important;
 }
 .b-box2{
     height: 3.125em;
     width: 3.125em;
     background-color: rgb(34, 37, 185);
     border-radius: 0.625em;
-    margin-top: 1.25em !important;
+    margin-top: 0.80em !important;
 }
 .b-right{
     float: right;
@@ -102,7 +99,7 @@
 
 .b-card-name{
     /* padding-right: 160px; */
-    padding-top: 1.875em;
+    padding-top: 0.875em;
     padding-left: 1.563em;
     font-size: 1.25em;
     font-weight: bold;
@@ -161,8 +158,13 @@
     align-items: center;
     justify-content: center;
   }
-  .b-card-build{
+  .b-card-build-body{
     float: left;
+display:flex;
+flex-direction: row;
+  }
+  .b-card-build{
+    
     font-size: 1.25em;
     padding-left: 1.875em;
     padding-top: 1.25em;
@@ -173,10 +175,13 @@
   .b-card-icon1{
     font-size: 1.25em;
     margin-right: 0.625em;
+    /* padding-top: -1.25em; */
   }
   .b-card-icon2{
     font-size: 1.563em;
-    margin-left: 6.25em;
+    padding-left: 3.5em;
+    padding-top: 1.2em;
+    
   }
   @media only screen and  (min-width:500px) and (max-width: 999px) {
     .b-body {

@@ -1,0 +1,59 @@
+.dest-ch-body{
+    background: black;
+    width: 100%;
+}
+.dest-ch{
+    /* width: 1300px; */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.dest-ch-title{
+    color: #fcb148;
+    font-weight: bold;
+    font-size: 1.75em;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    display: flex;
+    justify-content: center;
+    
+}
+.dest-ch-main{
+    display: flex;
+    flex-direction: row;
+    gap: 1.875em;
+}
+.dest-ch-card{
+    height: 12.5em;
+    width: 12.5em;
+    background: white;
+    margin-bottom: 2.5em;
+    border-radius: 0.625em;
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+}
+.dest-ch-card-icon{
+    padding-top: 1.875em;
+}
+.dest-ch-card-icon1{
+    font-size: 2.5em;
+}
+.dest-ch-card-name{
+    font-weight: bold;
+    color: #fcb148;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+    
+    /* padding-bottom: 10px;
+    padding-top: 10px; */
+}
+.dest-ch-card-name1{
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+}

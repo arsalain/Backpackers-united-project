@@ -88,19 +88,21 @@ const Trek = () =>{
       {
         id:2,
         imgSrc: Trekhome,
-        name: "Kurinjal Trek",
+        name: "Kumara Parvatha Trek",
+        link: "/trek/kumara",
         state: "Karnataka",
         day: "2D/2N",
         date: "July 21,2023(Friday)",
         person:"Per Person",
-        amount: "3799"
+        amount: "3900"
       },
+ 
       {
         id:3,
         imgSrc: Trekhome,
-        name: "Nethravathi Trek",
+        name: "Tadiandamol Trek",
         state: "Karnataka",
-        day: "2D/2N",
+        day: "2D/1N",
         date: "July 21,2023(Friday)",
         person:"Per Person",
         amount: "3799"
@@ -115,18 +117,17 @@ const Trek = () =>{
         person:"Per Person",
         amount: "3799"
       },
-  
       {
         id:5,
         imgSrc: Trekhome,
-        name: "Kumara Parvatha Trek from Coorg",
-        link: "/trek/kumara",
+        name: "Kurinjal Trek",
         state: "Karnataka",
         day: "2D/2N",
         date: "July 21,2023(Friday)",
         person:"Per Person",
-        amount: "3900"
+        amount: "3799"
       },
+  
       {
         id:6,
         imgSrc: Trekhome,
@@ -143,15 +144,25 @@ const Trek = () =>{
       {
         id:1,
         imgSrc: Trekhome,
-        name: "Tadiandamol Trek",
+        name: "Nethravathi Trek",
         state: "Karnataka",
-        day: "2D/1N",
+        day: "2D/2N",
         date: "July 21,2023(Friday)",
         person:"Per Person",
         amount: "3799"
       },
       {
         id:2,
+        imgSrc: Trekhome,
+        name: "Paithalamala Trek",
+        state: "Kerala",
+        day: "2D/2N",
+        date: "July 21,2023(Friday)",
+        person:"Per Person",
+        amount: "4999"
+      },
+      {
+        id:3,
         imgSrc: Trekhome,
         name: "Ethina Bhuja Mansoon Trek",
         state: "Karnataka",
@@ -161,7 +172,7 @@ const Trek = () =>{
         amount: "3600"
       },
       {
-        id:3,
+        id:4,
         imgSrc: Trekhome,
         name: "Skandagiri Trek",
         state: "Karnataka",
@@ -170,16 +181,7 @@ const Trek = () =>{
         person:"Per Person",
         amount: "1499"
       },
-      {
-        id:4,
-        imgSrc: Trekhome,
-        name: "Huttari Betta Trek",
-        state: "Karnataka",
-        day: "1D/1N",
-        date: "July 21,2023(Friday)",
-        person:"Per Person",
-        amount: "999"
-      },
+   
       {
         id:5,
         imgSrc: Trekhome,
@@ -191,15 +193,16 @@ const Trek = () =>{
         amount: "3799"
       },
       {
-        id:5,
+        id:6,
         imgSrc: Trekhome,
-        name: "Paithalamala Trek",
-        state: "Kerala",
-        day: "2D/2N",
+        name: "Huttari Betta Trek",
+        state: "Karnataka",
+        day: "1D/1N",
         date: "July 21,2023(Friday)",
         person:"Per Person",
-        amount: "4999"
-      },
+        amount: "999"
+      }
+    
     ]
     const waterfalltreks = [
       {

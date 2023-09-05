@@ -1,0 +1,81 @@
+.destimg{
+    margin: 0;
+    width: 100vw;
+    height: 100%;
+    position: relative;
+}
+.destimg-main{
+    width: 100%;
+    height: 18.75em;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+.destimg-head{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0 ;
+    display: flex;
+    flex-direction: column;
+}
+.destimg-head-title{
+    color: white;
+    font-weight: bold;
+    top: 8.125em;
+    left: 40%;
+    position: absolute;
+}
+.destimg-body{
+    width: 81.25em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3.125em;
+    padding-right: 1.875em;
+    padding-top: 5.625em;
+    padding-bottom: 5.625em;
+    display: flex;
+    flex-direction: column;
+}
+.destimg-body-title{
+    font-weight: bold;
+}
+.destimg-body-top{
+    display: flex;
+    flex-direction: row;
+    gap:0.625em;
+}
+.destimg-body-middle{
+    display: flex;
+    flex-direction: row;
+    padding-top: 0.938em;
+    gap:0.625em;
+}
+.destimg-body-last{
+    display: flex;
+    flex-direction: row;
+    padding-top: 0.938em;
+    gap:0.625em;
+}
+.destimg-body-img{
+    position: relative;
+}
+.destimg-body-i{
+    width: 17.75em;
+    height: 17.75em;
+    border-radius: 0.625em;
+}
+.destimg-body-name{
+    color: #FCB418;
+    font-weight: bold;
+    bottom: 3.125em;
+    left: 35%;
+    position: absolute;
+}
+.destimg-body-name1{
+    color: white;
+    font-weight: bold;
+    bottom: 1.563em;
+    left: 38%;
+    position: absolute;
+}

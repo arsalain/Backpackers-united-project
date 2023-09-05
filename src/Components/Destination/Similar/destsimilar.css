@@ -1,0 +1,166 @@
+.dest-sim{
+    width: 81.25em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.352em;
+    padding-bottom: 5.625em;
+    display: flex;
+    flex-direction: column;
+}
+.dest-sim-title{
+    font-weight: bold;
+    /* font-size: 40px; */
+    padding-left: 3.125em;
+    padding-bottom: 1.25em;
+}
+.dest-sim-content{
+    display: flex;
+    flex-direction: row;
+  
+}
+.dest-sim-card{
+    display: flex;
+    flex-direction: column;
+    height: 28.125em;
+    width: 22.5em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-left: 3.125em;
+    float: left;
+    border-radius: 1.25em;
+    background-color: black;
+}
+.dest-sim-card-img{
+    width: 22.5em;
+    height: 18.75em;
+    border-top-left-radius:1.25em ;
+    border-top-right-radius: 1.25em;
+}
+.dest-sim-card-name{
+    /* border-top: 1px solid white ; */
+    margin-top: 0.125em ;
+    border-right:0.125em solid black ;
+    border-left:0.125em solid black ;
+    font-size: 1.25em;
+    /* padding-left: 130px; */
+    border-radius: 0.625em;
+    padding-top: 0.625em;
+    padding-bottom: 0.625em;
+    display: flex;
+    /* color: white; */
+    justify-content: center;
+    background-color: white;
+    font-weight: 500;
+}
+.dest-sim-card-amount{
+    display: flex;
+    flex-direction: row;
+    padding-top: 0.625em;
+    padding-left: 4.688em;
+    /* justify-content: center; */
+}
+.dest-sim-card-t {
+    color: white;
+    display: flex;
+    align-items: center;
+  
+    /* padding-left: 90px; */
+}
+.dest-sim-card-t-icon{
+    padding-right: 0.125em;
+}
+.dest-sim-card-amount1{
+    display: flex;
+    flex-direction: row;
+    padding-top: 0.625em;
+    padding-left: 4.063em;
+    /* justify-content: center; */
+}
+.dest-sim-card-t1 {
+    color: white;
+    display: flex;
+    align-items: center;
+    /* padding-left: 45px; */
+    padding-left: 0.625em;
+}
+
+.dest-sim-card-t2 {
+    color: white;
+    display: flex;
+    align-items: center;
+    /* padding-left: 45px; */
+    padding-left: 0.625em;
+}
+.dest-sim-card-amount2{
+    display: flex;
+    flex-direction: row;
+    padding-top: 0.625em;
+    padding-left: 3.438em;
+    /* justify-content: center; */
+}
+.dest-sim-card-bt{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 0.625em;
+    justify-content: center;
+}
+.dest-sim-card-but{
+    background-color: #fcb418;
+    width: 6.25em;
+    height: 2.5em;
+    border-radius: 1.25em;
+    font-weight: bold;
+
+}
+.dest-sim-card-but1{
+    background-color: #fcb418;
+    width: 6.25em;
+    height: 2.5em;
+    border-radius: 1.25em;
+    margin-left: 0.625em;
+    font-weight: bold;
+}
+
+.dest-sim-slide{
+    width: 74em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding-top: 5.625em;
+}
+.dest-sim-prev{
+    font-size: 3.125em;
+    position: absolute;
+    top: 40%;
+    left: -1em;
+    z-index: 1;
+    background: none;
+}
+.dest-sim-next{
+    font-size: 3.125em;
+    position: absolute;
+    top: 40%;
+    right: -0.5em ;
+    background: none;
+}
+.dest-sim-slide-item{
+    /* margin-right: 20px; */
+   
+    width: 16.625em !important;
+    height: 12.5em !important;
+    position: relative;
+}
+.dest-sim-slide-item-img{
+    height: 12.5em;
+    width: 16.625em;
+    border-radius: 0.625em;
+}
+.dest-sim-slide-item-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+     color: white;
+     font-size: 0.813em;
+}

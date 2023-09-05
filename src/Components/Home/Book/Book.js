@@ -51,8 +51,11 @@ const Book = () =>{
                     <div className="b-card-dot"><RiLeafFill className="b-card-icon"/></div>
                     <div className="b-card-dot1"><GiFoldedPaper className="b-card-icon"/></div>
                     <div className="b-card-dot2"><GiPaperPlane className="b-card-icon"/></div>
-                    <div className="b-card-build"><BsFillBuildingsFill className="b-card-icon1"/>24 people going 
-                    <AiOutlineHeart className="b-card-icon2"/></div>
+                    <div className="b-card-build-body">
+                    <div className="b-card-build"><BsFillBuildingsFill className="b-card-icon1"/>24 people going </div>
+                    <div> <AiOutlineHeart className="b-card-icon2"/></div>
+                   
+                   </div>
                 </div>
             </div>
             
