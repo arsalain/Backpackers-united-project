@@ -1,11 +1,12 @@
 import "./trek.css"
 import React ,{ useState} from 'react'
-import {AiOutlineSearch} from "react-icons/ai";
+import {FaSearch} from "react-icons/fa";
 import Footer from '../../Components/Nav/Footer/Footer.js'
 import Navbar2 from '../../Components/Nav/Navbar/Navbar2.js'
 import Trekhome from "../../Image/TrekHome.jpg"
 import Trekslider from "../../Components/Trekslider/Trekslider";
-// import 'react-multi-carousel/lib/styles.css';
+import searchResult from  "../../searchdata.json"
+import { Link } from "react-router-dom";
 
 const Trek = () =>{
     const [searchInput, setSearchInput] = useState("")
@@ -285,17 +286,22 @@ const Trek = () =>{
        </div>
       <div className='trek-search'>
         <div className='trek-search-bar'>
-          <input type="text" placeholder="Search for amazing treks" className='trek-search-input'   onChange={(e)=>setSearchInput(e.target.value)}
+          <div className="trek-search-head"><input type="text" placeholder="Search for amazing treks" className='trek-search-input'   onChange={(e)=>setSearchInput(e.target.value)}
    value={searchInput}/>
-          <button  className='trek-search-button'><AiOutlineSearch   className="trek-search-icon" /></button>
-         
-          {/* {searchResult.map((list,index)=>(
-          <div  className='trek-search-field'>
-            <img src={`http://localhost:4000/uploads/${list.testimage}`} width={50} height={50} ></img>
-            <div className='trek-search-field-name'>{list.name} </div>
+          <button  className='trek-search-button'><FaSearch   className="trek-search-icon" /></button>
           </div>
-             ))} */}
+          {searchResult.filter(item =>{
+            const searchTerm = searchInput.toLowerCase()
+            const fullname = item.name.toLowerCase()
+            return searchTerm && fullname.startsWith(searchTerm)
+          }).map((list)=>(
+          // <div  className='trek-search-field'>
+               <div className='trek-search-field-name' ><Link to={list.link} className="trek-search-link">{list.name} </Link></div>
+          // </div> 
+             ))} 
+      
           </div>
+       
           </div>
           </div>
         <div className='trek-recom'>

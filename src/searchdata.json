@@ -1,0 +1,88 @@
+[
+    {
+      "id": 1,
+      "name": "Kudremukha Trek",
+      "link": "/trek/kudremukha"
+    },
+    {
+      "id": 2,
+      "name": "Bandaje Trek",
+      "link": "/trek/bandaje"
+    },
+    {
+        "id": 3,
+        "name": "Arisinagundi Trek",
+        "link": "/trek/arisinagundi"
+      },
+      {
+        "id": 4,
+        "name": "Bilikal Trek",
+        "link": "/trek/bilikal"
+      },
+      {
+        "id": 5,
+        "name": "Bramagiri Trek",
+        "link": "/trek/bramagiri"
+      },
+
+      {
+        "id": 6,
+        "name": "Dudhsagar Trek and Dandeli Exploration",
+        "link": "/trek/dudhsagar"
+      },
+      {
+        "id": 7,
+        "name": "Ethina Bhuja Mansoon Trek",
+        "link": "/trek/ethina"
+      },
+      {
+        "id": 8,
+        "name": "Gokarna Beach Trek",
+        "link": "/trek/gokarna"
+      },
+      {
+        "id": 9,
+        "name": "Huttari Beta Trek",
+        "link": "/trek/huttari"
+      },
+      {
+        "id": 10,
+        "name": "Kodachadri Trek",
+        "link": "/trek/kodachadri"
+      },
+      {
+        "id": 11,
+        "name": "Kumara Parvatha Trek",
+        "link": "/trek/kumara"
+      },
+      {
+        "id": 12,
+        "name": "Kurinjal Trek",
+        "link": "/trek/kurinjal"
+      },
+      {
+        "id": 13,
+        "name": "Narsimha Trek",
+        "link": "/trek/narsimha"
+      },
+      {
+        "id": 14,
+        "name": "Nethravathi Trek",
+        "link": "/trek/nethravathi"
+      },
+      {
+        "id": 15,
+        "name": "Paithalamala Trek",
+        "link": "/trek/paithalamala"
+      },
+      {
+        "id": 16,
+        "name": "Skandagiri Trek",
+        "link": "/trek/skandagiri"
+      } ,
+      {
+        "id": 17,
+        "name": "Tadiandamol Trek",
+        "link": "/trek/tadiandamol"
+      }
+  ]

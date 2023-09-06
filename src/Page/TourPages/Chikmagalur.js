@@ -20,7 +20,7 @@ import Review from '../../Components/Product/Reviews/Review'
 import Footer from "../../Components/Nav/Footer/Footer"
 import Gallery from '../../Components/Product/Galeery/Gallery'
 import Productfaq from '../../Components/Product/Faq/Productfaq'
-const Munar = () => {
+const Chikmagalur = () => {
     const [toggleState, setToggleState] = useState(1);
     const [show,setShow] = useState(false)
     const [show1,setShow1] = useState(false)
@@ -129,7 +129,7 @@ const Munar = () => {
         <Navbar2 />
         <div className='product-title-body' >
           <div className='product-body-contain'>
-        <div className='product-img-title' >Munar Tour</div>
+        <div className='product-img-title' >Chikmagalur Tour</div>
         <div className='product-title-time' ><FaLocationDot className='product-title-icon' ></FaLocationDot><div >Karnataka</div>
         <LuClock9 className='product-title-icon1'></LuClock9><div >2 Days 1 Night</div>
         </div>
@@ -460,7 +460,7 @@ We have certified trek leads (Male/Female) accompanying the participants at all 
         </div>
         <div className='product-gal'>
           <div className='product-gal-head-title'>Travel Plan</div>
-          <div className='product-gal-head-title1'>A weekend in Munar</div>
+          <div className='product-gal-head-title1'>A weekend in Chikmagalur</div>
       
           
         {/* <Slider {...settings} useRef={sliderRef}> */}
@@ -471,7 +471,7 @@ We have certified trek leads (Male/Female) accompanying the participants at all 
         <div className='similar-body-intro-line'></div>
             <div className='similar-intro'>
               <div className='similar-intro-title' >
-              Munar Inspiration
+              Chikmagalur Inspiration
               </div>
               <div className='similar-intro-line'></div>
               <div className='similar-intro-para'>Everyone likes to travel in their own way and we brace it but 
@@ -527,4 +527,4 @@ We have certified trek leads (Male/Female) accompanying the participants at all 
   )
 }
 
-export default Munar
+export default Chikmagalur

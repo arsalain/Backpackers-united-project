@@ -1,11 +1,12 @@
 import React from 'react'
 import "./terms.css"
 import Navbar2 from '../../Components/Nav/Navbar/Navbar2'
+import Footer from '../../Components/Nav/Footer/Footer'
 const Terms = () => {
   return (
     <div className='Term'>
         <Navbar2 />
-        {/* <div className='Terms-dummy'></div> */}
+    
      <div className='Term-head'>
         
         <div className='t-head-title'>TERMS & CONDITIONS</div>
@@ -80,7 +81,7 @@ Full payment is required at the time of booking unless otherwise specified. We a
 
 
         </div>
-
+<Footer />
     </div>
 
   )

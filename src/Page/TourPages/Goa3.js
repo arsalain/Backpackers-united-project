@@ -20,7 +20,7 @@ import Review from '../../Components/Product/Reviews/Review'
 import Footer from "../../Components/Nav/Footer/Footer"
 import Gallery from '../../Components/Product/Galeery/Gallery'
 import Productfaq from '../../Components/Product/Faq/Productfaq'
-const Munar = () => {
+const Goa3 = () => {
     const [toggleState, setToggleState] = useState(1);
     const [show,setShow] = useState(false)
     const [show1,setShow1] = useState(false)
@@ -129,9 +129,9 @@ const Munar = () => {
         <Navbar2 />
         <div className='product-title-body' >
           <div className='product-body-contain'>
-        <div className='product-img-title' >Munar Tour</div>
+        <div className='product-img-title' >Goa Tour</div>
         <div className='product-title-time' ><FaLocationDot className='product-title-icon' ></FaLocationDot><div >Karnataka</div>
-        <LuClock9 className='product-title-icon1'></LuClock9><div >2 Days 1 Night</div>
+        <LuClock9 className='product-title-icon1'></LuClock9><div >3 Days 2 Night</div>
         </div>
         <div className='prodeuct-title-para' >"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
@@ -261,7 +261,47 @@ const Munar = () => {
 
                   : null }
                   </div>
-                   
+                  <div className='product-iternary-left-day'>
+                <div className='product-iternary-left-day0' onClick={handleShow1}><div >Day 3 - Sightseeing and Chill</div>
+                <div  className='product-iternary-left-day0-but'>
+                  {show1 ? <IoMdArrowDropup className='product-iternary-left-day0-icon' />: 
+                  <IoMdArrowDropdown className='product-iternary-left-day0-icon' />}
+                  </div></div>
+                  {
+                  show1 ?  <div className='product-iternary-left-day0-body'>
+                      <div className='product-iternary-left-day0-title'>
+                      Jeep Ride
+                      </div>
+                      <div className='product-iternary-left-day0-point'>
+                 <TbPointFilled className='product-iternary-left-day0-point-icon' >
+                  </TbPointFilled> <div className='product-iternary-left-day0-point-text' >Have rest at twin sharing Tents.</div></div> 
+                  <div className='product-iternary-left-day0-point'>
+                 <TbPointFilled className='product-iternary-left-day0-point-icon' >
+                  </TbPointFilled> <div className='product-iternary-left-day0-point-text' >On the first day you will reach Home stay Early Morning through Jeep Ride.</div></div> 
+                  <div className='product-iternary-left-day0-title'>
+                     Bhamikonda View point
+                      </div>
+                      <div className='product-iternary-left-day0-point'>
+                 <TbPointFilled className='product-iternary-left-day0-point-icon' >
+                  </TbPointFilled> <div  className='product-iternary-left-day0-point-text'>After having breakfast, we will head towards the View point </div></div> 
+                  <div className='product-iternary-left-day0-point'>
+                 <TbPointFilled className='product-iternary-left-day0-point-icon' >
+                  </TbPointFilled> <div  className='product-iternary-left-day0-point-text'>Have lunch before returning back to the  homestay</div></div> 
+                  <div className='product-iternary-left-day0-title'>
+                   Somawathi Falls
+                      </div>
+                      <div className='product-iternary-left-day0-point'>
+                 <TbPointFilled className='product-iternary-left-day0-point-icon' >
+                  </TbPointFilled> <div className='product-iternary-left-day0-point-text' >After lunch head towards Somawathi falls.  </div></div> 
+                  <div className='product-iternary-left-day0-point'>
+                 <TbPointFilled className='product-iternary-left-day0-point-icon' >
+                  </TbPointFilled> <div  className='product-iternary-left-day0-point-text'>Enjoy the bonfire, depends on weather conditions.</div></div> 
+                  <div className='product-iternary-left-day0-point'>
+                 <TbPointFilled className='product-iternary-left-day0-point-icon' >
+                  </TbPointFilled> <div  className='product-iternary-left-day0-point-text'>Have the lip-smacking dinner and retire for the night.</div></div> 
+                  </div> : null 
+}
+</div>
                 
             </div>
             <div className='product-iternary-right'></div>
@@ -460,7 +500,7 @@ We have certified trek leads (Male/Female) accompanying the participants at all 
         </div>
         <div className='product-gal'>
           <div className='product-gal-head-title'>Travel Plan</div>
-          <div className='product-gal-head-title1'>A weekend in Munar</div>
+          <div className='product-gal-head-title1'>A weekend in Goa</div>
       
           
         {/* <Slider {...settings} useRef={sliderRef}> */}
@@ -471,7 +511,7 @@ We have certified trek leads (Male/Female) accompanying the participants at all 
         <div className='similar-body-intro-line'></div>
             <div className='similar-intro'>
               <div className='similar-intro-title' >
-              Munar Inspiration
+              Goa Inspiration
               </div>
               <div className='similar-intro-line'></div>
               <div className='similar-intro-para'>Everyone likes to travel in their own way and we brace it but 
@@ -527,4 +567,4 @@ We have certified trek leads (Male/Female) accompanying the participants at all 
   )
 }
 
-export default Munar
+export default Goa3

@@ -60,7 +60,7 @@ const Tour = () => {
           id:5,
           imgSrc: Trekhome,
           name: "kodaikanol Tour",
-          link: "/tour/kodaikanol",
+          link: "/tour/kodaikanal",
           state: "Karnataka",
           day: "2D/1N",
           date: "July 21,2023(Friday)",
@@ -71,7 +71,7 @@ const Tour = () => {
           id:6,
           imgSrc: Trekhome,
           name: "Gokarna Dandeli Tour",
-          link: "/trek/gokarnadandeli",
+          link: "/tour/gokarnadandeli",
           state: "Karnataka",
           day: "2D/1N",
           date: "July 21,2023(Friday)",
@@ -129,7 +129,7 @@ const Tour = () => {
             id:5,
             imgSrc: Trekhome,
             name: "Gokarna Dandeli Tour",
-            link: "/trek/gokarnadandeli",
+            link: "/tour/gokarnadandeli",
             state: "Karnataka",
             day: "2D/1N",
             date: "July 21,2023(Friday)",
@@ -184,8 +184,8 @@ const Tour = () => {
         {
           id:10,
           imgSrc: Trekhome,
-          name: "kodaikanol Tour",
-          link: "/tour/kodaikanol",
+          name: "kodaikanal Tour",
+          link: "/tour/kodaikanal",
           state: "Karnataka",
           day: "2D/1N",
           date: "July 21,2023(Friday)",
@@ -198,7 +198,7 @@ const Tour = () => {
           id:1,
           imgSrc: Trekhome,
           name: "Hampi Tour ",
-          link: "/tour/hampi/3d2n",
+          link: "/tour/hampi/3days-2nights",
           state: "Karnataka",
           day: "3D/2N",
           date: "July 21,2023(Friday)",
@@ -209,7 +209,7 @@ const Tour = () => {
           id:2,
           imgSrc: Trekhome,
           name: "Munnar Alleppey Tour ",
-          link: "/tour/munar/3d2n",
+          link: "/tour/munar/3days-2nights",
           state: "Kerala",
           day: "3D/2N",
           date: "July 21,2023(Friday)",
@@ -220,7 +220,7 @@ const Tour = () => {
           id:3,
           imgSrc: Trekhome,
           name: "Goa Backpacking tour",
-          link: "/tour/goa/3d2n",
+          link: "/tour/goa/3days-2nights",
           state: "Goa",
           day: "3D/2N",
           date: "July 21,2023(Friday)",
@@ -231,7 +231,7 @@ const Tour = () => {
           id:4,
           imgSrc: Trekhome,
           name: "Gokarna - Dandeli Tour",
-          link: "/tour/gokarnadandeli/3d2n",
+          link: "/tour/gokarnadandeli/3days-2nights",
           state: "Karnataka",
           day: "3D/2N",
           date: "July 21,2023(Friday)",
@@ -242,7 +242,7 @@ const Tour = () => {
           id:5,
           imgSrc: Trekhome,
           name: "Wayanad Tour",
-          link: "/tour/wayanad/3d2n",
+          link: "/tour/wayanad/3days-2nights",
           state: "Kerala",
           day: "3D/2N",
           date: "July 21,2023(Friday)",
@@ -253,7 +253,7 @@ const Tour = () => {
           id:6,
           imgSrc: Trekhome,
           name: "Coorg - Mysore Tour",
-          link: "/tour/coorgmysore/3d2n",
+          link: "/tour/coorgmysore/3days-2nights",
           state: "Karnataka",
           day: "3D/2N",
           date: "July 21,2023(Friday)",
@@ -264,7 +264,7 @@ const Tour = () => {
           id:7,
           imgSrc: Trekhome,
           name: "Chikmagalur Tour",
-          link: "/tour/chikmagalur/3d2n",
+          link: "/tour/chikmagalur/3days-2nights",
           state: "Karnataka",
           day: "3D/2N",
           date: "July 21,2023(Friday)",
@@ -277,7 +277,7 @@ const Tour = () => {
           id:1,
           imgSrc: Trekhome,
           name: "Best of Vietnam(5D/4N)",
-          link: "/tour/vietnam",
+          link: "/internationaltour/vietnam",
           state: "Vietnam ",
           day: "5D/4N"
         },
@@ -285,7 +285,7 @@ const Tour = () => {
           id:2,
           imgSrc: Trekhome,
           name: "PHUKET PHI PHI ISLAND TRIP(4D/3N) ",
-          link: "/tour/phuket-phi",
+          link: "/internationaltour/phuket-phi",
           state: "Thailand",
           day: "4D/3N"
         },
@@ -293,7 +293,7 @@ const Tour = () => {
           id:3,
           imgSrc: Trekhome,
           name: "PATTAYA - PHUKET TOUR(5D/4N)",
-          link: "/tour/pattaya-phuket",
+          link: "/internationaltour/pattaya-phuket",
           state: "Thailand",
           day: "5D/4N"
         },
@@ -301,7 +301,7 @@ const Tour = () => {
           id:4,
           imgSrc: Trekhome,
           name: "PHUKET - KRABI TOUR(6D/5N)",
-          link: "/tour/phuket-krabi/6d5n",
+          link: "/internationaltour/phuket-krabi/6days-5nights",
           state: "Thailand",
           day: "6D/5N"
         },
@@ -309,7 +309,7 @@ const Tour = () => {
           id:5,
           imgSrc: Trekhome,
           name: "PHUKET AND KRABI TOUR(5D/4N)",
-          link: "/tour/phuket-krabi/5d4n",
+          link: "/internationaltour/phuket-krabi/5days-4nights",
           state: "Thailand",
           day: "5D/4N"
         },
@@ -317,7 +317,7 @@ const Tour = () => {
           id:6,
           imgSrc: Trekhome,
           name: "BANGKOK - PATTAYA - PHUKET TOUR(6D/5N)",
-          link: "/tour/bangkok-pattaya",
+          link: "/internationaltour/bangkok-pattaya",
           state: "Thailand",
           day: "6D/5N"
         
@@ -326,7 +326,7 @@ const Tour = () => {
           id:7,
           imgSrc: Trekhome,
           name: "BEST OF BANGKOK - (4D/3N)",
-          link: "/tour/best-of-bangkok",
+          link: "/internationaltour/best-of-bangkok",
           state: "Thailand",
           day: "4D/3N"
         },
@@ -334,7 +334,7 @@ const Tour = () => {
           id:8,
           imgSrc: Trekhome,
           name: "BANGKOK TEMPLE TOUR - PATTAYA CORAL ISLAND (5D/4N)",
-          link: "/tour/bangkok-temple-pattaya-coral-island",
+          link: "/internationaltour/bangkok-temple-pattaya-coral-island",
           state: "Thailand",
           day: "5D/4N"
         },
@@ -342,7 +342,7 @@ const Tour = () => {
           id:9,
           imgSrc: Trekhome,
           name: "Best Of Phuket And Krabi Tour Package -(6D/5N)",
-          link: "/tour/best-of-phuket-krabi",
+          link: "/internationaltour/best-of-phuket-krabi",
           state: "Thailand",
           day: "6D/5N"
         },
@@ -350,7 +350,7 @@ const Tour = () => {
           id:10,
           imgSrc: Trekhome,
           name: "PATTAYA - BANGKOK TOUR (5D/4N)",
-          link: "/tour/pattaya-bangkok",
+          link: "/internationaltour/pattaya-bangkok",
           state: "Thailand",
           day: "5D/4N"
         },
@@ -358,7 +358,7 @@ const Tour = () => {
           id:11,
           imgSrc: Trekhome,
           name: "Thailand Backpacking Tour (4D/3N )",
-          link: "/tour/thailand",
+          link: "/internationaltour/thailand",
           state: "Thailand",
           day: "4D/3N"
         },
@@ -366,7 +366,6 @@ const Tour = () => {
   return (
     <div >
     <div className="tour">
-   {/* <img src={TourHome} className="tourimg"/> */}
    <div className='tourbody'>
    <img src={TourHome} className="tourimg"/>
    </div>
