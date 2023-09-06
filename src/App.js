@@ -3,26 +3,27 @@ import './App.css';
 import Home from './Page/Home/Home';
 import Trek from './Page/Trek/Trek'
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
-import Kudremukh from './Page/TrekandTourPages/Kudremukh';
 import Tour from './Page/Tour/Tour';
 import Destination from './Page/Destination/Destination';
-import Ethina from './Page/TrekandTourPages/Ethina';
+import Kudremukh from './Page/TrekPages/Kudremukh';
+import Ethina from './Page/TrekPages/Ethina';
 import Terms from './Page/TermsCondition/Terms';
-import Skandagiri from './Page/TrekandTourPages/Skandagiri';
-import Gokarna from './Page/TrekandTourPages/Gokarna';
-import Dudhsagar from './Page/TrekandTourPages/Dudhsagar';
-import Kumara from './Page/TrekandTourPages/Kumara';
-import Bramagiri from './Page/TrekandTourPages/Bramagiri';
-import Kurinjal from './Page/TrekandTourPages/Kurinjal';
-import Narsimha from './Page/TrekandTourPages/Narsimha';
-import Nethravathi from './Page/TrekandTourPages/Nethravathi';
-import Paithalamala from './Page/TrekandTourPages/Paithalamala';
-import Huttari from './Page/TrekandTourPages/Huttari';
-import Kodachadri from './Page/TrekandTourPages/kodachadri';
-import Bilikal from './Page/TrekandTourPages/Bilikal';
-import Bandaje from './Page/TrekandTourPages/Bandaje';
-import Arisinagundi from './Page/TrekandTourPages/Arisinagundi';
-import Tadiandamol from './Page/TrekandTourPages/Tadiandamol';
+import Skandagiri from './Page/TrekPages/Skandagiri';
+import Gokarna from './Page/TrekPages/Gokarna';
+import Dudhsagar from './Page/TrekPages/Dudhsagar';
+import Kumara from './Page/TrekPages/Kumara';
+import Bramagiri from './Page/TrekPages/Bramagiri';
+import Kurinjal from './Page/TrekPages/Kurinjal';
+import Narsimha from './Page/TrekPages/Narsimha';
+import Nethravathi from './Page/TrekPages/Nethravathi';
+import Paithalamala from './Page/TrekPages/Paithalamala';
+import Huttari from './Page/TrekPages/Huttari';
+import Kodachadri from './Page/TrekPages/kodachadri';
+import Bilikal from './Page/TrekPages/Bilikal';
+import Bandaje from './Page/TrekPages/Bandaje';
+import Arisinagundi from './Page/TrekPages/Arisinagundi';
+import Tadiandamol from './Page/TrekPages/Tadiandamol';
+import Wayanad from './Page/TourPages/Wayanad';
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
    <Route path='/trek/bandaje' element={<Bandaje/> }/>
    <Route path='/trek/arisinagundi' element={<Arisinagundi/> }/>
    <Route path='/tour' element={<Tour/> }/>
+   <Route path='/tour/wayanad' element={<Wayanad/> }/>
    <Route path='/destination' element={<Destination />} />
    <Route path='/terms&condition' element={<Terms />} />
   {/*<Route path='/about' element={<About /> }/>

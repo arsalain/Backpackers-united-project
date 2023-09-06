@@ -5,6 +5,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+   
 }
 .tour-body{
     /* width: 100%;
@@ -13,12 +14,18 @@
     top: 0;
     left: 0;
 }
+.tourbody{
+    width: 100%;
+    height: 25em;
+ 
+}
+
 .tourimg{
     width: 100%;
     height: 25em;
-    object-fit: cover;
+    object-fit:cover;
+ 
 }
-
 .tour-search{
  
     top: 45%;
