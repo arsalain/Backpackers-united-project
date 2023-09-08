@@ -69,3 +69,20 @@
     padding-right: 20px;
     
 }
+@media only screen and (max-width: 480px) {
+.product-gal-body-top{
+   display: flex !important;
+   justify-content:center ;
+}
+
+}
+@media only screen and  (min-width:500px) and (max-width: 900px) {
+    .product-gal-body-top{
+        width: 230px;
+     }
+     .product-gal-body-container{
+        width: 230px;
+       
+       
+    }
+    }

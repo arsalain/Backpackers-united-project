@@ -27,9 +27,9 @@ const Kudremukh = () => {
     const [show2,setShow2] = useState(false)
     const ref = useRef(null);
 
-    const handleScroll = () => {
-      ref.current?.scrollIntoView({ behavior: 'smooth' });
-    };
+    // const handleScroll = () => {
+    //   ref.current?.scrollIntoView({ behavior: 'smooth' });onClick={handleScroll} ref={ref}
+    // };
     const data = [
       {
         id:1,
@@ -130,9 +130,9 @@ const Kudremukh = () => {
         <div className='product-title-body' >
           <div className='product-body-contain'>
         <div className='product-img-title' >Kudremukha Trek</div>
-        <div className='product-title-time' ><FaLocationDot className='product-title-icon' ></FaLocationDot><div >Karnataka</div>
-        <LuClock9 className='product-title-icon1'></LuClock9><div >2 Days 1 Night</div>
-        <GiLevelThree className='product-title-icon1'></GiLevelThree><div >Difficulty - Moderate</div></div>
+        <div className='product-title-time' ><div ><FaLocationDot className='product-title-icon' ></FaLocationDot>Karnataka</div>
+        <div ><LuClock9 className='product-title-icon1'></LuClock9>2 Days 1 Night</div>
+        <div ><GiLevelThree className='product-title-icon1'></GiLevelThree>Difficulty - Moderate</div></div>
         <div className='prodeuct-title-para' >The name Kuduremukha literally means "horse-faced" in Kannada and refers
          to a particular picturesque view of a side of the mountain that resembles a horse's face.Located at a distance 
          of 96 km from the district of Chikmagalur, this Kudremukh trekking would let you explore the forests
@@ -161,26 +161,26 @@ const Kudremukh = () => {
                   <div className='product-iternary-left-day0-title'>
                 <div >Transfers from bangalore to Kudremukh via Bus</div></div> 
                   <div className='product-iternary-left-day0-point'>
-                 <TbPointFilled className='product-iternary-left-day0-point-icon'>
-                  </TbPointFilled> <div className='product-iternary-left-day0-point-text'>On Friday, Get picked up in Bangalore from the following points and start your Kudremukh trekking tour.</div></div> 
+                 <div className='product-iternary-left-day0-point-icon'><TbPointFilled >
+                  </TbPointFilled> </div> <div className='product-iternary-left-day0-point-text'>On Friday, Get picked up in Bangalore from the following points and start your Kudremukh trekking tour.</div></div> 
                   <div className='product-iternary-left-day0-point'>
-                 <TbPointFilled className='product-iternary-left-day0-point-icon' >
-                  </TbPointFilled> <div className='product-iternary-left-day0-point-text' >The exact pick-up location and time will be confirmed after the booking.</div></div> 
+                 <div className='product-iternary-left-day0-point-icon' ><TbPointFilled  >
+                  </TbPointFilled> </div> <div className='product-iternary-left-day0-point-text' >The exact pick-up location and time will be confirmed after the booking.</div></div> 
                   <div className='product-iternary-left-day0-point'>
-                 <TbPointFilled className='product-iternary-left-day0-point-icon' >
-                  </TbPointFilled> <div className='product-iternary-left-day0-point-text'>Pickup locations are:-</div></div> 
+                <div className='product-iternary-left-day0-point-icon'> <TbPointFilled  >
+                  </TbPointFilled> </div> <div className='product-iternary-left-day0-point-text'>Pickup locations are:-</div></div> 
                   <div className='product-iternary-left-day0-point-loc'>
-                 <TbPoint className='product-iternary-left-day0-point-icon' >
-                  </TbPoint> <div >Indiranagar</div></div> 
+                 <div className='product-iternary-left-day0-point-icon'><TbPoint  >
+                  </TbPoint> </div> <div >Indiranagar</div></div> 
                   <div className='product-iternary-left-day0-point-loc'>
-                 <TbPoint className='product-iternary-left-day0-point-icon' >
-                  </TbPoint> <div >Domlur</div></div> 
+                <div className='product-iternary-left-day0-point-icon' > <TbPoint >
+                  </TbPoint> </div><div >Domlur</div></div> 
                   <div className='product-iternary-left-day0-point-loc'>
-                 <TbPoint className='product-iternary-left-day0-point-icon' >
-                  </TbPoint> <div >Yeshwantpur</div></div> 
+                 <div className='product-iternary-left-day0-point-icon'><TbPoint  >
+                  </TbPoint></div><div >Yeshwantpur</div></div> 
                   <div className='product-iternary-left-day0-point-loc'>
-                 <TbPoint className='product-iternary-left-day0-point-icon' >
-                  </TbPoint> <div >Gorgunte Playa</div></div> 
+                 <div className='product-iternary-left-day0-point-icon'><TbPoint  >
+                  </TbPoint> </div><div >Gorgunte Playa</div></div> 
   
                   </div> :null
                 }
@@ -197,32 +197,32 @@ const Kudremukh = () => {
                       Jeep Ride
                       </div>
                       <div className='product-iternary-left-day0-point'>
-                 <TbPointFilled className='product-iternary-left-day0-point-icon' >
-                  </TbPointFilled> <div className='product-iternary-left-day0-point-text' >Have rest at twin sharing Tents.</div></div> 
+                 <div  className='product-iternary-left-day0-point-icon'><TbPointFilled >
+                  </TbPointFilled> </div> <div className='product-iternary-left-day0-point-text' >Have rest at twin sharing Tents.</div></div> 
                   <div className='product-iternary-left-day0-point'>
-                 <TbPointFilled className='product-iternary-left-day0-point-icon' >
-                  </TbPointFilled> <div className='product-iternary-left-day0-point-text' >On the first day you will reach Home stay Early Morning through Jeep Ride.</div></div> 
+                <div className='product-iternary-left-day0-point-icon'> <TbPointFilled  >
+                  </TbPointFilled> </div> <div className='product-iternary-left-day0-point-text' >On the first day you will reach Home stay Early Morning through Jeep Ride.</div></div> 
                   <div className='product-iternary-left-day0-title'>
                      Bhamikonda View point
                       </div>
                       <div className='product-iternary-left-day0-point'>
-                 <TbPointFilled className='product-iternary-left-day0-point-icon' >
-                  </TbPointFilled> <div  className='product-iternary-left-day0-point-text'>After having breakfast, we will head towards the View point </div></div> 
+                 <div  className='product-iternary-left-day0-point-icon'><TbPointFilled >
+                  </TbPointFilled> </div><div  className='product-iternary-left-day0-point-text'>After having breakfast, we will head towards the View point </div></div> 
                   <div className='product-iternary-left-day0-point'>
-                 <TbPointFilled className='product-iternary-left-day0-point-icon' >
-                  </TbPointFilled> <div  className='product-iternary-left-day0-point-text'>Have lunch before returning back to the  homestay</div></div> 
+                <div className='product-iternary-left-day0-point-icon'> <TbPointFilled  >
+                  </TbPointFilled> </div><div  className='product-iternary-left-day0-point-text'>Have lunch before returning back to the  homestay</div></div> 
                   <div className='product-iternary-left-day0-title'>
                    Somawathi Falls
                       </div>
                       <div className='product-iternary-left-day0-point'>
-                 <TbPointFilled className='product-iternary-left-day0-point-icon' >
-                  </TbPointFilled> <div className='product-iternary-left-day0-point-text' >After lunch head towards Somawathi falls.  </div></div> 
+                 <div className='product-iternary-left-day0-point-icon'><TbPointFilled  >
+                  </TbPointFilled></div><div className='product-iternary-left-day0-point-text' >After lunch head towards Somawathi falls.  </div></div> 
                   <div className='product-iternary-left-day0-point'>
-                 <TbPointFilled className='product-iternary-left-day0-point-icon' >
-                  </TbPointFilled> <div  className='product-iternary-left-day0-point-text'>Enjoy the bonfire, depends on weather conditions.</div></div> 
+                <div  className='product-iternary-left-day0-point-icon' > <TbPointFilled >
+                  </TbPointFilled> </div><div  className='product-iternary-left-day0-point-text'>Enjoy the bonfire, depends on weather conditions.</div></div> 
                   <div className='product-iternary-left-day0-point'>
-                 <TbPointFilled className='product-iternary-left-day0-point-icon' >
-                  </TbPointFilled> <div  className='product-iternary-left-day0-point-text'>Have the lip-smacking dinner and retire for the night.</div></div> 
+                 <div className='product-iternary-left-day0-point-icon'><TbPointFilled  >
+                  </TbPointFilled> </div><div  className='product-iternary-left-day0-point-text'>Have the lip-smacking dinner and retire for the night.</div></div> 
                   </div> : null 
 }
 </div>
@@ -237,27 +237,27 @@ const Kudremukh = () => {
                      Kudremukh Trek
                       </div>
                       <div className='product-iternary-left-day0-point'>
-                 <TbPointFilled className='product-iternary-left-day0-point-icon' >
-                  </TbPointFilled> <div className='product-iternary-left-day0-point-text'>On the second day of your Kudremukh trek, you will reach Kudremukh National park start point.</div></div> 
+                <div className='product-iternary-left-day0-point-icon' > <TbPointFilled  >
+                  </TbPointFilled> </div><div className='product-iternary-left-day0-point-text'>On the second day of your Kudremukh trek, you will reach Kudremukh National park start point.</div></div> 
                   <div className='product-iternary-left-day0-point'>
-                 <TbPointFilled className='product-iternary-left-day0-point-icon' >
-                  </TbPointFilled> <div className='product-iternary-left-day0-point-text' >After having breakfast, we will reach the base camp. By 09:00 AM, 
+                  <div className='product-iternary-left-day0-point-icon' >  <TbPointFilled  >
+                  </TbPointFilled> </div><div className='product-iternary-left-day0-point-text' >After having breakfast, we will reach the base camp. By 09:00 AM, 
                     we will start trekking to the top of Kudremukh Peak which is around 22 KM both ways.</div></div> 
                     <div className='product-iternary-left-day0-point'>
-                 <TbPointFilled className='product-iternary-left-day0-point-icon' >
-                  </TbPointFilled> <div className='product-iternary-left-day0-point-text' >En route to the peak, have lunch midway.</div></div> 
+                    <div className='product-iternary-left-day0-point-icon' > <TbPointFilled className='product-iternary-left-day0-point-icon' >
+                  </TbPointFilled> </div><div className='product-iternary-left-day0-point-text' >En route to the peak, have lunch midway.</div></div> 
                   <div className='product-iternary-left-day0-point'>
-                 <TbPointFilled className='product-iternary-left-day0-point-icon' >
-                  </TbPointFilled> <div  className='product-iternary-left-day0-point-text'>Once we reach the top, all of us can enjoy the relishing view of the serenity the peak has to offer.</div></div> 
+                  <div className='product-iternary-left-day0-point-icon' >  <TbPointFilled className='product-iternary-left-day0-point-icon' >
+                  </TbPointFilled> </div><div  className='product-iternary-left-day0-point-text'>Once we reach the top, all of us can enjoy the relishing view of the serenity the peak has to offer.</div></div> 
                   <div className='product-iternary-left-day0-point'>
-                 <TbPointFilled className='product-iternary-left-day0-point-icon' >
-                  </TbPointFilled> <div  className='product-iternary-left-day0-point-text'>Return to the base camp around 06:00 PM after a trek to Kudremukh. </div></div> 
+                  <div className='product-iternary-left-day0-point-icon' >  <TbPointFilled className='product-iternary-left-day0-point-icon' >
+                  </TbPointFilled> </div><div  className='product-iternary-left-day0-point-text'>Return to the base camp around 06:00 PM after a trek to Kudremukh. </div></div> 
                   <div className='product-iternary-left-day0-point'>
-                 <TbPointFilled className='product-iternary-left-day0-point-icon' >
-                  </TbPointFilled> <div  className='product-iternary-left-day0-point-text'>resh up and head to-wards Bangalore. </div></div> 
+                  <div className='product-iternary-left-day0-point-icon' > <TbPointFilled className='product-iternary-left-day0-point-icon' >
+                  </TbPointFilled> </div><div  className='product-iternary-left-day0-point-text'>resh up and head to-wards Bangalore. </div></div> 
                   <div className='product-iternary-left-day0-point'>
-                 <TbPointFilled className='product-iternary-left-day0-point-icon' >
-                  </TbPointFilled> <div  className='product-iternary-left-day0-point-text'>Return to Bangalore around 3am  and get back home with splendid memories.</div></div> </div>
+                  <div className='product-iternary-left-day0-point-icon' >  <TbPointFilled className='product-iternary-left-day0-point-icon' >
+                  </TbPointFilled></div> <div  className='product-iternary-left-day0-point-text'>Return to Bangalore around 3am  and get back home with splendid memories.</div></div> </div>
                  
 
                   : null }
@@ -268,7 +268,7 @@ const Kudremukh = () => {
             <div className='product-iternary-right'></div>
         </div>
         <div className='product-list'>
-        <div className="bloc-tabs1" onClick={handleScroll}>
+        <div className="bloc-tabs1" >
         <button
           className={toggleState === 1 ? "tabs1 active-tabs1" : "tabs1"}
           onClick={() => toggleTab(1) }
@@ -297,7 +297,7 @@ const Kudremukh = () => {
         </button>
       </div>
 
-      <div className="content-tabs1" ref={ref}>
+      <div className="content-tabs1" >
         <div
          className={toggleState === 1 ? "content1  active-content1" : "content1"}
         >
@@ -306,46 +306,46 @@ const Kudremukh = () => {
             <div  className='product-detail-inclusions' > 
             <div className='product-detail-inclusions1' >Inclusions</div>
             <div className='product-detail-point'>
-                 <TbPointFilled className='product-detail-point-icon' >
-                  </TbPointFilled> <div className='product-detail-point-text'>Transportation from Bangalore to Bangalore.(non A/C)
+               <div className='product-detail-point-icon'>  <TbPointFilled  >
+                  </TbPointFilled></div> <div className='product-detail-point-text'>Transportation from Bangalore to Bangalore.(non A/C)
                     </div></div> 
                     <div className='product-detail-point'>
-                 <TbPointFilled className='product-detail-point-icon' >
-                  </TbPointFilled> <div className='product-detail-point-text'>Forest Permits.
+                    <div className='product-detail-point-icon'>  <TbPointFilled >
+                  </TbPointFilled> </div><div className='product-detail-point-text'>Forest Permits.
                     </div></div> 
                     <div className='product-detail-point'>
-                 <TbPointFilled className='product-detail-point-icon' >
-                  </TbPointFilled> <div className='product-detail-point-text'>Trek leads from Backpackers United
+                    <div className='product-detail-point-icon'>  <TbPointFilled  >
+                  </TbPointFilled> </div><div className='product-detail-point-text'>Trek leads from Backpackers United
                     </div></div> 
                     <div className='product-detail-point'>
-                 <TbPointFilled className='product-detail-point-icon' >
-                  </TbPointFilled> <div className='product-detail-point-text'>Local Guides
+                    <div className='product-detail-point-icon'>   <TbPointFilled  >
+                  </TbPointFilled> </div><div className='product-detail-point-text'>Local Guides
                     </div></div> 
                     <div className='product-detail-point'>
-                 <TbPointFilled className='product-detail-point-icon' >
-                  </TbPointFilled> <div className='product-detail-point-text'>2 Breakfast, 1 Packed Lunch, 1 Dinner
+                    <div className='product-detail-point-icon'>   <TbPointFilled  >
+                  </TbPointFilled></div> <div className='product-detail-point-text'>2 Breakfast, 1 Packed Lunch, 1 Dinner
                     </div></div> 
                     <div className='product-detail-point'>
-                 <TbPointFilled className='product-detail-point-icon' >
-                  </TbPointFilled> <div className='product-detail-point-text'>Local Malnad Food
+                    <div className='product-detail-point-icon'>   <TbPointFilled  >
+                  </TbPointFilled> </div><div className='product-detail-point-text'>Local Malnad Food
                     </div></div> 
                     <div className='product-detail-point'>
-                 <TbPointFilled className='product-detail-point-icon' >
-                  </TbPointFilled> <div className='product-detail-point-text'>Jeep Ride
+                    <div className='product-detail-point-icon'>  <TbPointFilled  >
+                  </TbPointFilled> </div><div className='product-detail-point-text'>Jeep Ride
                     </div></div> 
             </div>
                <div className='product-detail-exclusions'><div className='product-detail-exclusions1'>Exclusions</div>
                <div className='product-detail-point'>
-                 <TbPointFilled className='product-detail-point-icon' >
-                  </TbPointFilled> <div className='product-detail-point-text'>Lunch on Day 3
+               <div className='product-detail-point-icon'> <TbPointFilled  >
+                  </TbPointFilled> </div><div className='product-detail-point-text'>Lunch on Day 3
                     </div></div> 
                     <div className='product-detail-point'>
-                 <TbPointFilled className='product-detail-point-icon' >
-                  </TbPointFilled> <div className='product-detail-point-text'>Lunch on Day 3Personal Expenses
+                    <div className='product-detail-point-icon'> <TbPointFilled  >
+                  </TbPointFilled> </div><div className='product-detail-point-text'>Lunch on Day 3Personal Expenses
                     </div></div> 
                     <div className='product-detail-point'>
-                 <TbPointFilled className='product-detail-point-icon' >
-                  </TbPointFilled> <div className='product-detail-point-text'>Anything not mentioned in the Inclusions.
+                    <div className='product-detail-point-icon'> <TbPointFilled  >
+                  </TbPointFilled></div> <div className='product-detail-point-text'>Anything not mentioned in the Inclusions.
                     </div></div> 
           
                  </div>

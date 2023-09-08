@@ -7,7 +7,7 @@ const Copyright = () => {
   return (
     <div className='CopyrightPolicy'>
         <Navbar2 />
-        {/* <div className='Copy-dummy'></div> */}
+    
      <div className='Copy-head'>
         
         <div className='Copy-head-title'>Copyright Policy</div>
