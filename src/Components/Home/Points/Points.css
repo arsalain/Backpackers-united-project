@@ -12,7 +12,8 @@ font-size: 16px;
     margin-right:auto;
 }
 .p-left {
-    width: 25em;
+    width: auto;
+    margin-left: -5.25em;
     /* padding-left: 20px; */
     border-radius: 1.875em 3.125em;
     background: url(../../../Images/pointsimg.jpg) ;
@@ -193,7 +194,7 @@ font-size: 16px;
     /* padding-right: 40px; */
 }
 @media only screen and  (min-width:500px) and (max-width: 999px) {
-    .p {
+    /* .p {
         flex-direction: column;
         width: auto;
     }
@@ -209,7 +210,7 @@ font-size: 16px;
     .p-para1{
         padding-left: 30px;
         /* width: 320px; */
-    }
+    /* }
     .p-left-box1 {
         margin-right: -50px;
     }
@@ -231,17 +232,47 @@ font-size: 16px;
    }
    .p-card-name1{
     font-size: 20px;
-   }
+   } */ 
+   .p {
+   
+      /* width: 81.25em; */
+      display: flex;
+
+
+}
+.p-left {
+     margin-left: 8.75em;
+     margin-right: auto;
+    /* padding-left: 20px; */
+    
+} 
+ .p-right{
+    
+    margin-right: 28.25em;
+    margin-left: auto;
+
+ }
+ .p-para1 {
+    width: auto;
+    padding-left: 3.125em;
+    margin-right: 6.25em;
+ }
 }
 
 @media only screen and (max-width: 480px) {
     .p {
+        display: flex;
         flex-direction: column;
         width: auto;
     }
     .p-left {
-        height: 400px;
-        width: 300px;
+        
+            height: 18.75em;
+            width: 12.5em;
+            margin-left: auto;
+            margin-right: auto;
+    
+    
     }
     .p-card-log{
         height: 120px;
@@ -289,6 +320,7 @@ font-size: 16px;
 }
 .p-name{
     padding-left: 30px;
+
 }
 .p-title1{
     padding-left: 30px;
@@ -323,5 +355,40 @@ font-size: 16px;
    .p-card-name1{
     font-size: 16px;
     padding-left: 5px;
+   }
+   .p right{
+    margin-left: auto;
+    margin-right: auto;
+    
+   }
+   .p-head {
+    margin-top: 1.25em;
+   }
+   .p-para1 {
+    margin-left: -3.25em;
+    margin-right: 3.25em;
+    /* text-align: center; */
+    justify-content: left;
+    
+
+   }
+   .p-name {
+
+    margin-left: -2em;
+    margin-right: 1.25em;
+   }
+   .p-title1 {
+    margin-left: -1.6em;
+    margin-right: 1.25em;
+
+   }
+   .p-title2 {
+    margin-left: -1.6em;
+    margin-right: 1.25em;
+
+
+   }
+   .p-card {
+    margin-top: 1.25em;
    }
 }

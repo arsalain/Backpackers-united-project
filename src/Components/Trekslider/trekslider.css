@@ -41,31 +41,29 @@ color: black;
 .trek-card{
     display:flex;
     flex-direction: column;
-    height: 370px;
-    width: 240px !important;
+    height: 23.125em;
+    width: 15em !important;
     border: 1px solid rgb(220, 213, 213);
-    border-radius: 20px;
+    border-radius: 1.25em;
 }
 .trek-card-body{
-    min-height: 100px !important;
+    min-height: 6.25em !important;
 }
 .trek-card-img{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    border-radius: 20px;
-    width: 200px;
-    height: 170px;
+  margin: 1.25em;
+    border-radius: 1.25em;
+    width: 12.5em;
+    height: 10.625em;
     object-fit: cover;
 }
 .trek-card-title{
-    padding-left: 20px;
-    padding-bottom: 10px;
+    padding-left: 1.25em;
+    padding-bottom: 0.625em;
     font-weight: bold;
 }
 .trek-card-loca1{
-    padding-left: 20px;
-    padding-bottom: 10px;
+    padding-left: 1.25em;
+    padding-bottom: 0.625em;
     display: flex;
     flex-direction: row;
 }
@@ -73,32 +71,32 @@ color: black;
     margin-top: 1px;
 }
 .trek-card-day{
-    margin-left: 50px;
+    margin-left: 3.125em;
     display: flex;
     flex-direction: row;
 }
 .trek-card-date{
-    font-size: 13px;
+    font-size: 0.813em;
     font-weight: bold;
-    padding-left: 20px;
-    padding-bottom: 10px;
+    padding-left: 1.55em;
+    padding-bottom: 0.625em;
 }
 .trek-card-total{
     display: flex;
     flex-direction: row;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
-    padding-top: 10px;
+    margin-left: 1.25em;
+    margin-right: 1.25em;
+    margin-top: 0.625em;
+    padding-top: 0.625em;
     border-top: 1px solid rgb(220, 213, 213);
 }
 .trek-card-amount{
-    padding-left: 60px;
+    padding-left: 3.75em;
     display: flex;
     flex-direction: row;
 }
 .trek-card-amount-icon{
-    padding-top: 2px;
+    padding-top: 0.125em;
 }
 
 
@@ -107,3 +105,70 @@ color: black;
     pointer-events:none !important;
     display: none !important;
 } */
+@media only screen and  (max-width: 330px) {
+
+    .trek-card{
+        margin-left: 0;
+}
+.trek-slide-prev{
+    top: 40%;
+    left: -30px;
+
+}
+.trek-slide-prev1{
+    top: 40%;
+    left: -30px;
+    color: black;
+}
+.trek-slide-next{
+    right: -30px;
+color: black;
+}
+.trek-slide-next{
+    right: -30px;
+color: black;
+}
+}
+@media only screen and (min-width: 330px) and (max-width: 480px) {
+    .trek-card{
+            margin-left: 10vw;
+            width: 270px !important;
+    }
+    .trek-card-img{
+        width: auto;
+        margin: 1.25em;
+    }
+    .trek-card-day {
+        margin-left: 5em;
+    }
+    .trek-card-amount {
+        padding-left: 6em;
+    }
+    .trek-slide-prev{
+        top: 40%;
+        left: -20px;
+    }
+    .trek-slide-prev1{
+        top: 40%;
+        left: -20px;
+        color: black;
+    }
+    .trek-slide-next1{
+    color: black;
+}
+}
+@media only screen and  (min-width:500px) and (max-width: 999px) {
+    .trek-slide-prev{
+        top: 40%;
+        left: -40px;
+
+    }
+    .trek-slide-prev1{
+        top: 40%;
+        left: -40px;
+        color: black;
+    }
+    .trek-slide-next1{
+        color: black;
+    }
+}

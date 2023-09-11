@@ -53,6 +53,7 @@ import Pattayabangkok from './Page/InternationalTours/Pattyabangkok';
 import Thailand from './Page/InternationalTours/Thailand';
 import Copyright from './Page/Copyright/Copyright';
 import Privacy from './Page/Privacy/Privacy';
+import Blogs from './Page/blogs/Blogs';
 
 function App() {
   return (
@@ -113,6 +114,7 @@ function App() {
    <Route path='/terms&condition' element={<Terms />} />
    <Route path='/copyrightpolicy' element={<Copyright />} />
    <Route path='/privacypolicy' element={<Privacy />} />
+   <Route path='/blogs' element= {<Blogs />} />
   {/*<Route path='/about' element={<About /> }/>
   <Route path='/contact' element={<Contact /> }/>
   <Route path='/dest' element={<Product /> }/>

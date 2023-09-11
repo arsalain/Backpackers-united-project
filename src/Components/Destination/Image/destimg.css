@@ -1,45 +1,4 @@
-.destimg{
-    margin: 0;
-    width: 100vw;
-    height: 100%;
-    position: relative;
-}
-.destimg-main{
-    width: 100%;
-    height: 18.75em;
-    object-fit: cover;
-    top: 0;
-    left: 0;
-}
-.destimg-head{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0 ;
-    display: flex;
-    flex-direction: column;
-}
-.destimg-head-title{
-    color: white;
-    font-weight: bold;
-    top: 8.125em;
-    left: 40%;
-    position: absolute;
-}
-.destimg-body{
-    width: 81.25em;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 3.125em;
-    padding-right: 1.875em;
-    padding-top: 5.625em;
-    padding-bottom: 5.625em;
-    display: flex;
-    flex-direction: column;
-}
-.destimg-body-title{
-    font-weight: bold;
-}
+
 .destimg-body-top{
     display: flex;
     flex-direction: row;
@@ -59,11 +18,14 @@
 }
 .destimg-body-img{
     position: relative;
-}
-.destimg-body-i{
     width: 17.75em;
     height: 17.75em;
+}
+.destimg-body-i{
+    height: 100%;
+    width: 100%;
     border-radius: 0.625em;
+    object-fit: cover;
 }
 .destimg-body-name{
     color: #FCB418;
@@ -78,4 +40,69 @@
     bottom: 1.563em;
     left: 38%;
     position: absolute;
+}
+@media only screen and (max-width: 300px) {
+    .destimg-main{
+        height: 60vh;
+        }
+    .destimg-head-title {
+        top: 25vh;
+            left: 20%;
+    }   .destimg-body {
+        width: auto;
+        padding: 0 0.625em;
+    }
+    .destimg-body-top{
+        flex-direction: column;
+    }
+    .destimg-body-img{
+        width: auto;
+    }
+    }
+    @media only screen and  (min-width:300px) and (max-width: 480px) {
+    .destimg-main{
+    height: 60vh;
+    }
+    .destimg-head-title {
+            top: 25vh;
+            left: 30%;
+    }
+    .destimg-body {
+        width: auto;
+        padding: 0 1.25em;
+    }
+    .destimg-body-top{
+        flex-direction: column;
+    }
+    .destimg-body-img{
+        width: 10em;
+        height: 10em;
+    }
+    .destimg-body-name{
+        left: 40%;
+    }
+    .destimg-body-name1{
+        left: 43%;
+    }
+    .destimg-body-middle{
+        flex-direction: column;
+    }
+    /* .destimg-body-last{
+        flex-direction: column;
+    } */
+    .dest-ch-body{
+        margin-top: 1.2em;
+    }
+    .dest-ch-title {
+        padding-top: 1em;
+        gap: 1em;
+        
+        
+    }
+    .dest-ch-main {
+        display: flex; 
+        flex-direction:column !important;
+
+        
+    }
 }

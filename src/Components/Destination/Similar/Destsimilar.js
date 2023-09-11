@@ -33,10 +33,6 @@ const ArrowRight = (props) => (
         className={'dest-sim-next'}><MdKeyboardArrowRight style={{color:"black"}}/> </button>
 )
 const sliderRef = React.useRef<Slider>(null);
-//  sliderRef.current.slickPlay();;
-// if (sliderElement){
-   
-// }
     const settings = {
         infinite: true,
         autoplay: true,

@@ -58,5 +58,9 @@
 .topslide{
     font-size: 13px;
 }
-
+.topslide-title {
+    margin-left: 1.25em;
+    margin-right: 1.25em;
+    text-align: center;
+}
 }

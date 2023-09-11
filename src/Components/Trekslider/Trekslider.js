@@ -64,7 +64,8 @@
                 settings: {
                   slidesToShow: 3,
                   slidesToScroll: 1,
-                  infinite: true
+                  infinite: true,
+                  dots: true
                 }
               },
               {
@@ -72,7 +73,7 @@
                 settings: {
                   slidesToShow: 2,
                   slidesToScroll: 1,
-                  initialSlide: 1,
+                  infinite: true,
                   dots: true
                 }
               },
@@ -80,7 +81,9 @@
                 breakpoint: 480,
                 settings: {
                   slidesToShow: 1,
-                  slidesToScroll: 1
+                  slidesToScroll: 1,
+                  infinite: true,
+                  dots: true
                 }
               }
             ]
@@ -90,7 +93,7 @@
 
     
       return (
-        <div>
+        <div >
             
           <Slider {...settings} useRef={sliderRef}    >
           {slides.map((index)=>(

@@ -36,6 +36,9 @@
   padding-bottom: 5em;
   font-size: 0.938em;
 }
+.reviews-left-para-read{
+font-weight: bolder;
+}
 @media only screen and (max-width: 480px) {
   .reviews-left{
     width: auto;

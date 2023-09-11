@@ -116,3 +116,21 @@
 .test-arrow-top{
 
 }
+@media only screen and (max-width: 480px) {
+    .t-body {
+        margin-top: 0em;
+        display: flex;
+        flex-direction: column;
+    }
+    .test-card {
+        margin-top: -5em;
+        width: 20em;
+        margin-left: 3.25em;
+        margin-right: 2.25em;
+    }
+    .test-card-img {
+        margin-left: 3.15em;
+        margin-top: -3.25em;
+
+    }
+}

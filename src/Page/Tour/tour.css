@@ -34,46 +34,46 @@
 }
 .tour-search-bar{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: white;
-  
     width: 25em;
-height: 2.5em;
-border-radius: 4.375em;
+    height: 2.5em;
+    border-radius: 1.375em;
     border: 0.063em solid rgb(220, 213, 213);
+    padding: 5px;
+}
+.tour-search-head{
+    display: flex;
+    flex-direction: row;
 }
 .tour-search-input{
 padding-top: 0.313em;
-padding-left: 1.25em;
+margin-left: 1.25em;
 border: none;
-border-radius: 4.375em;
+/* border-radius: 1.375em; */
 outline:none;
 width: 20.625em;
+height: 2.5em;
 }
 .tour-search-button{
 
     border: none;
     background-color: white;
-    margin-left: -0.313em;
+    /* margin-left: -2.13em; */
 }
 .tour-search-icon{
     padding-top: 0.313em;
-    padding-left: 2.25em;
-    font-size: 1.875em;
+    padding-left: 4em;
+    font-size: 1.3em;
 }
-.tour-search-field{
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    width: 23.75em;
-    padding-top: 0.313em;
-    padding-bottom: 0.313em;
-    padding-left: 1.25em;
-    align-items: center;
-    /* border-radius: 20px; */
+.tour-search-link{
+    text-decoration: none !important;
+color: black;
 }
+
 .tour-search-field-name{
-    padding-left: 0.625em;
+    padding-left: 1.2em;
+    font-weight: bold;
 }
 .tour-recom{
     padding-top: 3.125em;
@@ -98,3 +98,74 @@ width: 20.625em;
 .tour-but-icon{
     font-size: 1.875em ;
 }
+@media only screen and  (max-width: 300px) {
+    .tour-recom-title {
+        font-size: 1.5em;
+    }
+    .tour-search {
+            top: 55%;
+            left: 5%;
+        }
+        .tour-search-bar{
+            width: 15em;
+            height: auto;
+        }
+        .tour-search-input{
+            width: auto;
+            height: auto;
+        }
+        .tour-search-icon{
+            padding-left: 1.5em;
+        }
+        .tour-recom {
+            padding-top: 2em;
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+}
+@media only screen and  (min-width:300px) and (max-width: 480px) {
+    .tour-recom-title {
+        font-size: 1.5em;
+    }
+.tourkimg{
+    height: 60vh;
+}
+.tour-search {
+    top: 55%;
+    left: 18%;
+}
+.tour-search-bar{
+    width: 15em;
+    height: auto;
+}
+.tour-search-input{
+    width: auto;
+    height: auto;
+}
+.tour-search-icon{
+    padding-left: 1.5em;
+}
+.tour-recom {
+    padding-top: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+}
+@media only screen and  (min-width:500px) and (max-width: 999px) {
+    .tour-search {
+            top: 45%;
+            left: 28%;
+        }
+        .tour-search-bar{
+            width: 22em;
+            height: auto;
+        }
+        .tour-search-icon{
+            padding-left: 1.5em;
+        }
+    .tour-recom {
+            padding-top: 2em;
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+    }

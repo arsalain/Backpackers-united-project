@@ -26,13 +26,12 @@
         position: absolute;
 }
 .trek-search-bar{
-    display: flex;
-    flex-direction: column;
+        display: flex;
+        flex-direction: column;
         background-color: white;
-      
         width: 25em;
-min-height: 2.5em;
-border-radius: 1.375em;
+        height: 2.5em;
+        border-radius: 1.375em;
         border: 0.063em solid rgb(220, 213, 213);
         padding: 5px;
 }
@@ -93,3 +92,74 @@ color: black;
 .trek-but-icon{
         font-size: 1.875em ;
 }
+@media only screen and  (max-width: 300px) {
+        .trek-recom-title {
+                font-size: 1.5em;
+            }
+        .trek-search {
+                top: 55%;
+                left: 5%;
+            }
+            .trek-search-bar{
+                width: 15em;
+                height: auto;
+            }
+            .trek-search-input{
+                width: auto;
+                height: auto;
+            }
+            .trek-search-icon{
+                padding-left: 1.5em;
+            }
+            .trek-recom {
+                padding-top: 2em;
+                padding-left: 1em;
+                padding-right: 1em;
+            }
+}
+@media only screen and  (min-width:300px) and (max-width: 480px) {
+        .trek-recom-title {
+                font-size: 1.5em;
+            }
+.trekimg{
+        height: 60vh;
+}
+.trek-search {
+        top: 55%;
+        left: 18%;
+    }
+    .trek-search-bar{
+        width: 15em;
+        height: auto;
+    }
+    .trek-search-input{
+        width: auto;
+        height: auto;
+    }
+    .trek-search-icon{
+        padding-left: 1.5em;
+    }
+    .trek-recom {
+        padding-top: 2em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+@media only screen and  (min-width:500px) and (max-width: 999px) {
+        .trek-search {
+                top: 45%;
+                left: 28%;
+            }
+            .trek-search-bar{
+                width: 22em;
+                height: auto;
+            }
+            .trek-search-icon{
+                padding-left: 1.5em;
+            }
+        .trek-recom {
+                padding-top: 2em;
+                padding-left: 1em;
+                padding-right: 1em;
+            }
+        }

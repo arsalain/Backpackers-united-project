@@ -100,10 +100,67 @@
     .int-card-amount-icon{
         padding-top: 2px;
     }
+    @media only screen and  (max-width: 330px) {
+
+        .int-card{
+            margin-left: 0;
+    }
+    .int-slide-prev{
+        top: 40%;
+        left: -30px;
     
+    }
+    .int-slide-prev1{
+        top: 40%;
+        left: -30px;
+        color: black;
+    }
+    .int-slide-next{
+        right: -30px;
+    color: black;
+    }
+    .int-slide-next{
+        right: -30px;
+    color: black;
+    }
+    }
+    @media only screen and (min-width: 330px) and (max-width: 480px) {
+        .int-card{
+                margin-left: 10vw;
+                width: 270px !important;
+        }
+        .int-card-img{
+            width: auto;
+            margin: 1.25em;
+        }
+        .int-card-day {
+            margin-left: 5em;
+        }
+        .int-slide-prev{
+            top: 40%;
+            left: -20px;
+        }
+        .int-slide-prev1{
+            top: 40%;
+            left: -20px;
+            color: black;
+        }
+        .int-slide-next1{
+        color: black;
+    }
+    }
+    @media only screen and  (min-width:500px) and (max-width: 999px) {
+        .int-slide-prev{
+            top: 40%;
+            left: -40px;
     
-      /* .slick-disabled {
-        opacity: 0;
-        pointer-events:none !important;
-        display: none !important;
-    } */
+        }
+        .int-slide-prev1{
+            top: 40%;
+            left: -40px;
+            color: black;
+        }
+        .int-slide-next1{
+            color: black;
+        }
+    }

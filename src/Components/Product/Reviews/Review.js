@@ -29,7 +29,7 @@ const Review = ({slides}) => {
                   </div>
                   {/* <br /> */}
                   <div className='reviews-left-para' >
-                  { slides[currentIndex].para}
+                  { slides[currentIndex].para} ....... <button className='reviews-left-para-read'>Read More</button>
                   </div>
                 </div>
             </div>

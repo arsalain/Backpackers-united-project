@@ -1,0 +1,42 @@
+.destdrop{
+    margin: 0;
+    width: 100vw;
+    height: 100%;
+    position: relative;
+}
+.destdrop-main{
+    width: 100%;
+    height: 18.75em;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+.destdrop-head{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0 ;
+    display: flex;
+    flex-direction: column;
+}
+.destdrop-head-title{
+    color: white;
+    font-weight: bold;
+    top: 8.125em;
+    left: 40%;
+    position: absolute;
+}
+.destdrop-body{
+    width: 81.25em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3.125em;
+    padding-right: 1.875em;
+    padding-top: 5.625em;
+    padding-bottom: 5.625em;
+    display: flex;
+    flex-direction: column;
+}
+.destdrop-body-title{
+    font-weight: bold;
+}

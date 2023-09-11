@@ -1,16 +1,17 @@
 import React,{useState} from 'react'
 import "./tour.css"
-import {AiOutlineSearch} from "react-icons/ai";
+import {FaSearch} from "react-icons/fa";
 import Footer from '../../Components/Nav/Footer/Footer.js'
 import Navbar2 from '../../Components/Nav/Navbar/Navbar2.js'
 import TourHome from "../../Image/TourHome1.jpg"
 import Trekhome from "../../Image/TrekHome.jpg"
 import Trekslider from "../../Components/Trekslider/Trekslider";
 import IntTours from '../../Components/Trekslider/IntTours';
-
+import searchResult from  "../../searchdata.json"
+import { Link } from "react-router-dom";
 
 const Tour = () => {
-    const [searchInput, setSearchInput] = useState("")
+  const [searchInput, setSearchInput] = useState("")
     const recommendedtours = [
         {
           id:1,
@@ -375,16 +376,18 @@ const Tour = () => {
        </div>
       <div className='tour-search'>
         <div className='tour-search-bar'>
-          <input type="text" placeholder="Search for amazing treks" className='tour-search-input'   onChange={(e)=>setSearchInput(e.target.value)}
+        <div className="tour-search-head"><input type="text" placeholder="Search for amazing tours" className='trek-search-input'   onChange={(e)=>setSearchInput(e.target.value)}
    value={searchInput}/>
-          <button  className='tour-search-button'><AiOutlineSearch   className="tour-search-icon" /></button>
-         
-          {/* {searchResult.map((list,index)=>(
-          <div  className='trek-search-field'>
-            <img src={`http://localhost:4000/uploads/${list.testimage}`} width={50} height={50} ></img>
-            <div className='trek-search-field-name'>{list.name} </div>
+          <button  className='tour-search-button'><FaSearch   className="tour-search-icon" /></button>
           </div>
-             ))} */}
+          {searchResult.filter(item =>{
+            const searchTerm = searchInput.toLowerCase()
+            const fullname = item.name.toLowerCase()
+            return searchTerm && fullname.startsWith(searchTerm)
+          }).map((list)=>(
+               <div className='tour-search-field-name' ><Link to={list.link} className="tour-search-link">{list.name} </Link></div>
+             ))} 
+      
           </div>
           </div>
           </div>

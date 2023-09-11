@@ -13,6 +13,7 @@
 
 .b-left{
     float: left;
+    padding-left: 1.25em;
     /* display: flex;
     flex: 1; */
 }
@@ -23,25 +24,22 @@
     align-items: flex-start;
 }
 .b-name{
-    padding-left: 1.8em;
     font-size: 1.75em;
     font-family: 'Mansalva';
     color: #FCB418;
     font-weight: bold;
 }
 .b-title{
-    padding-left: 1.25em;
     font-size: 2.5em;
     font-weight: bold;
 }
 .b-title1{
-    padding-left: 1.25em;
+    
     font-size: 2.5em;
     font-weight: bold;
     padding-bottom: 1.475em;
 }
 .b-left-body{
-    padding-left: 3.125em;
     height: 6.25em;
     width: 43.75em;
     background-color: white;
@@ -183,44 +181,21 @@ flex-direction: row;
     padding-top: 1.2em;
     
   }
-  @media only screen and  (min-width:500px) and (max-width: 999px) {
-    .b-body {
-        margin-top: 80px;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    .b-left{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .b-left1{
-        width: auto;
-    }
-    .b-left-body{
-        padding-left: 0;
-        width: auto;
-    }
-    .b-right{
-        width: auto;
-        align-items: center;
-    }
-    .b-card{
-        margin-left: 0;
-    }
-  }
   @media only screen and (max-width: 480px) {
     .b-body {
-        margin-top: 50px;
+        display:flex;
+        flex-direction: column;
+        margin-top:0em;
         margin-left: 0;
         display: flex;
         flex-direction: column;
         width: 100%;
     }
+    
     .b-left1{
         width: auto;
         height: auto;
+        margin-right: 3.25em;
     }
     .b-name{
         padding-left: 30px;
@@ -256,6 +231,7 @@ flex-direction: row;
         width: 120px;
     }
     .b-right{
+        margin-top: -8em;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -314,3 +290,26 @@ flex-direction: row;
     margin-left: 80px;
 }
   }
+
+  @media only screen and  (min-width:500px) and (max-width: 999px) {
+  .b-body {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;  }
+  .b-left {
+    width: 30em;
+    padding-left: 3em;
+  }
+  .b-right {
+    margin-top:1.25em ;
+    width:auto;
+  }
+  .b-card {
+    margin-left: 2.5em;
+  }
+  .b-box-para {
+    width: 22em;
+}
+
+}
