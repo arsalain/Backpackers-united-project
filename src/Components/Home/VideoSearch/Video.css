@@ -21,18 +21,16 @@ video{
     flex-direction: column;
     background-color: rgba(0,0,0,0.2);
 }
+
 .video-title{
-    padding-top: 3em;
+    padding-top: 25vh;
     font-size: 2.813em;
     display: flex;
     align-self: center;
     transition: step-end;
     font-family: 'Smooch', cursive;
 }
-@keyframes fade-inout{
-    0%{opacity: 1;}
-    100%{opacity: 0;}
-}
+
 .video-title1{
     padding-bottom: 2rem;
     font-size: 3.125em;
@@ -40,13 +38,7 @@ video{
     align-self: center;
     color: #FCB418;
     font-weight: 400;
-    /* font-family: 'Poppins', sans-serif; */
-    /* font-family: 'Roboto Slab', serif; */
-/* font-family: fantasy; */
 font-style: bold;
-/* animation: fade-inout 2.5s infinite alternate; */
-/* transition:opacity 500ms; */
-/* opacity: 0; */
 }
 .video-search{
     color: white;
@@ -108,7 +100,7 @@ font-style: bold;
 @media only screen and  (min-width:500px) and (max-width: 999px) {
 
     .video-title {
-        padding-top: 340px;
+        padding-top: 35vh;
     }
     .video-search-input{
         width: 350px;
@@ -117,8 +109,7 @@ font-style: bold;
   }
 @media only screen and (max-width: 480px) {
     .video-title {
-        padding-top: 220px;
-        font-size: 30px;
+        padding-top: 35vh;
     }
     .video-title1 {
         font-size: 30px;

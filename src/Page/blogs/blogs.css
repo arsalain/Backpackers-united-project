@@ -1,0 +1,100 @@
+.blog-dummy9{
+    height: 100vh;
+    
+
+}
+.blog-title{
+    font-size: 2em;
+    margin-top: 1.25em;
+    font-weight: bold;
+}
+.blogpost9{
+    position: relative;
+}
+.blog-head9{
+    width:100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: absolute;
+
+}
+.carousel .slide img {
+    max-height: 100vh;  
+    width: auto;
+}
+
+.blog-head-title{
+    font-size: 2.5em ;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.blog-body{
+    background-color: white !important;
+    width: 70em;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+.img{
+    /* Background pattern from Toptal Subtle Patterns */
+   background-image: url("https://amymhaddad.s3.amazonaws.com/morocco-blue.png");
+   margin-top: 1.25em;
+   height: 25em;
+   width: 100%;
+}
+.blog-body-para {
+    margin-top: 1.125em;
+}
+
+.blog-body-para1 {
+    margin-top: 1.25em;
+}
+
+
+@media only screen and (max-width: 480px) {
+    .blog-head{
+        background-color:grey;
+        width:100%;
+        height: 100vh;
+    
+    }
+    .blog-body{
+        width: auto;
+        margin-left: 1.25em;
+        margin-right: 1.25em;
+    
+    }
+}
+
+@media only screen and  (min-width:500px) and (max-width: 900px) {
+    .blog-head{
+    background-color:grey;
+    width:100%;
+    height: 20em;
+     
+    }
+    .blog-body{
+        /* background-color: white !important; */
+        width: auto;
+        margin-left: 3.25em;
+        margin-right: 3.25em;
+        
+    
+    }
+    .blog-head-title{
+        margin-top: 1.25em;
+       
+    }
+}
+@media only screen and  (min-width:1400px) and (max-width: 2000px) {
+    .blog-body{
+        width: auto;
+        margin-left: 3.25em;
+        margin-right: 3.25em;
+        
+    }
+}

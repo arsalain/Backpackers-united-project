@@ -9,7 +9,6 @@
 }
 .dest-sim-title{
     font-weight: bold;
-    /* font-size: 40px; */
     padding-left: 3.125em;
     padding-bottom: 1.25em;
 }
@@ -131,7 +130,8 @@
 .dest-sim-prev{
     font-size: 3.125em;
     position: absolute;
-    top: 40%;
+    top: 50%;
+    transform: translateY(-50%);
     left: -1em;
     z-index: 1;
     background: none;
@@ -139,7 +139,8 @@
 .dest-sim-next{
     font-size: 3.125em;
     position: absolute;
-    top: 40%;
+    top: 50%;
+    transform: translateY(-50%);
     right: -0.5em ;
     background: none;
 }

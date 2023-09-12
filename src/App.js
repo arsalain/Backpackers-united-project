@@ -54,6 +54,9 @@ import Thailand from './Page/InternationalTours/Thailand';
 import Copyright from './Page/Copyright/Copyright';
 import Privacy from './Page/Privacy/Privacy';
 import Blogs from './Page/blogs/Blogs';
+import About from './Page/About/About';
+import Contact from './Page/Contact/Contact';
+import Career from './Page/Career/Career';
 
 function App() {
   return (
@@ -114,9 +117,11 @@ function App() {
    <Route path='/terms&condition' element={<Terms />} />
    <Route path='/copyrightpolicy' element={<Copyright />} />
    <Route path='/privacypolicy' element={<Privacy />} />
-   <Route path='/blogs' element= {<Blogs />} />
-  {/*<Route path='/about' element={<About /> }/>
-  <Route path='/contact' element={<Contact /> }/>
+   <Route path='/blogs/:id' element= {<Blogs />} />
+ <Route path='/about' element={<About /> }/>
+ <Route path='/contact' element={<Contact /> }/>
+ <Route path='/career' element={<Career /> }/>
+  {/* <Route path='/contact' element={<Contact /> }/>
   <Route path='/dest' element={<Product /> }/>
   <Route path="/forgotpassword/:id/:token" element={<ForgotPassword/>} />
 

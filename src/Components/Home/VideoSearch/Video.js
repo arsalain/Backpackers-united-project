@@ -40,6 +40,7 @@ const Video = () => {
         <input type="text" placeholder="Search" className='video-search-input'/>
           <button  className='video-search-button'>Explore</button>
         </div>
+
         <div className='video-footer-main'>
         <div className='video-footer'>
           <div className='video-rating-icon'><FaRegThumbsUp /></div>

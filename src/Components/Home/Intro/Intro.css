@@ -9,23 +9,15 @@
   padding-bottom: 5.625em;
 }
 .i-left {
-  /* margin-top: 80px; */
   display: flex;
-  /* position: relative; */
   flex-direction: column;
   padding-left: 3.75em;
-  /* gap: 2rem; */
 }
 .i-name {
-  /* display: flex;
-  flex-direction: column; */
   font-size: 1.75em;
   color: #FCB418;
   font-family: 'Mansalva';
   font-weight: bold;
-
-
-  /* gap: 0.25rem; */
 }
 .i-title{
   font-size: 2.5em;
@@ -60,7 +52,9 @@
 }
 @media only screen and (max-width: 480px) {
   .i-left {
-    /* flex-direction: row; */
+    padding: 0;
+    display: flex;
+    align-self: center;
   }
   .Intro{
     flex-direction: column;
@@ -70,51 +64,22 @@
     margin-left: auto;
     margin-right: auto;
   }
-  
-  .i-name{
-    /* font-size: 10px; */
-    margin-left: 0.65em;
-    margin-right: 1.25em;
-  }
-
-  .i-title {
-    margin-left: 0.65em;
-    margin-right: 1.25em;
-
-
-  }
-
-  .i-title1 {
-    margin-left: 0.75em;
-    margin-right: 1.25em;
-
-  }
-  .i-discrip1 {
-    margin-left: 1.25em;
-    margin-right: 1.25em;
-
-  }
-  .i-button {
-    margin-left: auto;
-    margin-right: auto;
-
-  }
-  .i-bot{
-    margin-left: 3.25em;
-    margin-right:3.25em;
-  }
-
+.i-right{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
   .i-right-img {
-    margin-left: 3.5em;
-    margin-right: 3.5em;
     margin-top: 3.25em;
+    margin-left: 0;
+   
   }
   
 }
 
 @media only screen and  (min-width:500px) and (max-width: 999px) {
   .i-left {
-    margin-top: 30px;
+    margin-top: 1.475em;
     width: auto;
     padding-left: 1.75em;
   }
@@ -124,13 +89,13 @@
     width: auto; 
   }
   .i-name{
-    font-size: 20px;
+    font-size: 1.25em;
   }
   .i-title1{
-    font-size: 40px;
+    font-size: 2.5em
   }
   .i-right{
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
     margin-right: auto;
 
   }

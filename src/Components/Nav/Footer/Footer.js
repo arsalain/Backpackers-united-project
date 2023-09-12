@@ -35,13 +35,13 @@ return (
                 <div className="f-mid-sub"> <Link to="/about"style={{ textDecoration: 'none' , color: "white"}} >
                 About
         </Link></div>
-                <div className="f-mid-sub"><Link to='/' style={{ textDecoration: 'none' , color: "white"}}  >Destinations</Link></div>
-                <div className="f-mid-sub">Careers</div>
+                <div className="f-mid-sub"><Link to='/destination' style={{ textDecoration: 'none' , color: "white"}}  >Destinations</Link></div>
+                <div className="f-mid-sub"><Link to='/career' style={{ textDecoration: 'none' , color: "white"}}  >Careers</Link></div>
                 </div>
                 <div className="f-mid">
                 <div className="f-mid-name">Contact</div>
                 <div className="f-mid-sub"><Link to='/' style={{ textDecoration: 'none' , color: "white"}}  >Help/FAQ</Link></div>
-                <div className="f-mid-sub"><Link to='/' style={{ textDecoration: 'none' , color: "white"}} >Contact Us</Link></div>
+                <div className="f-mid-sub"><Link to='/contact' style={{ textDecoration: 'none' , color: "white"}} >Contact Us</Link></div>
                 <div className="f-mid-sub"><Link to='/' style={{ textDecoration: 'none' , color: "white"}}  >Partner With Us</Link></div>
                 </div>
                 <div className="f-mid">

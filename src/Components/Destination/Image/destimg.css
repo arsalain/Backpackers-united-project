@@ -2,6 +2,7 @@
 .destimg-body-top{
     display: flex;
     flex-direction: row;
+    position: relative;
     gap:0.625em;
 }
 .destimg-body-middle{
@@ -31,15 +32,57 @@
     color: #FCB418;
     font-weight: bold;
     bottom: 3.125em;
-    left: 35%;
+    left: 50%;
+    transform: translateX(-50%);
     position: absolute;
 }
 .destimg-body-name1{
     color: white;
     font-weight: bold;
     bottom: 1.563em;
-    left: 38%;
+    left: 50%;
+    transform: translateX(-50%);
     position: absolute;
+}
+.destimg-slide-prev{
+    border: none;
+    font-size: 3.125em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -35px;
+    z-index: 1;
+    background: none;
+}
+.destimg-slide-prev1{
+    border: none;
+    font-size: 3.125em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -35px;
+    z-index: 1;
+    background: none;
+    color: lightgrey;
+}
+.destimg-slide-next{
+    border: none;
+    font-size: 3.125em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -10px;
+    background: none;
+}
+.destimg-slide-next1{
+    border: none;
+    font-size: 3.125em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -10px;
+    background: none;
+    color: lightgrey;
 }
 @media only screen and (max-width: 300px) {
     .destimg-main{
@@ -47,8 +90,9 @@
         }
     .destimg-head-title {
         top: 25vh;
-            left: 20%;
-    }   .destimg-body {
+        left: 20%;
+    }  
+     .destimg-body {
         width: auto;
         padding: 0 0.625em;
     }

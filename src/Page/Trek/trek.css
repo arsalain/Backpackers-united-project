@@ -30,7 +30,7 @@
         flex-direction: column;
         background-color: white;
         width: 25em;
-        height: 2.5em;
+        height: auto;
         border-radius: 1.375em;
         border: 0.063em solid rgb(220, 213, 213);
         padding: 5px;

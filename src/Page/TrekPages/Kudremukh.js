@@ -32,29 +32,24 @@ const Kudremukh = () => {
     // };
     const data = [
       {
-        id:1,
+        id:"/blogs/28",
         imgSrc: view,
         title: "Enma's Story",
         para: "Emma was under pressure to bring together the ideal trip for her family with only six weeks to go the clock was ticking, she chose Epic to help her because of their responsiveness and pragmatism."
       },
       {
-        id:2,
+        id:"/blogs/29",
         imgSrc: KudremukhSight,
         title: "Gary Story",
         para: "Discover Gary’s Transformational Travel experience."
       },
       {
-        id:3,
+        id:"/blogs/30",
         imgSrc: jeepride,
         title: "Erin's Story",
         para: "Discover how Erin fell in love with Morocco. "
       },
-      {
-        id:4,
-        imgSrc: kudremukh,
-        title: "Olivia's Story",
-        para: "Travelling with her favourite pooch. Discover Olivia’s story here. "
-      }
+      
     ]
     const Gdata = [
       {

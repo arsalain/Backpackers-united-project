@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "./review.css"
 import gokarna from "../../../Images/gokarna.jpg"
 import {IoIosArrowDropleft,IoIosArrowDropright} from "react-icons/io"
+import { Link } from 'react-router-dom'
 
 const Review = ({slides}) => {
     const [currentIndex, setCurrentIndex] = useState(0)
@@ -29,7 +30,7 @@ const Review = ({slides}) => {
                   </div>
                   {/* <br /> */}
                   <div className='reviews-left-para' >
-                  { slides[currentIndex].para} ....... <button className='reviews-left-para-read'>Read More</button>
+                  { slides[currentIndex].para} ....... <div ><Link to={slides[currentIndex].id}><button className='reviews-left-para-read'>Read More</button></Link></div>
                   </div>
                 </div>
             </div>

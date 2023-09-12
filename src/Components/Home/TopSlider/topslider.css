@@ -64,3 +64,8 @@
     text-align: center;
 }
 }
+@media only screen and  (min-width:500px) and (max-width: 999px) {
+    .topslide-title {
+        margin-left: 0.625em;
+    }
+}

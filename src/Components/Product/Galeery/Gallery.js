@@ -5,7 +5,6 @@ import Slider from "react-slick"
 import "./gallery.css"
 const Gallery = ({slides}) => {
     
-  
     const settings = {
       infinite: true,
         autoplay: true,
@@ -51,7 +50,7 @@ const Gallery = ({slides}) => {
    <div className='product-gal-body-top'>
       
       <div className='product-gal-body-container'>
-    <div className='product-gal-body-card'>
+    <div  className= 'product-gal-body-card'>
     <div className='product-gal-body-front'>
     <img src={index.Gimg} className='product-gal-body-top-img'></img></div>
   <div className='product-gal-body-back'>

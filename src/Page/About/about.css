@@ -1,0 +1,230 @@
+.about-head-img{
+    width: 100%;
+    height: 400px;
+    background: url(../../Images/ab.jpg) ;
+    /* color: White; */
+    background-size:cover;
+    background-repeat:no-repeat;
+    display: flex;
+    text-align: center;
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.about-head-title{
+    /* background-color: aliceblue; */
+    text-align: center;
+    padding-top: 50px;
+}
+.about-head-para{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.about-head-title{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.about-body{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+.about-body-title{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.about-cards{
+    display: flex;
+    flex-direction: row;
+}
+.about-card{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin-right: 50px;
+
+}
+.about-card-img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    align-self: center;
+    margin-bottom: 20px;
+}
+.about-card-name{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.about-card-desig{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.about-card-logo{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.about-card-logo1{
+    
+    width: 20px;
+    height: 20px;
+    padding-right: 5px;
+}
+.about-card hr{
+    height: 1px;
+    /* color: #FCB418; */
+    width: 100px;
+    background-color: #FCB418 ;
+    border: none;
+}
+.about-card-para{
+    /* text-align: center; */
+    font-size: 13px;
+}
+.about-cards1{
+    display: flex;
+    flex-direction: row;
+}
+.about-card1{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin-right: 50px;
+    margin-top: 1.25em ;
+}
+   
+.about-card1 hr{
+    height: 1px;
+    /* color: #FCB418; */
+    width: 100px;
+    margin-bottom: 20px;
+    background-color: #FCB418 ;
+    border: none;
+}
+@media only screen and (max-width: 480px) {
+    .about-head-img{
+        width: 100%;
+        object-fit: cover;
+        height: 50vh;
+        
+    }
+    .about-head-para{
+        width: auto;
+        margin-left: 1.25em;
+        margin-right: 1.25em;
+
+    
+
+        
+    }
+    .about-body{
+        /* background-color: aliceblue; */
+        width: auto;
+        /* text-align: center; */
+        font-size: 1.25em ;
+        
+    }
+.about-body-title {
+
+        margin-left: 1.25em;
+        margin-right: 1.25em;
+        bottom: auto;
+    } 
+    .about-cards{
+        display: flex;
+        flex-direction: column;
+     
+        /* align-: center; */
+        /* width: 350px;
+        /* margin-right: 50px; */ 
+        /* margin-left: 1.25em;
+        margin-right: 1.25em;
+     */
+    }
+    .about-card{
+        display: flex;
+        flex-direction: column;
+        /* text-align: center; */
+        width: auto;
+        margin-left: 1.25em;
+        margin-right: 1.25em;
+        /* width: 350px; */
+        /* margin-right: 50px; */
+    
+    }
+    .about-card-para{
+        justify-content: left;
+    }
+    .about-cards1{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin-left: 1.25em;
+        margin-right: 1.25em;
+        margin-top: 1.25em
+    }
+    .about-card1{
+        display: flex;
+        flex-direction: column;
+        top: auto;
+        margin-top: 1.25em
+     
+        /* align-: center; */
+        /* width: 350px;
+        /* margin-right: 50px; */ 
+        /* margin-left: 1.25em;
+        margin-right: 1.25em;
+     */
+    }
+}
+@media only screen and  (min-width:500px) and (max-width: 1100px) {
+    .about-body {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+
+
+    }
+    .about-head-para {
+        width: auto;
+        margin-left: 3em;
+        margin-right: 3em;
+
+    }
+    .about-cards {
+        width: auto;
+        margin-left: 3em;
+        margin-right: 3em;
+
+    }
+    .about-cards1 {
+        width: auto;
+        margin-left: 3em;
+        margin-right: 3em;
+
+
+    }
+    .about-body-title {
+        width: auto;
+        margin-left: 3em;
+        margin-right: 3em;
+
+    }
+
+}

@@ -31,7 +31,6 @@ const Topslider = () => {
         slidesToShow: 6,
         slidesToScroll: 1,
         rows: 2,
-       
         nextArrow: <ArrowRight />,
         prevArrow: <ArrowLeft />,
         responsive: [
@@ -40,15 +39,15 @@ const Topslider = () => {
               settings: {
                 slidesToShow: 4,
                 slidesToScroll: 1,
-                infinite: true
+                infinite: true,
+                dots: true
               }
             },
             {
               breakpoint: 600,
               settings: {
-                slidesToShow: 2,
+                slidesToShow: 3,
                 slidesToScroll: 1,
-                initialSlide: 1,
                 dots: true
               }
             },
@@ -56,7 +55,8 @@ const Topslider = () => {
               breakpoint: 480,
               settings: {
                 slidesToShow: 2,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                dots: true
               }
             }
           ]

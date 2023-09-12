@@ -5,7 +5,7 @@
 
 .i-dest{
    
-    max-width: 81.25em !important;
+    /* max-width: 81.25em !important; */
     height: 37.5em;
     text-align: center;
     margin-left:auto;
@@ -32,8 +32,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* padding-left: 250px; */
-    /* width: 500px !important; */
     padding-top: 3.75em; 
 }
 .i-destt .slick-list{
@@ -65,49 +63,19 @@
 }
 .card-name3{
     margin-top: 0.938em;
-    margin-left: 0.75em !important;
+    margin-left: 0.65em !important;
     display: flex;
     align-items: center;
     float: left;
 }
-.card-name33{
-    /* margin-top: 15px; */
-    margin-left: 0.75em !important;
-    float: left;
-    /* margin-right: 60px; */
-}
-.i-dest-card1{
-    height:20em;
-    width: 11.5em !important;
-    background-color: white;
-    border-radius: 1.25em;
-    margin-left: 0.625em;
-    float:left;
-}
-.i-dest-card1 img{
-    border-radius: 1.25em 1.25em  0px 0px;
-    height: 14.375em;
-    width: 11.5em;
-}
-.i-dest-card2{
-    height:20em;
-    width: 12.3em !important;
-    background-color: white;
-    border-radius: 1.25em;
-    margin-left: 1.25em;
-    float:left;
-}
-.i-dest-card2 img{
-    border-radius: 1.25em 1.25em  0em 0em;
-    height: 14.375em;
-    width: 12.3em;
-}
+
 .i-dest-prev{
     border: none;
     font-size: 3.125em;
     position: absolute;
-    top: 40%;
-    left: -0.1em;
+    top: 45%;
+    left: 0.5em;
+    transform: translateY(-50%);
     /* z-index: 1; */
     background: none;
 }
@@ -115,19 +83,20 @@
     border: none;
     font-size: 3.125em;
     position: absolute;
-    top: 40%;
-    right: -0.1em;
+    top: 45%;
+    right: 0.5em;
+    transform: translateY(-50%);
     background: none;
 }
 @media only screen and  (min-width:500px) and (max-width: 999px) {
     .i-dest {
       /* flex-direction: row; */
       width: auto;
-      height: 550px;
-
+      height: auto;
+        font-size: 13px;
     }
     .i-destt{
-        padding-top: 50px;
+        padding-bottom: 50px;
         padding-left: 0px;
         display: flex;
         align-items: center;
@@ -135,29 +104,20 @@
         width: auto;
         margin-left: auto;
         margin-right: auto;
-        gap: 10px;
+        /* gap: 10px; */
     }
-    .i-dest-card{
-        height: 280px;
-        width: 180px;
+    /* .i-dest-card{
+        width: 11em !important;
     }
-    .i-dest-card1{
-        height: 280px;
-        width: 180px;
-    }
-    .i-dest-card2{
+    .i-dest-card img{
+        width: 11em !important;
+    } */
+
+    /* .i-dest-card{
         height: 280px;
         width: 180px;
     }
     .i-dest-card img{
-        height: 200px;
-        width: 180px;
-    }
-    .i-dest-card1 img{
-        height: 200px;
-        width: 180px;
-    }
-    .i-dest-card2 img{
         height: 200px;
         width: 180px;
     }
@@ -171,7 +131,7 @@
         margin-top: 5px;
         margin-left: 12px !important;
         float: left;
-    }
+    } */
   }
   @media only screen and (max-width: 480px) {
   
@@ -199,30 +159,30 @@
    /* margin-left: 80px; */
 }
 .i-dest-card{
-    height: 250px;
+    height: 280px;
     width: 200px !important;
 }
 .i-dest-card1{
     /* margin-left: 0; */
-    height: 250px;
+    height: 280px;
     width: 200px;
 }
 .i-dest-card2{
     margin-left: 0;
-    height: 250px;
+    height: 280px;
     width: 200px;
     margin-bottom: 40px;
 }
 .i-dest-card img{
-    height: 170px;
+    height: 200px;
     width: 200px;
 }
 .i-dest-card1 img{
-    height: 170px;
+    height: 200px;
     width: 200px;
 }
 .i-dest-card2 img{
-    height: 170px;
+    height: 200px;
     width: 200px;
 
 }

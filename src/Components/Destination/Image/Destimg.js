@@ -8,12 +8,12 @@ const Destimg = ({slides}) => {
     const ArrowLeft = (props) => (
         <button
             {...props}
-            className={currentSlide === 0 ? 'trek-slide-prev1' :'trek-slide-prev'}>  <BsArrowLeftSquareFill /> </button>
+            className={currentSlide === 0 ? 'destimg-slide-prev1' :'destimg-slide-prev'}>  <BsArrowLeftSquareFill /> </button>
     );
     const ArrowRight = (props) => (
         <button
             {...props}
-            className={currentSlide === totalSlides ?  'trek-slide-next1': 'trek-slide-next'}><BsArrowRightSquareFill /> </button>
+            className={currentSlide === totalSlides ?  'destimg-slide-next1': 'destimg-slide-next'}><BsArrowRightSquareFill /> </button>
     )
   
     const settings = {
@@ -22,6 +22,7 @@ const Destimg = ({slides}) => {
       slidesToShow: 4 ,
       slidesToScroll: 1,
       afterChange: (index) => setCurrentSlide(index),
+      swipeToSlide: true,
       nextArrow: <ArrowRight />,
       prevArrow: <ArrowLeft />,
       responsive: [

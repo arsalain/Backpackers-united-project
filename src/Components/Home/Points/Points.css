@@ -12,8 +12,8 @@ font-size: 16px;
     margin-right:auto;
 }
 .p-left {
-    width: auto;
-    margin-left: -5.25em;
+    width: 25em ;
+    height: 32em;
     /* padding-left: 20px; */
     border-radius: 1.875em 3.125em;
     background: url(../../../Images/pointsimg.jpg) ;
@@ -236,26 +236,27 @@ font-size: 16px;
    .p {
    
       /* width: 81.25em; */
-      display: flex;
-
-
+    width: auto;
+    font-size: 13px;
+    /* padding-left:2em;
+    padding-right:2em; */
 }
 .p-left {
-     margin-left: 8.75em;
-     margin-right: auto;
-    /* padding-left: 20px; */
+ 
+    width: 18em;
+    margin-left: 3.25em;
     
-} 
+} .p-card-log{
+    margin-left: -2em;
+}
  .p-right{
-    
-    margin-right: 28.25em;
-    margin-left: auto;
-
+    padding-left: 1em;
  }
- .p-para1 {
-    width: auto;
-    padding-left: 3.125em;
-    margin-right: 6.25em;
+ .p-card{
+    margin-left: 1.25em;
+ }
+ .p-body{
+    padding-left: 2.3em
  }
 }
 
@@ -264,46 +265,49 @@ font-size: 16px;
         display: flex;
         flex-direction: column;
         width: auto;
+        padding-bottom: 0;
     }
     .p-left {
         
             height: 18.75em;
-            width: 12.5em;
+            width: 14.5em;
             margin-left: auto;
             margin-right: auto;
-    
-    
     }
     .p-card-log{
-        height: 120px;
-        width: 80px;
-        margin-top: 0px;
-        margin-left: -40px;
-        border-radius: 5px;
+        height: 6.5em;
+        width: 5em;
+        margin-top: -0.938em;
+        margin-left: -1.875em;
+        border-radius: 0.313em;
     }
     .p-num-log{
-        padding-top: 15px;
-        font-size: 25px;
+        padding-top: 0.625em;
+        font-size: 1.2em;
+    }.p-card-nam-dest{
+        font-size: 0.8em;
     }
     .p-num-icon {
-        padding-top: 7px;
-        font-size: 22px;
+        padding-top: 0;
+        font-size: 1em;
+    }
+    .p-num-icon1 {
+        padding-top: 0.65em;
     }
     .p-card-nam1 {
-        font-size: 13px;
-        padding-left: 7px;
+        font-size: 0.613em;
+        padding-left: 0.438em;
     }
     .p-card-nam {
         height: 30px;
         width: 30px;
         margin-top: 10px;
-        margin-left: 25px;
     }
     .p-left-box1 {
-      height: 70px;
-      width: 100px;
-      margin-top: 280px;
-      margin-right: -20px;
+      height: 4.375em;
+      width: 6.25em;
+      margin-top: 12.625em;
+      margin-right: -1.25em;
       border-radius: 5px;
     }
     .p-card-logo{
@@ -311,84 +315,56 @@ font-size: 16px;
         font-size: 25px;
     }
 .p-num-log1 {
-    font-size: 25px;
+    font-size: 2.25em;
     margin-top: 0px ;
+}
+.p-card-nam-emp{
+    font-size: 0.9em;
 }
 .p-card-nam2 {
     font-size: 13px;
     padding-left: 30px;
 }
+.p-right{
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+  
+}
 .p-name{
-    padding-left: 30px;
-
+    font-size: 1em;
+    padding-left: 0;
 }
 .p-title1{
-    padding-left: 30px;
-    font-size: 35px;
+    padding-left: 0;
+    font-size: 2em;
 }
 .p-title2{
-    padding-left: 30px;
-    font-size: 35px;
+    padding-left: 0;
+    font-size: 2em;
 }
 .p-para1{
-    padding-left: 30px;
-    width: 320px;
+    width: auto;
+    padding-left: 0;
+    font-size: 1em;
 }
-   .p-card{
-    height: 100px;
-    width: 90px;
-    margin-left: 30px;
-   }
-   .p-num {
-    font-size: 25px;
-    padding-top: 0px;
-    padding-left: 15px;
-   }
-   .p-num-right-icon{
-    font-size: 20px;
-   }
-   .p-card-name{
-    font-size: 16px;
-    padding-top: 12px;
-    padding-left: 5px;
-   }
-   .p-card-name1{
-    font-size: 16px;
-    padding-left: 5px;
-   }
-   .p right{
-    margin-left: auto;
-    margin-right: auto;
-    
-   }
-   .p-head {
-    margin-top: 1.25em;
-   }
-   .p-para1 {
-    margin-left: -3.25em;
-    margin-right: 3.25em;
-    /* text-align: center; */
-    justify-content: left;
-    
+.p-body{
+    display: flex;
+    flex-direction: row;
+}
+.p-card{
+    min-width: 4em;
+    height: auto;
+    margin-left: 0.2em;
 
-   }
-   .p-name {
-
-    margin-left: -2em;
-    margin-right: 1.25em;
-   }
-   .p-title1 {
-    margin-left: -1.6em;
-    margin-right: 1.25em;
-
-   }
-   .p-title2 {
-    margin-left: -1.6em;
-    margin-right: 1.25em;
-
-
-   }
-   .p-card {
-    margin-top: 1.25em;
-   }
+}
+.p-num{
+    font-size: 1.8em;
+}
+.p-card-name{
+    font-size: 1em;
+}
+.p-card-name1{
+    font-size: 1em;
+    padding-bottom: 1em;
+}
 }

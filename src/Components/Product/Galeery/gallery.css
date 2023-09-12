@@ -9,6 +9,7 @@
     width: 260px;
     height: 300px ;
     perspective: 800px;
+    
    
 }
 .product-gal-body-container:hover > .product-gal-body-card{
@@ -21,15 +22,19 @@
     height: 100%;
     position: relative;
     transition: transform 1500ms;
+   
     transform-style: preserve-3d;
 }
+
 .product-gal-body-front,.product-gal-body-back{
     height: 100%;
     width: 100%;
     border-radius: 2em;
     box-shadow: 0 0 5px 2px rgba(50,50,50,0.25);
     position: absolute;
+  
     backface-visibility: hidden;
+    
 }
 .product-gal-body-top-img{
     width: 100%;
@@ -63,7 +68,6 @@
 .product-gal-body-back-para{
     color: black;
     font-size:1em;
-    /* padding-top: 10px; */
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
@@ -76,13 +80,16 @@
 }
 
 }
+
 @media only screen and  (min-width:500px) and (max-width: 900px) {
     .product-gal-body-top{
         width: 230px;
      }
+     
      .product-gal-body-container{
         width: 230px;
        
        
     }
+ 
     }

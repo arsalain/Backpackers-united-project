@@ -55,6 +55,22 @@ const Selling = () => {
             }
           ]
       };
+      const sell = [ {
+        name: "Hampi",
+        amount: "6,000",
+        img: hampi
+      } ,
+      {
+        name: "Wayanad",
+        amount: "3,600",
+        img: wayanad
+      } ,
+      {
+        name: "Kumara parvatha",
+        amount: "3,200",
+        img: kumara
+      } 
+      ]
     return (
         <div className="i-dest-body">
 <div className="i-dest">
@@ -64,39 +80,16 @@ const Selling = () => {
     </div>
     <div className="i-destt">
     <Slider {...settings} useRef={sliderRef}>
-    {/* <div className="i-dest2"> */}
+    {sell.map((index)=>(
         <div className="i-dest-card">
-            <img src={hampi}></img>
+            <img src={index.img}></img>
             <div className="card-name">
-                <div className="card-name1">Hampi</div>
-                <div className="card-name2"><BiDollar />6,000</div>
-    {/* <br /> */}
+                <div className="card-name1">{index.name}</div>
+                <div className="card-name2"><BiDollar />{index.amount}</div>
     </div>
             <div className="card-name3"><IoNavigateSharp  />April 2023</div>
         </div>
-        {/* </div> */}
-        {/* <div className="i-dest2"> */}
-        <div className="i-dest-card1">
-            <img src={wayanad}></img>
-            <div className="card-name">
-                <div className="card-name1">Wayanad</div>
-                <div className="card-name2"><BiDollar  />3,600</div>
-    {/* <br /> */}
-    </div>
-            <div className="card-name3"><IoNavigateSharp   />April 2023</div>
-        </div>
-        {/* </div> */}
-        {/* <div className="i-dest2"> */}
-        <div className="i-dest-card2">
-            <img src={kumara}></img>
-            <div className="card-name">
-                <div className="card-name1">Kumaraparvatha</div>
-                <div className="card-name2"><BiDollar  />3,200</div>
-    {/* <br /> */}
-    </div>
-            <div className="card-name3"><IoNavigateSharp   /><span></span>April 2023</div>
-        </div>
-        {/* </div> */}
+))}
         </Slider>
         </div>
     </div>

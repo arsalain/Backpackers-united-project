@@ -33,29 +33,24 @@ const Bandaje = () => {
     };
     const data = [
       {
-        id:1,
+        id:"/blogs/4",
         imgSrc: view,
         title: "dolor sit amet",
         para: "Suspendisse semper felis et massa feugiat, sed scelerisque velit cursus"
       },
       {
-        id:2,
+        id:"/blogs/5",
         imgSrc: KudremukhSight,
         title: "consectetur ",
         para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
       },
       {
-        id:3,
+        id:"/blogs/6",
         imgSrc: jeepride,
         title: "adipiscing",
         para: "Donec sed tellus nec metus consequat pharetra. "
       },
-      {
-        id:4,
-        imgSrc: kudremukh,
-        title: "Sed gravida",
-        para: "Sed gravida sapien hendrerit maximus efficitur. "
-      }
+      
     ]
     const Gdata = [
       {

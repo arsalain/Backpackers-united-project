@@ -1,0 +1,241 @@
+.careers-dummy{
+    height: 3.75em;
+
+}
+.careers-head{
+    background-color:grey;
+    width:100%;
+    height: 25em;
+     display: flex; 
+    justify-content: center;
+    align-items:center;
+
+}
+.careers-head-title{
+    font-size: 2.5em ;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.careers-body{
+    background-color: white !important;
+    width: 75em;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+.careers-body-para {
+    margin-top: 3.125em;
+    font-weight:bold ;
+    font-size: 1.875em;
+}
+
+
+.careers-body-para1 {
+    margin-top: 1.25em;
+}
+.careers-body-para2 {
+    margin-top: 1.25;
+    font-weight:bold ;
+    font-size: 1.625em;
+}
+/* .careers-body-para3 {
+    margin-top: 5px;
+}
+.careers-body-para4 {
+    margin-top: 5px;
+}
+.careers-body-para5 {
+    margin-top: 5px;
+}
+.careers-body-para6 {
+    margin-top: 5px;
+}
+.careers-body-para7 {
+    margin-top: 5px;
+}
+.careers-body-para8 {
+    margin-top: 5px;
+} */
+.careers-body-para4 {
+    margin-top: 1.25;
+    font-weight:bold ;
+    font-size: 1.625em;
+}
+.careers-body-para5 {
+    margin-top: 0.313em;
+}
+/* .careers-body-para11 {
+    margin-top: 5px;
+}
+.careers-body-para12 {
+    margin-top: 5px;
+}
+.careers-body-para13 {
+    margin-top: 5px;
+} */
+.careers-body-para6 {
+    margin-top: 1.25em;
+    font-weight:bold ;
+    font-size: 1.625em;
+}
+.careers-body-para7 {
+    margin-top: 0.313em;
+}
+/* .careers-body-para {
+    margin-top: 5px;
+}
+.careers-body-para17 {
+    margin-top: 5px;
+} */
+.career-form-row{
+    display: flex;
+    flex-direction: row;
+    width: 62.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+.career-form{
+    margin-top: 3.125em;
+    margin-bottom: 3.125em;
+    width: 31.25em;
+    display: flex;
+    flex-direction: column;
+}
+.career-form-name{
+    display: flex;
+    flex-direction: row;
+    padding-top: 1.25em;
+}
+.career-form-name-icon{
+    font-size: 0.938em;
+    padding-bottom: 0.313em;
+}
+.career-form-title{
+    padding-top: 0.188em;
+}
+
+.career-form-title1{
+    /* padding-top: 3px; */
+    /* display: flex;
+    flex-direction: row; */
+    width: auto;
+    padding-top: 1.25em;
+
+}
+.career-form-text-area{
+    padding-left: 1.25em;
+}
+.career-form-name input{
+    width: 18.75em;
+    margin-left: 4.375em;
+    height: 1.563em;
+    padding-left: 0.625em;
+}
+.career-form-email{
+    display: flex;
+    flex-direction: row;
+    padding-top: 1.25em;
+}
+.career-form-email-icon{
+    font-size: 0.938em;
+    padding-bottom: 0.313em;
+}
+.career-form-email input{
+    width: 18.75em;
+    margin-left: 5.188em;
+    height: 1.563em;
+    padding-left: 0.625em;
+}
+.career-form-number{
+    display: flex;
+    flex-direction: row;
+    padding-top: 1.25em;
+}
+.career-form-number-icon{
+    font-size: 0.938em;
+    padding-bottom: 0.313em;
+}
+.career-form-number input{
+    width: 18.75em;
+    margin-left: 1.875em;
+    height: 1.563em;
+    padding-left: 0.625em;
+}
+.career-form-area{
+    display: flex;
+    flex-direction: row;
+    padding-top: 1.25em;
+}
+.career-image{
+    display: flex;
+    flex-direction: row;
+    padding-top: 12.5em;
+    padding-left: 12.5em;
+}
+.career-form-button{
+    display: flex;
+    justify-content: center;
+}
+.career-form-but{
+    margin-top: 1.875em;
+    margin-bottom: 2.5em;
+    border: none;
+    border-radius: 0.313em;
+    background-color: #FCB418 ;
+    height: 1.875em;
+    width: 30em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width: 480px) {
+    .careers-head{
+        background-color:grey;
+        width:100%;
+        height: 100vh;
+    
+    }
+    .careers-body{
+        width: auto;
+        margin-left: 1.25em;
+        margin-right: 1.25em;
+    
+    }
+    .career-form-row {
+        display: flex;
+        flex-direction: column;
+    }
+    .career-form {
+        display: flex;
+        flex-direction: column;
+        width: 30em;
+        margin-left: 1.25em;
+        margin-right: 1.25em;
+
+    }
+    .career-form-name {
+        width: auto;
+    }
+    .career-form-name input {
+        
+    }
+    .career-form-but {
+        width: auto;
+        /* margin-left: 1.25em; */
+        margin-right: 1.25em;
+        justify-content: center;
+
+
+
+    }
+
+    .career-image {
+        width: auto;
+        align-items: center;
+        margin-left: 1.25em;
+        margin-right: 1.25em;
+    }
+}
