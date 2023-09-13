@@ -1,21 +1,17 @@
 .b-body {
-    /* padding-left: 100px; */
-    /* margin-top: 150px; */
     height: 100%;
     width: 81.25em;
-    /* text-align: center; */
     font-size: 16px;
     margin-left:auto;
     margin-right:auto;
     display: flex;
     flex-direction: row;
+    font-size: 16px;
 }
 
 .b-left{
     float: left;
-    padding-left: 1.25em;
-    /* display: flex;
-    flex: 1; */
+    padding-left: 3.5em;
 }
 .b-left-head{
     display: flex;
@@ -87,7 +83,6 @@
     flex-direction: column;
 }
 .b-card {
-   
     height: 29.375em;
     width: 25.625em;
     border-radius: 1.25em;
@@ -96,7 +91,6 @@
 
 
 .b-card-name{
-    /* padding-right: 160px; */
     padding-top: 0.875em;
     padding-left: 1.563em;
     font-size: 1.25em;
@@ -113,7 +107,6 @@
     height: 12.5em;
 }
 .b-card-name1{
-    /* padding-right: 120px; */
     padding-left: 1.563em;
     padding-top: 1.25em;
     font-size: 1.25em;
@@ -129,7 +122,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* display: inline-block; */
+    
   }
   .b-card-dot1 {
     margin-top: 1.25em;
@@ -173,7 +166,7 @@ flex-direction: row;
   .b-card-icon1{
     font-size: 1.25em;
     margin-right: 0.625em;
-    /* padding-top: -1.25em; */
+   
   }
   .b-card-icon2{
     font-size: 1.563em;
@@ -185,34 +178,32 @@ flex-direction: row;
     .b-body {
         display:flex;
         flex-direction: column;
-        margin-top:0em;
-        margin-left: 0;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+        width: auto;
+        font-size: 12px;
     }
     
-    .b-left1{
-        width: auto;
+    .b-left{
+        display: flex;
+        flex-direction: column;
         height: auto;
-        margin-right: 3.25em;
+        padding-left: 1.6em;
+        padding-right: 1.6em;
     }
     .b-name{
-        padding-left: 30px;
-        font-size: 20px;
+        padding-left: 0;
     }
     .b-title{
-        padding-left: 30px;
-        font-size: 35px;
+        padding-left: 0;
     }
     .b-title1{
-        padding-left: 30px;
-        font-size: 35px;
+        padding-left: 0;
+        padding-bottom: 0.5em;
     }
     .b-left-body{
-        padding-left: 30px;
-        height: 100px;
+        padding-left: 0;
+        height: 6em;
         width: auto;
+       
     }
     .b-box-name{
         font-size: 15px;
@@ -223,15 +214,17 @@ flex-direction: row;
     }
     .b-box{
         width: 80px;
+        height: 50px;
     }
     .b-box1{
-        width: 90px;
+        width: 85px;
+        height: 50px;
     }
     .b-box2{
         width: 120px;
+        height: 50px;
     }
     .b-right{
-        margin-top: -8em;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -239,8 +232,6 @@ flex-direction: row;
     .b-card{
         margin-top: 50px;
         margin-left: 0;
-   
-        /* margin-left: 40px; */
         height: 380px;
         width: 300px;
     }
@@ -287,7 +278,8 @@ flex-direction: row;
 }
 .b-card-icon2{
     font-size: 20px;
-    margin-left: 80px;
+    padding-top: 1.7em;
+    padding-left: 4em;
 }
   }
 

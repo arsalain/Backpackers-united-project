@@ -57,6 +57,8 @@ import Blogs from './Page/blogs/Blogs';
 import About from './Page/About/About';
 import Contact from './Page/Contact/Contact';
 import Career from './Page/Career/Career';
+import HelpFaq from './Page/HelpFaq/HelpFaq';
+import Partner from './Page/Partner/Partner';
 
 function App() {
   return (
@@ -121,13 +123,9 @@ function App() {
  <Route path='/about' element={<About /> }/>
  <Route path='/contact' element={<Contact /> }/>
  <Route path='/career' element={<Career /> }/>
-  {/* <Route path='/contact' element={<Contact /> }/>
-  <Route path='/dest' element={<Product /> }/>
-  <Route path="/forgotpassword/:id/:token" element={<ForgotPassword/>} />
-
-  <Route path='/user' element={<PrivateRoute /> } >
-    <Route path='home' element={<UserHome /> } ></Route>
-  </Route> */}
+ <Route path='/helpfaq' element={<HelpFaq /> }/>
+ <Route path='/partner' element={<Partner/> }/>
+  
 </Routes>
     </div>
   );

@@ -204,7 +204,6 @@ const Blogs = () => {
         
         </div> 
          <div className='blog-body'>
-        {/* <div className='img'></div> */}
         <div className='blog-title'>
         {item.name}</div>
       <div className='blog-body-para'>{item.description}

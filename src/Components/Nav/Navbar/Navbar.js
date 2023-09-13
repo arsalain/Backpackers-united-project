@@ -1,6 +1,5 @@
 
 import React , {useState, useRef, Component} from "react";
-// import Toggle from "../Toggle/Toggle";
 import "./Navbar.css";
 import {CgCloseR, CgMenu} from "react-icons/cg";
 import Link from "next/link";
@@ -15,14 +14,13 @@ class Navbar extends Component {
   return (
     <>
     <div className="n-wrapper" >
-      {/* left */}
-      <div className="n-img"></div>
+       <div className="n-img"></div>
       <div className="n-left">
         
         <div className="n-name">BACKPACKERS</div>
         <div className="n-name1">UNITED</div>
       </div>
-      {/* right */}
+     
       <div className="n-right">
         <div className={this.state.clicked ? "n-list active": "n-list" } >
           <ul  style={{ listStyleType: "none" }}>
@@ -71,16 +69,7 @@ class Navbar extends Component {
       
         </div>
         </div>
-         {/* <div  className="mobile-navbar" >
-                      <CgMenu  name="menu-outline"
-                            className='mobile-nav-icon'
-                            onClick={() => setisMobile(true)} />   
-                     
-               <CgCloseR name="close-outline"
-                            className='mobile-nav-icon'
-                            onClick={() => setisMobile(false)}/>
-                            
-                            </div> */}
+         
                             <div className="mobile-navbar" onClick={this.handleClick}>
                               {this.state.clicked ? <CgCloseR  className='mobile-nav-icon' />:   <CgMenu className='mobile-nav-icon' />} 
 

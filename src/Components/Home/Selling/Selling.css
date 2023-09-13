@@ -1,11 +1,10 @@
 .i-dest-body{
     background-color: black;
-    /* width: 100%; */
+    height: auto;
+    
 }
 
 .i-dest{
-   
-    /* max-width: 81.25em !important; */
     height: 37.5em;
     text-align: center;
     margin-left:auto;
@@ -15,7 +14,7 @@
 .i-dest1{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    
 }
 .i-dest-t1 {
     padding-top: 1.875em;
@@ -26,17 +25,17 @@
 .i-dest-t2 {
     font-size: 2.5em;
     color: white;
-    /* color: rgb(214, 162, 48); */
+   
 }
 .i-destt {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 3.75em; 
+    width: 40em;
 }
-.i-destt .slick-list{
-    overflow: visible !important;
-  }
+
 .i-dest-card{
     height:20em;
     width: 12.3em !important;
@@ -73,70 +72,35 @@
     border: none;
     font-size: 3.125em;
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 0.5em;
     transform: translateY(-50%);
-    /* z-index: 1; */
     background: none;
 }
 .i-dest-next{
     border: none;
     font-size: 3.125em;
     position: absolute;
-    top: 45%;
+    top: 50%;
     right: 0.5em;
     transform: translateY(-50%);
     background: none;
 }
 @media only screen and  (min-width:500px) and (max-width: 999px) {
     .i-dest {
-      /* flex-direction: row; */
       width: auto;
       height: auto;
         font-size: 13px;
     }
     .i-destt{
         padding-bottom: 50px;
-        padding-left: 0px;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        width: auto;
-        margin-left: auto;
-        margin-right: auto;
-        /* gap: 10px; */
+        width: 40em;
     }
-    /* .i-dest-card{
-        width: 11em !important;
-    }
-    .i-dest-card img{
-        width: 11em !important;
-    } */
-
-    /* .i-dest-card{
-        height: 280px;
-        width: 180px;
-    }
-    .i-dest-card img{
-        height: 200px;
-        width: 180px;
-    }
-    .card-name1{
-        padding-left: 10px;
-    }
-    .card-name2{
-        margin-left: 100px !important;
-    }
-    .card-name3{
-        margin-top: 5px;
-        margin-left: 12px !important;
-        float: left;
-    } */
   }
   @media only screen and (max-width: 480px) {
   
     .i-dest {
-        /* flex-direction: row; */
         width: auto;
         height: 100%;
       }
@@ -150,20 +114,20 @@
 }
 .i-destt {
     padding-top: 40px;
+    padding-bottom: 40px;
+    width: auto;
     flex-direction: column;
 }
 .i-dest2{
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-   /* margin-left: 80px; */
 }
 .i-dest-card{
     height: 280px;
     width: 200px !important;
 }
 .i-dest-card1{
-    /* margin-left: 0; */
     height: 280px;
     width: 200px;
 }

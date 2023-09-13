@@ -14,7 +14,6 @@ const Navbar2 = () =>{
     setToggleState(index);
   }
   useEffect(() => {
-    // window is accessible here.
     window.addEventListener('scroll',changeBackground)
   }, [])
   const changeBackground = () =>{
@@ -34,9 +33,7 @@ const Navbar2 = () =>{
   
   return (
     <>
-    {/* <Sigin open={isOpen} onClose={() => setIsOpen(false)} /> */}
     <div className= {navbar ? "n-wrapper2 active" : "n-wrapper2"}  >
-      {/* left */}
       <div className="n-left12">
       <div ><img  className="n-img2" src={bplog}></img></div>
       <div className="n-left2">
@@ -45,7 +42,6 @@ const Navbar2 = () =>{
         <div className="n-name12">UNITED</div>
       </div>
       </div>
-      {/* right */}
       <div className="n-right2">
         <div className={toggle ? "n-list2 active": "n-list2 "}>
           <ul  style={{ listStyleType: "none" }}>
@@ -73,39 +69,39 @@ const Navbar2 = () =>{
                 <div className={toggleState === 1 ? "n-right-dropdown-body active-n-right-dropdown-body": "n-right-dropdown-body" }>
                   <div className="n-right-dropdown-karnataka-summer" >
                   <div className="n-right-dropdown-karnataka-summer-title" >Summer </div> 
-            <li  >
+            <div  >
               <Link to="/trek/kudremukha" style={{ textDecoration: 'none' , color: "black"}} >
                 Kudremukha
               </Link>
-            </li>
-            <li >
+            </div>
+            <div >
               <Link to="/trek/nethravathi" style={{ textDecoration: 'none' , color: "black"}} >
                 Nethravathi
               </Link>
-            </li>
-            <li >
+            </div>
+            <div >
               <Link to="/trek/gokarna" style={{ textDecoration: 'none' , color: "black"}} >
                 Gokarna
               </Link>
-            </li>
+            </div>
             </div>
             <div className="n-right-dropdown-karnataka-winter" >
                   <div className="n-right-dropdown-karnataka-winter-title" > Winter</div> 
-            <li  >
+            <div  >
               <Link to="/trek/kudremukha" style={{ textDecoration: 'none' , color: "black"}} >
                 
               </Link>
-            </li>
-            <li >
+            </div>
+            <div >
               <Link to="/trek/nethravathi" style={{ textDecoration: 'none' , color: "black"}} >
                 Nethravathi
               </Link>
-            </li>
-            <li >
+            </div>
+            <div >
               <Link to="/trek/gokarna" style={{ textDecoration: 'none' , color: "black"}} >
                 
               </Link>
-            </li>
+            </div>
             </div>
             </div>
             <div className={toggleState === 2 ? "n-right-dropdown-body active-n-right-dropdown-body": "n-right-dropdown-body" }>
@@ -159,19 +155,7 @@ const Navbar2 = () =>{
       
         </div>
         </div>
-         {/*   <div className="n-login2" > 
-           <button className="n-login2-but" onClick={()=>{setIsOpen(true)}}>Login</button>
-        </div>
-        <div  className="mobile-navbar" >
-                      <CgMenu  name="menu-outline"
-                            className='mobile-nav-icon'
-                            onClick={() => setisMobile(true)} />   
-                     
-               <CgCloseR name="close-outline"
-                            className='mobile-nav-icon'
-                            onClick={() => setisMobile(false)}/>
-                            
-                            </div> */}
+         
                             <div className="mobile-navbar2" onClick={handleToggle}>
                             {toggle? <CgCloseR  className='mobile-nav-icon2' />:   <CgMenu className='mobile-nav-icon2' /> }
 

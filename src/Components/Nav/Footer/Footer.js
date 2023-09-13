@@ -40,9 +40,9 @@ return (
                 </div>
                 <div className="f-mid">
                 <div className="f-mid-name">Contact</div>
-                <div className="f-mid-sub"><Link to='/' style={{ textDecoration: 'none' , color: "white"}}  >Help/FAQ</Link></div>
+                <div className="f-mid-sub"><Link to='/helpfaq' style={{ textDecoration: 'none' , color: "white"}}  >Help/FAQ</Link></div>
                 <div className="f-mid-sub"><Link to='/contact' style={{ textDecoration: 'none' , color: "white"}} >Contact Us</Link></div>
-                <div className="f-mid-sub"><Link to='/' style={{ textDecoration: 'none' , color: "white"}}  >Partner With Us</Link></div>
+                <div className="f-mid-sub"><Link to='/partner' style={{ textDecoration: 'none' , color: "white"}}  >Partner With Us</Link></div>
                 </div>
                 <div className="f-mid">
                 <div className="f-mid-name">More</div>

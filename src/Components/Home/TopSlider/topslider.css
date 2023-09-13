@@ -9,7 +9,6 @@
 .topslide-title{
     font-size: 1.875em;
     font-weight: bold;
-    /* padding-bottom: 1.25em; */
 }
 .topslide-prev{
     border: none;
@@ -17,7 +16,6 @@
     position: absolute;
     top: 40%;
     left: -0.1em;
-    /* z-index: 1; */
     background: none;
 }
 .topslide-next{

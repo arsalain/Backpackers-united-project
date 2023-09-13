@@ -1,11 +1,10 @@
 .p {
    
     width: 81.25em;
-display: flex;
-/* /* align-items: center; */
-justify-content: center; 
-flex-direction: row;
-font-size: 16px;
+    display: flex;
+    justify-content: center; 
+    flex-direction: row;
+    font-size: 16px;
     padding-top: 5.625em;
     padding-bottom: 5.625em;
     margin-left:auto;
@@ -14,7 +13,6 @@ font-size: 16px;
 .p-left {
     width: 25em ;
     height: 32em;
-    /* padding-left: 20px; */
     border-radius: 1.875em 3.125em;
     background: url(../../../Images/pointsimg.jpg) ;
     background-size:cover;
@@ -25,7 +23,6 @@ font-size: 16px;
         width: 3.75em;
         border-radius: 50%;
         background-color: rgb(220, 171, 12);
-        /* margin-left: 30px; */
         margin-top: 1.25em;
         display: flex;
         align-items: center;
@@ -33,7 +30,6 @@ font-size: 16px;
     }
     .p-card-nam-icon{
         font-size: 2.5em;
-        /* padding-left: 10px; */
     }
     .p-card-log {
         float: left;
@@ -102,7 +98,6 @@ font-size: 16px;
     }
  
     .p-num-icon {
-        /* padding-top: 0.15em; */
         font-size: 1.3em;
         color: rgb(214, 162, 48);
     }  
@@ -113,15 +108,13 @@ font-size: 16px;
         color: rgb(214, 162, 48);
     }
     .p-num-log1 {
-        /* font-size: 2.188em; */
         padding-left: 0.5em;
         color: rgb(214, 162, 48);
         justify-content: center;
         display:flex ;
         font-weight: bolder;
-        /* margin-top: -0.313em; */
     }
-.p-right {
+    .p-right {
     padding-top: 3.125em;
     padding-left: 4.375em;
    
@@ -183,7 +176,6 @@ font-size: 16px;
 .p-card-name{
     font-size: 1.25em;
     color: rgb(214, 162, 48);
-    /* padding-right: 60px; */
     padding-top: 1em;
     padding-left: 0.938em;
 }
@@ -191,55 +183,13 @@ font-size: 16px;
     font-size: 1.25em;
     color: rgb(214, 162, 48);
     padding-left: 0.938em;
-    /* padding-right: 40px; */
 }
 @media only screen and  (min-width:500px) and (max-width: 999px) {
-    /* .p {
-        flex-direction: column;
-        width: auto;
-    }
-    .p-name{
-        padding-left: 30px;
-    }
-    .p-title1{
-        padding-left: 30px;
-    }
-    .p-title2{
-        padding-left: 30px;
-    }
-    .p-para1{
-        padding-left: 30px;
-        /* width: 320px; */
-    /* }
-    .p-left-box1 {
-        margin-right: -50px;
-    }
-   .p-card{
-    height: 140px;
-    width: 130px;
-    margin-left: 30px;
-   }
-   .p-num {
-    font-size: 30px;
-    padding-top: 2px;
-   }
-   .p-num-right-icon{
-    font-size: 25px;
-   }
-   .p-card-name{
-    font-size: 20px;
-    padding-top: 22px;
-   }
-   .p-card-name1{
-    font-size: 20px;
-   } */ 
+ 
    .p {
-   
-      /* width: 81.25em; */
+
     width: auto;
     font-size: 13px;
-    /* padding-left:2em;
-    padding-right:2em; */
 }
 .p-left {
  
@@ -328,43 +278,47 @@ font-size: 16px;
 .p-right{
     padding-left: 1.25em;
     padding-right: 1.25em;
+    padding-bottom: 3em;
   
 }
 .p-name{
-    font-size: 1em;
+    font-size: 1.3em;
     padding-left: 0;
 }
 .p-title1{
     padding-left: 0;
-    font-size: 2em;
+    font-size: 1.9em;
 }
 .p-title2{
     padding-left: 0;
-    font-size: 2em;
+    font-size: 1.9em;
 }
 .p-para1{
     width: auto;
     padding-left: 0;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 .p-body{
     display: flex;
     flex-direction: row;
+    padding-top: 1.5em;
 }
 .p-card{
-    min-width: 4em;
-    height: auto;
+    width: 6em;
+    height: 7em;
     margin-left: 0.2em;
 
 }
 .p-num{
-    font-size: 1.8em;
+    font-size: 1.2em;
 }
 .p-card-name{
     font-size: 1em;
+    padding-left: 0.5em;
 }
 .p-card-name1{
     font-size: 1em;
     padding-bottom: 1em;
+    padding-left: 0.5em;
 }
 }

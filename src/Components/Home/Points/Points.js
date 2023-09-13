@@ -24,7 +24,7 @@ const Points = () => {
     <div className="p-card-nam-emp">Employees</div>
               
 </div>
-            {/* <Image src={dest} width={400} height={600}/>  */}
+            
         </div>
         <div className="p-right">
             <div className="p-head">

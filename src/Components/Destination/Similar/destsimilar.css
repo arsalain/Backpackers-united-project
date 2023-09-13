@@ -35,17 +35,14 @@
     border-top-right-radius: 1.25em;
 }
 .dest-sim-card-name{
-    /* border-top: 1px solid white ; */
     margin-top: 0.125em ;
     border-right:0.125em solid black ;
     border-left:0.125em solid black ;
     font-size: 1.25em;
-    /* padding-left: 130px; */
     border-radius: 0.625em;
     padding-top: 0.625em;
     padding-bottom: 0.625em;
     display: flex;
-    /* color: white; */
     justify-content: center;
     background-color: white;
     font-weight: 500;
@@ -55,14 +52,14 @@
     flex-direction: row;
     padding-top: 0.625em;
     padding-left: 4.688em;
-    /* justify-content: center; */
+   
 }
 .dest-sim-card-t {
     color: white;
     display: flex;
     align-items: center;
   
-    /* padding-left: 90px; */
+    
 }
 .dest-sim-card-t-icon{
     padding-right: 0.125em;
@@ -145,8 +142,6 @@
     background: none;
 }
 .dest-sim-slide-item{
-    /* margin-right: 20px; */
-   
     width: 16.625em !important;
     height: 12.5em !important;
     position: relative;

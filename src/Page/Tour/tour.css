@@ -8,8 +8,6 @@
    
 }
 .tour-body{
-    /* width: 100%;
-    height: 300px; */
     position: absolute;
     top: 0;
     left: 0;
@@ -50,7 +48,6 @@
 padding-top: 0.313em;
 margin-left: 1.25em;
 border: none;
-/* border-radius: 1.375em; */
 outline:none;
 width: 20.625em;
 height: 2.5em;
@@ -59,7 +56,7 @@ height: 2.5em;
 
     border: none;
     background-color: white;
-    /* margin-left: -2.13em; */
+  
 }
 .tour-search-icon{
     padding-top: 0.313em;

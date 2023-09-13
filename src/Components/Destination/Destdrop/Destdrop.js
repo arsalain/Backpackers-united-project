@@ -109,25 +109,21 @@ const Kerala = [
   {selectedOption === 'destdrop1' && (
     <div >
           <div className='destdrop-list'>
-            {/* Content for Div 1 */}
-            <div className='destdrop-list-title'> Karnataka </div>
+           <div className='destdrop-list-title'> Karnataka </div>
             <Destimg slides={karnataka} />
           </div>
            <div  className='destdrop-list'>
-           {/* Content for Div 2 */}
            <div className='destdrop-list-title'> Kerala</div>
            <Destimg slides={Kerala} />
          </div>
          <div  className='destdrop-list'>
-            {/* Content for Div 3 */}
-            <div className='destdrop-list-title'> Tamil Nadu </div>
+           <div className='destdrop-list-title'> Tamil Nadu </div>
             <Destimg slides={TamilNadu} />
           </div>
          </div>
         )}
         {selectedOption === 'destdrop2' && (
           <div className='destdrop-list'>
-            {/* Content for Div 1 */}
             <div className='destdrop-list-title'> Karnataka </div>
             <Destimg slides={karnataka} />
           </div>
@@ -135,15 +131,13 @@ const Kerala = [
   
         {selectedOption === 'destdrop3' && (
           <div  className='destdrop-list'>
-            {/* Content for Div 2 */}
-            <div className='destdrop-list-title'> Kerala</div>
+           <div className='destdrop-list-title'> Kerala</div>
             <Destimg slides={Kerala} />
           </div>
         )}
   
         {selectedOption === 'destdrop4' && (
           <div  className='destdrop-list'>
-            {/* Content for Div 3 */}
             <div className='destdrop-list-title'> Tamil Nadu </div>
             <Destimg slides={TamilNadu} />
           </div>

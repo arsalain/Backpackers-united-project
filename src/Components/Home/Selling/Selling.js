@@ -5,7 +5,6 @@ import {MdKeyboardArrowRight,MdKeyboardArrowLeft} from "react-icons/md"
 import hampi from "../../../Images/hampi.jpg"
 import wayanad from "../../../Images/wayanad.jpg"
 import kumara from "../../../Images/kumara.jpg"
-// import { BiDollar } from "react-icons/bi" ; 
 import { BiDollar } from "react-icons/bi";
 import {IoNavigateSharp} from "react-icons/io5"
 const Selling = () => {
@@ -25,7 +24,6 @@ const Selling = () => {
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
-        
         nextArrow: <ArrowRight />,
         prevArrow: <ArrowLeft />,
         responsive: [
@@ -50,7 +48,7 @@ const Selling = () => {
               breakpoint: 480,
               settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 1,
               }
             }
           ]

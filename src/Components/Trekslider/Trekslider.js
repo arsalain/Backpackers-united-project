@@ -17,24 +17,23 @@
       useEffect(() => {
         const today = new Date();
    
-        const currentDay = today.getDay(); // 0: Sunday, 1: Monday, ..., 6: Saturday
+        const currentDay = today.getDay(); 
         
         if (currentDay === 5) {
-          // If today is Monday, calculate the date of the next Friday
-          const daysUntilFriday = 5; // Friday is 5 days ahead of Monday
+          
+          const daysUntilFriday = 5; 
           const nextFridayDate = new Date(today);
           nextFridayDate.setDate(today.getDate() + daysUntilFriday);
           const istDate = new Date(nextFridayDate);
   
           const options = {
                    timeZone: 'Asia/Kolkata',
-                   month: 'long', // 'short' for abbreviated month, 'long' for full month name
+                   month: 'long', 
                    day: 'numeric',
               };
   
           const istMonthDay = istDate.toLocaleString('en-US', options)
-          // const formattedNextFriday = nextFridayDate
-          // Format the date as desired (e.g., "YYYY-MM-DD") 
+        
           setNextFriday(istMonthDay);
   
         }

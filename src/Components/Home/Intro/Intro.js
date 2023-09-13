@@ -2,15 +2,13 @@ import React, { useContext } from "react";
 import "./Intro.css";
 import homea from "../../../Images/homeimg.jpg"
 const Intro = () => {
-  // Transition
+  
 
   return (
   
     <div className="Intro" >
-      {/* left name side */}
-      <div className="i-left">
+     <div className="i-left">
         <div className="i-name">
-          {/* yahan change hy darkmode ka */}
           Best Destinations Around The World
           </div>
           <div className="i-title">
@@ -26,10 +24,8 @@ const Intro = () => {
         </div>
         <div>
         </div>
-        {/* social icons */}
-      </div>
-      {/* right image side */}
-      <div className="i-right">
+        </div>
+     <div className="i-right">
         <img src={homea} className="i-right-img"  />
     </div>
     </div>

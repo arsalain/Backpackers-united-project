@@ -574,8 +574,7 @@ We have certified trek leads (Male/Female) accompanying the participants at all 
           <div className='product-gal-head-title'>Travel Plan</div>
           <div className='product-gal-head-title1'>A weekend in Bangkok - Pattaya</div>
       
-          
-        {/* <Slider {...settings} useRef={sliderRef}> */}
+        
         <Gallery  slides={Gdata} />
         </div>
        

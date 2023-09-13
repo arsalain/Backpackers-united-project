@@ -503,7 +503,7 @@ We have certified trek leads (Male/Female) accompanying the participants at all 
           <div className='product-gal-head-title1'>A weekend in Coorg - Mysore</div>
       
           
-        {/* <Slider {...settings} useRef={sliderRef}> */}
+    
         <Gallery  slides={Gdata} />
         </div>
        

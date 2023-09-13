@@ -4,7 +4,6 @@
     max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
-    /* justify-content: center; */
     align-items: center;
     background-color: #000;
     color: white;
@@ -82,7 +81,7 @@ padding-left: 10px;
         top: 50%;
       }
 .f-name2{
-  /* margin-top: 20px; */
+  
 }
 .f-mid-main{
   display: flex;
@@ -92,7 +91,6 @@ padding-left: 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* padding-top: 100px; */
     padding-left: 50px;
   }
   .f-mid-name{
@@ -116,7 +114,7 @@ padding-left: 10px;
     display: flex;
     align-items: center;
     justify-content:center ;
-    /* display: inline-block; */
+  
   }
   .f-dot1 {
     margin-left: 30px;
@@ -125,7 +123,7 @@ padding-left: 10px;
     align-items: center;
     justify-content:center ;
     color: #FCB418;
-    /* display: inline-block; */
+  
   }
   .f-end{
     margin-top: 50px;
@@ -136,7 +134,7 @@ padding-left: 10px;
     background-color: white;
     color:  black;
     font-weight: bold;
-    /* background: #FCB418; */
+  
   }
   .f-end-name{
     color: #FCB418;
@@ -170,7 +168,7 @@ padding-left: 10px;
   }
   .f-form-input::placeholder {
     color: white;
-    opacity: 0.75; /* Firefox */
+    opacity: 0.75; 
   }
  
   .f-form-input-body{
@@ -191,7 +189,6 @@ padding-left: 10px;
     border-radius: 10px;
   }
   .f-form-but:hover {
-    /* color: #FCB418; */
     background-color: white;
     border: 1px solid white;
   }
@@ -202,7 +199,7 @@ padding-left: 10px;
     }
     .f-mid-main{
       margin-top: 30px;
-      /* margin-left: 50px; */
+    
     }
     .f-footer{
       display: flex;
@@ -236,7 +233,6 @@ padding-left: 10px;
       margin-left: 0;
     }
     .f-mid-main{
-      /* flex-direction: column; */
       margin-left: 20px;
     }
     .f-mid{

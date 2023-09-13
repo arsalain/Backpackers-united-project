@@ -1,6 +1,5 @@
 .t-body{
     width: 81.25em;
-    /* height: 1400px; */
     margin-left:auto;
     margin-right:auto;
     margin-top: 8.125em;
@@ -27,7 +26,6 @@
 .test-title {
     font-size: 2.5em;
     font-weight: bold;
-    /* padding-top: 20px; */
 }
 .test-title1 {
     font-size: 2.5em;
@@ -36,15 +34,11 @@
 }
 .test-right {
     position: relative;
- 
-    /* height: 200px; */
 }
 .test-card{
     width: 34.375em;
     display: flex;
     flex-direction: column;
-   
-    /* position: absolute; */
     background: white;
     border-radius: 1.25em;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -63,7 +57,6 @@
     top:-2.5em;
     left:-1.875em;
     position: absolute;
-    /* margin-top: 20px; */
 }
 .test-card-name
 {
@@ -88,7 +81,6 @@
     z-index: -1;
      left: 2.5em;
      top: 3em;
-    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
     border: 0.063em solid rgb(220, 213, 213);
 }
 .text-card1-name{
@@ -96,7 +88,7 @@
     padding-left: 1.475em;
     font-size: 1.25em;
     font-weight: bold;
-    /* margin-top: -3.24em */
+    
 }
 .text-card1-name1{
     padding-left: 1.875em;

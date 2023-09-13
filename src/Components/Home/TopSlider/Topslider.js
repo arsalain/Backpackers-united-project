@@ -64,7 +64,6 @@ const Topslider = () => {
   return (
     <div className='topslide'>
       <div className='topslide-title'>Upcoming  Weekend Treks and Tours</div>
-      {/* <div className='topslide-body'> */}
       <Slider {...settings} useRef={sliderRef}>
         <div className='topslide-contain'>
             <img src={nethravathi} className='topslide-contain-img' /> 
@@ -128,7 +127,6 @@ const Topslider = () => {
           <div className='topslide-contain-name1'>Trek</div>
         </div>
       </Slider>
-      {/* </div> */}
     </div>
   )
 }

@@ -40,7 +40,6 @@
 
 }
 .img{
-    /* Background pattern from Toptal Subtle Patterns */
    background-image: url("https://amymhaddad.s3.amazonaws.com/morocco-blue.png");
    margin-top: 1.25em;
    height: 25em;
@@ -78,7 +77,6 @@
      
     }
     .blog-body{
-        /* background-color: white !important; */
         width: auto;
         margin-left: 3.25em;
         margin-right: 3.25em;
