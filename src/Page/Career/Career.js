@@ -3,13 +3,14 @@ import Navbar1 from '../../Components/Nav/Navbar/Navbar1'
 import "./career.css"
 import {GiPolarStar} from "react-icons/gi"
 import cp from "../../Images/contact.jpg"
+import Navbar2 from '../../Components/Nav/Navbar/Navbar2'
+import Footer from '../../Components/Nav/Footer/Footer'
 
 const Career = () => {
   return (
     
         <div className='Careers'>
-        <Navbar1></Navbar1>
-        <div className='careers-dummy'></div>
+        <Navbar2 />
      <div className='careers-head'>
         
         <div className='careers-head-title'>Careers</div>
@@ -71,19 +72,19 @@ const Career = () => {
 <div className='career-form'>
         <div className='career-title'>Reach Out to Us</div>
             <div className='career-form-name'>
-                <div className='career-form-title' >Full Name <GiPolarStar className='contact-form-name-icon'></GiPolarStar></div>
+                <div className='career-form-title' >Full Name <GiPolarStar className='career-form-name-icon'></GiPolarStar></div>
                 <input type="text" name="fname" placeholder='Enter Name' ></input>
             </div>
             <div className='career-form-email'>
-                <div className='career-form-title'  >Email ID <GiPolarStar className='contact-form-email-icon'></GiPolarStar></div>
+                <div className='career-form-title'  >Email ID <GiPolarStar className='career-form-email-icon'></GiPolarStar></div>
                 <input type="email" name="fname" placeholder='Enter Email'  ></input>
             </div>
             <div className='career-form-number'>
-                <div className='career-form-title'  >Mobile Number <GiPolarStar className='contact-form-number-icon'></GiPolarStar></div>
+                <div className='career-form-title'  >Mobile Number <GiPolarStar className='career-form-number-icon'></GiPolarStar></div>
                 <input type="tel" name="fname" placeholder='Enter Phone Number'  ></input>
             </div>
             <div className='career-form-area'>
-                <div className='career-form-title1'  >Why should we Hire you? </div>
+                <div className='career-form-title'  >Why should we Hire you? </div>
                 <textarea className='career-form-text-area'/>
              </div>
           
@@ -98,7 +99,7 @@ const Career = () => {
 
 
         
-
+<Footer />
     </div>
 
   )

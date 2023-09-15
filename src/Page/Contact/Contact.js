@@ -4,10 +4,11 @@ import Navbar1 from '../../Components/Nav/Navbar/Navbar1'
 import {GiPolarStar} from "react-icons/gi"
 import Footer from '../../Components/Nav/Footer/Footer'
 import cp from "../../Images/contact.jpg"
+import Navbar2 from '../../Components/Nav/Navbar/Navbar2'
 const Contact = () => {
   return (
     <div className='contact'>
-      <Navbar1 />
+      <Navbar2 />
       <div className='contact-header' >
       <div className='contact-header-title' >Contact Us</div>
       </div>
@@ -32,20 +33,20 @@ const Contact = () => {
         <div className='contact-form'>
         <div className='contact-title'>Reach Out to Us</div>
             <div className='contact-form-name'>
-                <div className='contact-form-title' >Full Name <GiPolarStar className='contact-form-name-icon'></GiPolarStar></div>
-                <input type="text" name="fname" placeholder='Enter Name' ></input>
+                <div className='contact-form-title' ><label for="cname">Full Name</label> <GiPolarStar className='contact-form-name-icon'></GiPolarStar></div>
+                <input type="text" name="cname" placeholder='Enter Name' ></input>
             </div>
             <div className='contact-form-email'>
-                <div className='contact-form-title'  >Email ID <GiPolarStar className='contact-form-email-icon'></GiPolarStar></div>
-                <input type="email" name="fname" placeholder='Enter Email'  ></input>
+                <div className='contact-form-title'  ><label for="cemail">Email ID</label> <GiPolarStar className='contact-form-email-icon'></GiPolarStar></div>
+                <input type="email" name="cemail" placeholder='Enter Email'  ></input>
             </div>
             <div className='contact-form-number'>
-                <div className='contact-form-title'  >Mobile Number <GiPolarStar className='contact-form-number-icon'></GiPolarStar></div>
-                <input type="tel" name="fname" placeholder='Enter Phone Number'  ></input>
+                <div className='contact-form-title'  ><label for="ctel">Mobile Number</label> <GiPolarStar className='contact-form-number-icon'></GiPolarStar></div>
+                <input type="tel" name="ctel" placeholder='Enter Phone Number'  ></input>
             </div>
             <div className='contact-form-area'>
-                <div className='contact-form-title1'  >Message </div>
-                <textarea />
+                <div className='contact-form-title1'  ><label for="carea">Message </label></div>
+                <textarea name= "carea"/>
              </div>
              <div className='contatc-form-button'><button className='contact-form-but'>Submit</button></div>
              

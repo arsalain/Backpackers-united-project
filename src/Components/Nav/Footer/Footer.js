@@ -19,7 +19,6 @@ return (
         <div className="f-name1">UNITED</div>
         </div>
         <div className="f-name2" >Book your trip in minute, get full
-            <br />
             Control for much longer</div>
       </div>
       </div>
@@ -50,6 +49,7 @@ return (
                 <div className="f-mid-sub"><Link to='/terms&condition' style={{ textDecoration: 'none' , color: "white"}} >Terms and Condition</Link></div>
                 <div className="f-mid-sub"><Link to='/copyrightpolicy' style={{ textDecoration: 'none' , color: "white"}}  >Copyright Policy</Link></div>
                 </div>
+                </div>
                 <div className="f-form">
                   <form >
                     <div className="f-form-title">Get in Touch</div>
@@ -67,7 +67,7 @@ return (
                       </div>
                   </form>
                 </div>
-                </div>
+                
               
       </div>
       <div className="f-end"> All rights reserved@backpackersunited.in</div>

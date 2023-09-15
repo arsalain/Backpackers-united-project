@@ -1,5 +1,6 @@
 .t-body{
     width: 81.25em;
+    /* height: 1400px; */
     margin-left:auto;
     margin-right:auto;
     margin-top: 8.125em;
@@ -26,19 +27,28 @@
 .test-title {
     font-size: 2.5em;
     font-weight: bold;
+    /* padding-top: 20px; */
 }
 .test-title1 {
     font-size: 2.5em;
     font-weight: bold;
    
 }
+.test-right-main{
+    display: flex;
+    flex-direction: row;
+}
 .test-right {
     position: relative;
+ 
+    /* height: 200px; */
 }
 .test-card{
     width: 34.375em;
     display: flex;
     flex-direction: column;
+   
+    /* position: absolute; */
     background: white;
     border-radius: 1.25em;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -56,7 +66,9 @@
     border-radius: 50%;
     top:-2.5em;
     left:-1.875em;
+    object-fit: cover;
     position: absolute;
+    /* margin-top: 20px; */
 }
 .test-card-name
 {
@@ -81,6 +93,7 @@
     z-index: -1;
      left: 2.5em;
      top: 3em;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
     border: 0.063em solid rgb(220, 213, 213);
 }
 .text-card1-name{
@@ -88,7 +101,7 @@
     padding-left: 1.475em;
     font-size: 1.25em;
     font-weight: bold;
-    
+    /* margin-top: -3.24em */
 }
 .text-card1-name1{
     padding-left: 1.875em;
@@ -105,24 +118,72 @@
     gap: 1.563em;
     font-size: 1.563em;
 }
-.test-arrow-top{
-
-}
 @media only screen and (max-width: 480px) {
-    .t-body {
-        margin-top: 0em;
-        display: flex;
-        flex-direction: column;
+    .t-body{
+    flex-direction: column;
+    margin-top: 0;
+    font-size: 13px;
+    width: auto;
     }
-    .test-card {
-        margin-top: -5em;
-        width: 20em;
-        margin-left: 3.25em;
-        margin-right: 2.25em;
+    .test-left{
+        padding-left: 1.25em;
+        padding-right: 1.25em;
+        padding-bottom: 5em;
     }
-    .test-card-img {
-        margin-left: 3.15em;
-        margin-top: -3.25em;
-
+    .test-title{
+        font-size: 2.3em;
     }
+    .test-title1{
+        font-size: 2.3em;
+    }
+    .test-right{
+        padding-left: 1.25em;
+        padding-right: 1.25em;
+    }
+    .test-card{
+        width: 22em;
+    }
+    .test-card-img{
+        left: 0.2em;
+        top: -3em;
+    }
+    .test-card-para {
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+    .test-card-name{
+        padding-left: 1em;
+        font-size: 1.1em;
+    }
+    .test-card-name1{
+        font-size: 0.9em;
+        padding-left: 1.3em;
+    }
+    .test-card1{
+        width: 23em;
+        height: 21em;
+    }
+    .text-card1-name{
+        font-size: 1.2em;
+        padding-top: 14.8em;
+        padding-left: 1em;
+    }
+    .text-card1-name1 {
+        padding-left: 1.25em;
+        font-size: 0.9em;
+    }
+    .test-arrows{
+        padding-left: 1.2em;
+    }
+}
+@media only screen and  (min-width:500px) and (max-width: 900px) {
+    .t-body{
+        font-size: 11px;
+        padding-left: 2em;
+        padding-right: 2em;
+        width: auto;
+        }
+        .test-right-main {
+            padding-left: 1em;
+        }
 }

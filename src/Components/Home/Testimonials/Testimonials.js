@@ -24,6 +24,7 @@ const Testimonials = ({slides}) => {
             <div className='test-title'>{slides[currentIndex].title1}</div>
             <div className='test-title1'>{slides[currentIndex].title2}</div>
             </div>
+            <div className='test-right-main' >
         <div  className='test-right'>
             <img src={boy} height= {50} width= {50}  className='test-card-img'></img>
         <div className='test-card'>
@@ -38,6 +39,7 @@ const Testimonials = ({slides}) => {
             <div className='text-card1-name1' >{slides[currentIndex].state2}
             </div>
         </div>
+       
         </div>
         <div className='test-arrows'>
             <div >
@@ -45,6 +47,7 @@ const Testimonials = ({slides}) => {
                 </div>
                <div ><IoIosArrowDown className='test-arrow-bottom'   onClick={goToNext}/></div>
             
+        </div>
         </div>
         </div>
   )

@@ -1,46 +1,45 @@
 .about-head-img{
     width: 100%;
-    height: 400px;
+    height:60vh ;
     background: url(../../Images/ab.jpg) ;
     background-size:cover;
     background-repeat:no-repeat;
     display: flex;
     text-align: center;
-    font-size: 50px;
+    font-size: 3.125em;
     align-items: center;
     justify-content: center;
 }
 .about-head-title{
     text-align: center;
-    padding-top: 50px;
+    padding-top: 2em;
+    font-weight: bold;
+    padding-bottom: 0.625em;
+    font-size: 0.8em;
 }
 .about-head-para{
-    width: 800px;
+    width: 50em;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-.about-head-title{
-    font-size: 30px;
-    font-weight: bold;
-    padding-bottom: 10px;
-}
+
 .about-body{
-    width: 1000px;
+    width: 62.5em;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-top: 50px;
+    padding-top: 3.125em;
 }
 .about-body-title{
-    font-size: 30px;
+    font-size: 1.875em;
     font-weight: bold;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 1.25em;
 }
 .about-cards{
     display: flex;
@@ -49,27 +48,27 @@
 .about-card{
     display: flex;
     flex-direction: column;
-    width: 350px;
-    margin-right: 50px;
+    width: 21.875em;
+    margin-right: 3.125em;
 
 }
 .about-card-img{
-    width: 120px;
-    height: 120px;
+    width: 7.5em;
+    height: 7.5em;
     border-radius: 50%;
     align-self: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
 }
 .about-card-name{
     text-align: center;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.25em;
 }
 .about-card-desig{
     text-align: center;
     font-weight: lighter;
-    font-size: 20px;
-    padding-bottom: 10px;
+    font-size: 1.25em;
+    padding-bottom: 0.625em;
 }
 .about-card-logo{
     display: flex;
@@ -80,19 +79,19 @@
 }
 .about-card-logo1{
     
-    width: 20px;
-    height: 20px;
-    padding-right: 5px;
+    width: 1.25em;
+    height: 1.25em;
+    padding-right: 0.313em;
 }
 .about-card hr{
-    height: 1px;
-    width: 100px;
+    height: 0.063em;
+    width: 6.25em;
     background-color: #FCB418 ;
     border: none;
 }
 .about-card-para{
     
-    font-size: 13px;
+    font-size: 0.813em;
 }
 .about-cards1{
     display: flex;
@@ -101,15 +100,15 @@
 .about-card1{
     display: flex;
     flex-direction: column;
-    width: 350px;
-    margin-right: 50px;
+    width: 21.875em;
+    margin-right: 3.125em;
     margin-top: 1.25em ;
 }
    
 .about-card1 hr{
-    height: 1px;
-    width: 100px;
-    margin-bottom: 20px;
+    height: 0.063em;
+    width: 6.25em;
+    margin-bottom: 1.25em;
     background-color: #FCB418 ;
     border: none;
 }
@@ -120,20 +119,21 @@
         height: 50vh;
         
     }
+    .about-head-title{
+        font-size: 0.5em;
+    }
     .about-head-para{
         width: auto;
         margin-left: 1.25em;
         margin-right: 1.25em;
-
-    
-
-        
     }
+
     .about-body{
         width: auto;
         font-size: 1.25em ;
         
     }
+
 .about-body-title {
 
         margin-left: 1.25em;
@@ -150,12 +150,16 @@
         width: auto;
         margin-left: 1.25em;
         margin-right: 1.25em;
-    
+        padding-bottom: 1.25em;
     }
     .about-card-para{
         justify-content: left;
     }
     .about-cards1{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-card1{
         display: flex;
         flex-direction: column;
         width: auto;
@@ -172,6 +176,9 @@
     }
 }
 @media only screen and  (min-width:500px) and (max-width: 1100px) {
+    .about-head-title{
+        font-size: 0.7em;
+    }
     .about-body {
         width: auto;
         margin-left: auto;

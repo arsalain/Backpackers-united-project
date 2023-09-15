@@ -1,265 +1,270 @@
 .f-body{
-    margin-top: 50px;
-    padding-top: 50px;
-    max-width: 1300px;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    background-color: #000;
-    color: white;
+  margin-top: 3.125em;
+  padding-top: 3.125em;
+  max-width: 81.25em;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  background-color: #000;
+  color: white;
 }
 
 .f-head {
 display: flex;
 flex-direction: row;
-gap: 30px;
-padding-left: 10px;
+gap: 1.875em;
+padding-left: 1.25em;
 }
 .f-bottom{
-  display: flex;
-  flex-direction: column;
+display: flex;
+flex-direction: column;
 }
 .f-logo {
-  display: flex;
-  flex-direction: row;
+display: flex;
+flex-direction: row;
 }
 
 .f-left {
 
-  justify-content: left;
-  display: flex;
-  flex-direction: column;
-  float: left;
- 
+justify-content: left;
+display: flex;
+flex-direction: column;
+float: left;
+
 }
 
 .f-name {
-  font-size: 24px;
-  font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
+font-size: 1.5em;
+font-weight: bold;
+font-family: 'Montserrat', sans-serif;
+}
+.f-name2{
+  width: 13em;
 }
 .f-img{
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  margin-left: 40px;
+height: 3.125em;
+width: 3.125em;
+border-radius: 50%;
+margin-left: 2.5em;
 }
-      .f-logo-name-main{
-        display: flex;
-        flex-direction: column;
-        width: 190px;
-        padding-left: 5px;
-        padding-top: 5px;
-      }
-      .f-name1{
-        text-align: center;
-        position: relative;
-        font-size: 14px;
-        top: -6px;
-        font-weight:500;
-        color: red;
-        font-family: 'Montserrat', sans-serif;
-      }
-      .f-name1:before{
-        content: "";
-        display: block;
-        width: 65px;
-        height: 2px;
-        background: white;
-        position: absolute;
-        left: 0;
-        top: 50%;
-      }
-      .f-name1:after{
-        content: "";
-        display: block;
-        width: 65px;
-        height: 2px;
-        background: white;
-        position: absolute;
-        right: 0;
-        top: 50%;
-      }
-.f-name2{
-  
-}
+    .f-logo-name-main{
+      display: flex;
+      flex-direction: column;
+      width: 11.875em;
+      padding-left: 0.313em;
+      padding-top: 0.313em;
+    }
+    .f-name1{
+      text-align: center;
+      position: relative;
+      font-size: 0.875em;
+      top: -0.375em;
+      font-weight:500;
+      color: red;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .f-name1:before{
+      content: "";
+      display: block;
+      width: 4.8em;
+      height: 0.125em;
+      background: white;
+      position: absolute;
+      left: 0;
+      top: 50%;
+    }
+    .f-name1:after{
+      content: "";
+      display: block;
+      width: 4.8em;
+      height: 0.125em;
+      background: white;
+      position: absolute;
+      right: 0;
+      top: 50%;
+    }
 .f-mid-main{
-  display: flex;
-  flex-direction: row;
+display: flex;
+flex-direction: row;
 }
-  .f-mid{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 50px;
-  }
-  .f-mid-name{
-    font-size: 25px;
-    font-weight: bold;
-    padding-bottom: 40px;
-  }
-  .f-mid-sub{
-    font-size: 18px;
-    padding-bottom: 10px;
-  }
+.f-mid{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 3.125em;
+}
+.f-mid-name{
+  font-size: 1.563em;
+  font-weight: bold;
+  padding-bottom: 2.1em;
+}
+.f-mid-sub{
+  font-size: 1.125em;
+  padding-bottom: 0.25em;
+}
 .f-footer{
-  text-align: center;
+text-align: center;
+display: flex;
+justify-content: center;
+padding-top: 3.125em;
+}
+.f-dot {
+  color: #FCB418;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content:center ;
+
+}
+.f-dot1 {
+  margin-left: 1.875em;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content:center ;
+  color: #FCB418;
+
+}
+.f-end{
+  margin-top:  3.125em;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: white;
+  color:  black;
+  font-weight: bold;
+
+}
+.f-end-name{
+  color: #FCB418;
+}
+.f-end-name1{
+  color: red;
+}
+.f-dot-icon{
+  font-size: 1.625em;
+ 
+}
+.f-form{
+  padding-left: 5em;
+  display: flex;
+  flex-direction: column;
+}
+.f-form-title{
+  font-size: 1.875em;
+  font-weight: bold;
+ color: #FCB418;
   display: flex;
   justify-content: center;
-  padding-top: 50px;
 }
-  .f-dot {
-    color: #FCB418;
-    float: left;
-    display: flex;
-    align-items: center;
-    justify-content:center ;
-  
+.f-form-input{
+  background: #000;
+  color: white;
+  padding: 0.875em;
+  border-radius: 0.625em;
+  width: 12.5em;
+  border: 1px solid white;
+}
+.f-form-input::placeholder {
+  color: white;
+  opacity: 0.75; 
+}
+
+.f-form-input-body{
+  padding-top: 0.625em;
+}
+.f-form-but-body{
+  display: flex;
+  justify-content: center;
+  padding-top: 1.25em;
+}
+.f-form-but{
+  width: 6.25em;
+  height: 1.875em;
+  background-color: #FCB418;
+  color: black;
+  font-weight: bold;
+  border: 1px solid #FCB418;
+  border-radius: 10px;
+}
+.f-form-but:hover {
+  background-color: white;
+  border: 1px solid white;
+}
+@media only screen and  (min-width:500px) and (max-width: 999px) {
+  .f-body{
+    font-size: 13px;
   }
-  .f-dot1 {
-    margin-left: 30px;
-    float: left;
-    display: flex;
-    align-items: center;
-    justify-content:center ;
-    color: #FCB418;
-  
+  .f-footer{
+    padding-top: 2.5em;
   }
-  .f-end{
-    margin-top: 50px;
-    font-size: 15px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    background-color: white;
-    color:  black;
-    font-weight: bold;
-  
+  .f-head{
+    padding-left: 0.625em;
+    gap: 0;
   }
-  .f-end-name{
-    color: #FCB418;
+  .f-img{
+    margin-left: 0;
   }
-  .f-end-name1{
-    color: red;
+  .f-mid{
+    padding-left: 1em;
   }
-  .f-dot-icon{
-    font-size: 26px;
-   
-  }
+  .f-mid-sub {
+    font-size: 1em;
+}
   .f-form{
-    padding-left: 80px;
-    display: flex;
-    flex-direction: column;
-  }
-  .f-form-title{
-    font-size: 30px;
-    font-weight: bold;
-   color: #FCB418;
-    display: flex;
-    justify-content: center;
+    padding-left: 0;
+    padding-left: 1.25em;
   }
   .f-form-input{
-    background: #000;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-    width: 200px;
-    border: 1px solid white;
+    padding: 0.5em;
   }
-  .f-form-input::placeholder {
-    color: white;
-    opacity: 0.75; 
+}
+@media only screen and (max-width: 480px) {
+  .f-body{
+   
   }
- 
-  .f-form-input-body{
-    padding-top: 10px;
+  .f-head{
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0.625em;
+    padding-right: 0.625em;
+    gap: 1em;
   }
-  .f-form-but-body{
+  .f-img {
+    margin-left: 0;
+  }
+  .f-mid{
+    padding-top: 0;
+    padding-left: 1em;
+  }
+  .f-mid-sub{
+    font-size: 0.8em;
+    /* padding: 0.25em; */
+  }
+  .f-mid-name{
+   padding-bottom: 1.25em;
+   font-size: 1.25em;
+  }
+  .f-footer{
+    padding-top: 0;
     display: flex;
-    justify-content: center;
-    padding-top: 20px;
+  
   }
-  .f-form-but{
-    width: 100px;
-    height: 30px;
-    background-color: #FCB418;
-    color: black;
-    font-weight: bold;
-    border: 1px solid #FCB418;
-    border-radius: 10px;
+
+  .f-form{
+    padding-left: 0;
   }
-  .f-form-but:hover {
-    background-color: white;
-    border: 1px solid white;
-  }
-  @media only screen and  (min-width:500px) and (max-width: 999px) {
-    .f-head{
-      flex-direction: column;
-      align-items: center;
-    }
-    .f-mid-main{
-      margin-top: 30px;
-    
-    }
-    .f-footer{
-      display: flex;
-      justify-self: center;
-    }
-    .f-mid{
-      align-items: center;
-    }
-    .f-mid-name{
-      padding-bottom: 20px;
-    }
   .f-dot{
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-left: 10px;
   }
   .f-dot1{
     margin-left: 30px;
-    margin-top: 30px;
+    margin-top: 20px;
   }
-  .f-end{
-    padding-left: 50px;
-    padding-top: 70px;
-
+  .f-form-input{
+    padding: 0.6em;
   }
-  }
-  @media only screen and (max-width: 480px) {
-    .f-head{
-      flex-direction: column;
-      align-items: center;
-    }
-    .f-img {
-      margin-left: 0;
-    }
-    .f-mid-main{
-      margin-left: 20px;
-    }
-    .f-mid{
-      align-items: center;
-      padding-top: 0;
-      padding-left: 0;
-      padding-right: 20px;
-    }
-    .f-mid-name{
-     padding-bottom: 30px;
-    }
-    .f-footer{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .f-dot{
-      margin-top: 20px;
-      margin-left: 10px;
-    }
-    .f-dot1{
-      margin-left: 30px;
-      margin-top: 20px;
-    }
-    .f-end{
-      padding-left: 30px;
-      padding-top: 80px;
-    }
-  }
-  
+}

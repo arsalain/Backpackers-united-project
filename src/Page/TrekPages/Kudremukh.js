@@ -27,9 +27,7 @@ const Kudremukh = () => {
     const [show2,setShow2] = useState(false)
     const ref = useRef(null);
 
-    // const handleScroll = () => {
-    //   ref.current?.scrollIntoView({ behavior: 'smooth' });onClick={handleScroll} ref={ref}
-    // };
+    
     const data = [
       {
         id:"/blogs/28",

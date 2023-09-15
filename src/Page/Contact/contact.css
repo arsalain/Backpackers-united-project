@@ -165,3 +165,6 @@ padding-top: 20px;
     font-family:fantasy;
     padding-bottom: 50px;
 }
+@media only screen and (max-width: 480px) {
+}
+

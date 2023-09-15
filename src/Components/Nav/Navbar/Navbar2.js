@@ -107,39 +107,39 @@ const Navbar2 = () =>{
             <div className={toggleState === 2 ? "n-right-dropdown-body active-n-right-dropdown-body": "n-right-dropdown-body" }>
                   <div className="n-right-dropdown-karnataka-summer" >
                   <div className="n-right-dropdown-karnataka-summer-title" >Summer </div> 
-            <li  >
+            <div  >
               <Link to="/trek/kudremukha" style={{ textDecoration: 'none' , color: "black"}} >
                 Kudremukha
               </Link>
-            </li>
-            <li >
+            </div>
+            <div >
               <Link to="/trek/nethravathi" style={{ textDecoration: 'none' , color: "black"}} >
                 Nethravathi
               </Link>
-            </li>
-            <li >
+            </div>
+            <div >
               <Link to="/trek/gokarna" style={{ textDecoration: 'none' , color: "black"}} >
                 Gokarna
               </Link>
-            </li>
+            </div>
             </div>
             <div className="n-right-dropdown-karnataka-winter" >
                   <div className="n-right-dropdown-karnataka-winter-title" > Winter</div> 
-            <li  >
+            <div  >
               <Link to="/trek/kudremukha" style={{ textDecoration: 'none' , color: "black"}} >
                 
               </Link>
-            </li>
-            <li >
+            </div>
+            <div >
               <Link to="/trek/nethravathi" style={{ textDecoration: 'none' , color: "black"}} >
                 Nethravathi
               </Link>
-            </li>
-            <li >
+            </div>
+            <div >
               <Link to="/trek/gokarna" style={{ textDecoration: 'none' , color: "black"}} >
                 
               </Link>
-            </li>
+            </div>
             </div>
             </div>
             </div>
