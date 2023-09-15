@@ -1,4 +1,4 @@
-import React,{useState,useRef} from 'react'
+import React,{useState,useRef,useEffect} from 'react'
 import "./trekpage.css"
 import Navbar2 from '../../Components/Nav/Navbar/Navbar2'
 import {LuClock9} from "react-icons/lu"
@@ -26,6 +26,43 @@ const Kudremukh = () => {
     const [show1,setShow1] = useState(false)
     const [show2,setShow2] = useState(false)
     const ref = useRef(null);
+    const [activeTab, setActiveTab] = useState(1);
+
+    const handleTabClick = (tabNumber) => {
+      setActiveTab(tabNumber);
+    };
+    useEffect(() => {
+      // Load the external script
+      const script = document.createElement('script');
+      script.src = 'https://logout.world/static/widget/logout-booking.js';
+      script.async = true;
+      script.onload = initWidget;
+      document.body.appendChild(script);
+
+      return () => {
+          document.body.removeChild(script);
+      };
+  }, []);
+
+  const initWidget = () => {
+      if (window.logout && window.logout.widget) {
+          window.logout.widget.setConfig({
+              eventSlug: "kudremukh-trek-t4to",
+              placement: "#book-container-kudremukh",
+              customClass: "btn-custom",
+              btnId: "logout-bnb",
+              downloadBtnId: "logout-download-button",
+              enquiryBtnId: "logout-enquiry-button",
+              showEverything: true,
+              onlyButton: false,
+              showItineraryButton: true,
+              showEnquiryButton: false,
+              bookNowButtonColor: "#28a745",
+              itineraryButtonColor: "#dc3545",
+          });
+          window.logout.widget.init();
+      }
+  }
 
     
     const data = [
@@ -452,6 +489,65 @@ We have certified trek leads (Male/Female) accompanying the participants at all 
             </div>
             </div>
         </div>
+        <div className='round-tab-contain'>
+        <div className='round-tab-head-title'>
+          Detail Iternary
+        </div>
+        <div className="round-tabs-container">
+      <div className="round-tabs">
+        <div
+          className={`round-tab ${activeTab === 1 ? 'active' : ''}`}
+          onClick={() => handleTabClick(1)}
+        >
+          Day 0
+        </div>
+        <div
+          className={`round-tab ${activeTab === 2 ? 'active' : ''}`}
+          onClick={() => handleTabClick(2)}
+        >
+          Day 1
+        </div>
+        <div
+          className={`round-tab ${activeTab === 3 ? 'active' : ''}`}
+          onClick={() => handleTabClick(3)}
+        >
+          Day 2
+        </div>
+
+      </div>
+      <div className="round-tab-content">
+        {activeTab === 1 && <div className='round-tab-content-head'>
+          <div className='round-tab-point'> <div className='round-tab-point-icon' >  <TbPointFilled  ></TbPointFilled> </div>  <div className='round-tab-point-text'>Content for Tab 0 </div>
+          </div >
+          <div className='round-tab-point'> <div className='round-tab-point-icon' >  <TbPointFilled  ></TbPointFilled> </div>  <div className='round-tab-point-text'> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Morbi volutpat neque quis blandit cursus.Fusce non tortor eget purus elementum bibendum quis consectetur nisi.</div>
+          </div >
+          <div className='round-tab-point'> <div className='round-tab-point-icon' >  <TbPointFilled  ></TbPointFilled> </div>  <div className='round-tab-point-text'> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Morbi volutpat neque quis blandit cursus.Fusce non tortor eget purus elementum bibendum quis consectetur nisi.</div>
+          </div >
+          </div>}
+        {activeTab === 2 && <div className='round-tab-content-head'>
+          <div className='round-tab-point'> <div className='round-tab-point-icon' >  <TbPointFilled  ></TbPointFilled> </div>   <div className='round-tab-point-text'> Content for Tab 1 </div>
+          </div >
+          <div className='round-tab-point'> <div className='round-tab-point-icon' >  <TbPointFilled  ></TbPointFilled> </div>  <div className='round-tab-point-text'> Suspendisse ultricies urna vel lacus vehicula, sodales faucibus urna maximus.
+Pellentesque in sem finibus, pretium urna a, sodales justo.
+Duis convallis libero vel varius convallis</div>
+          </div >
+       
+          </div>}
+        {activeTab === 3 && <div className='round-tab-content-head'>
+          <div className='round-tab-point'> <div className='round-tab-point-icon' >  <TbPointFilled  ></TbPointFilled> </div>   Content for Tab 2
+          </div >
+          <div className='round-tab-point'> <div className='round-tab-point-icon' >  <TbPointFilled  ></TbPointFilled> </div>  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Morbi volutpat neque quis blandit cursus.
+Fusce non tortor eget purus elementum bibendum quis consectetur nisi.
+          </div >
+       
+          </div>}
+
+      </div>
+    </div>
+    </div>
         <div className='product-gal'>
           <div className='product-gal-head-title'>Travel Plan</div>
           <div className='product-gal-head-title1'>A weekend in Kudremukh</div>
@@ -514,6 +610,7 @@ We have certified trek leads (Male/Female) accompanying the participants at all 
                 If you have any of your own, let us know!</div>
             </div>
         </div>
+        <div id="book-container-kudremukh"></div>
         <Footer />
         </div>
     

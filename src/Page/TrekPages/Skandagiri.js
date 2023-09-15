@@ -1,4 +1,4 @@
-import React,{useState,useRef} from 'react'
+import React,{useState,useRef,useEffect} from 'react'
 import "./trekpage.css"
 import Navbar2 from '../../Components/Nav/Navbar/Navbar2'
 import {LuClock9} from "react-icons/lu"
@@ -21,12 +21,48 @@ import Footer from "../../Components/Nav/Footer/Footer"
 
 import Gallery from '../../Components/Product/Galeery/Gallery'
 import Productfaq from '../../Components/Product/Faq/Productfaq'
+import BookingWidget from '../../Components/BookingWidget/BookingWidget'
+
 const Skandagiri = () => {
     const [toggleState, setToggleState] = useState(1);
     const [show,setShow] = useState(false)
     const [show1,setShow1] = useState(false)
     const [show2,setShow2] = useState(false)
     const ref = useRef(null);
+
+    useEffect(() => {
+      // Load the external script
+      const script = document.createElement('script');
+      script.src = 'https://logout.world/static/widget/logout-booking.js';
+      script.async = true;
+      script.onload = initWidget;
+      document.body.appendChild(script);
+
+      return () => {
+          document.body.removeChild(script);
+      };
+  }, []);
+
+  const initWidget = () => {
+      if (window.logout && window.logout.widget) {
+          window.logout.widget.setConfig({
+              eventSlug: "skandagiri-trek",
+              placement: "#book-container",
+              customClass: "btn-custom",
+              btnId: "logout-bnb",
+              downloadBtnId: "logout-download-button",
+              enquiryBtnId: "logout-enquiry-button",
+              showEverything: true,
+              onlyButton: false,
+              showItineraryButton: true,
+              showEnquiryButton: false,
+              bookNowButtonColor: "#28a745",
+              itineraryButtonColor: "#dc3545",
+          });
+          window.logout.widget.init();
+      }
+  }
+
 
     const handleScroll = () => {
       ref.current?.scrollIntoView({ behavior: 'smooth' });
@@ -118,7 +154,6 @@ const Skandagiri = () => {
     <>
     
     <div >
-    
     <div className='product-img'>
         <img src={kud} className='product-img-main' />
       <div className='product-img-body'>
@@ -134,7 +169,8 @@ const Skandagiri = () => {
         ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
         velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
         sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
-          <div className='product-iternary-left-but'><button className='product-iternary-left-but-bt'>Dowload PDF</button></div>
+          <div className='product-iternary-left-but'><button className='product-iternary-left-but-bt' id="logout-enquiry-button">Dowload PDF</button>
+          <button class="btn-custom" id="logout-enquiry-button" onclick="handleCustomEnquiry()">Custom Enquiry</button></div>
           </div>
         </div>
         </div>
@@ -439,6 +475,9 @@ We have certified trek leads (Male/Female) accompanying the participants at all 
                 If you have any of your own, let us know!</div>
             </div>
         </div>
+        <div id="book-container"></div>
+        {/* <initWidget />
+        <BookingWidget /> */}
         <Footer />
         </div>
     

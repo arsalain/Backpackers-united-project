@@ -304,6 +304,70 @@ padding-left: 0.625em;
 .product-detail-question-faq{
   padding: 0 1em;
 }
+.round-tab-contain{
+  width: 68em;
+  /* padding-left: 0.625em; */
+  margin-left: auto;
+  margin-right: auto;
+}
+.round-tab-head-title{
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #FCB418;
+
+}
+.round-tabs-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.25em;
+}
+
+.round-tabs {
+  display: flex;
+  margin-bottom: 1.25em;
+}
+
+.round-tab {
+  padding: 10px 30px;
+  margin: 0 5px;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.round-tab.active {
+  background-color:#FCB418; 
+  color: #fff;
+  font-weight: bold;
+}
+
+
+.round-tabs{
+  background-color: lightgoldenrodyellow;
+  border-radius: 2em;
+}
+.round-tab-content{
+  padding-top: 0.625em;
+  padding-bottom: 2.5em;
+}
+.round-tab-content-head{
+  display: flex;
+  flex-direction: column;
+}
+.round-tab-point{
+ display: flex;
+ flex-direction: row;
+ font-size: 1.25em;
+}
+.round-tab-point-icon{
+  width: 1.25em;
+  color: #FCB418;
+  padding-top: 0.2em;
+}
+.round-tab-point-text{
+  width: 56em;
+}
 .product-gal{
   display: flex;
   flex-direction: column;
