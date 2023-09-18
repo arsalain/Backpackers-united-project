@@ -107,6 +107,8 @@
     width: 31.25em;
     visibility: hidden;
     z-index: 1;
+    border-radius: 10px;
+    
  
   }
   .n-right-drophead:hover .n-right-dropdown {

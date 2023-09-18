@@ -536,11 +536,11 @@ Duis convallis libero vel varius convallis</div>
        
           </div>}
         {activeTab === 3 && <div className='round-tab-content-head'>
-          <div className='round-tab-point'> <div className='round-tab-point-icon' >  <TbPointFilled  ></TbPointFilled> </div>   Content for Tab 2
+        <div className='round-tab-point'> <div className='round-tab-point-icon' >  <TbPointFilled  ></TbPointFilled> </div>   <div className='round-tab-point-text'> Content for Tab 1 </div>
           </div >
-          <div className='round-tab-point'> <div className='round-tab-point-icon' >  <TbPointFilled  ></TbPointFilled> </div>  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Morbi volutpat neque quis blandit cursus.
-Fusce non tortor eget purus elementum bibendum quis consectetur nisi.
+          <div className='round-tab-point'> <div className='round-tab-point-icon' >  <TbPointFilled  ></TbPointFilled> </div>  <div className='round-tab-point-text'> Suspendisse ultricies urna vel lacus vehicula, sodales faucibus urna maximus.
+Pellentesque in sem finibus, pretium urna a, sodales justo.
+Duis convallis libero vel varius convallis</div>
           </div >
        
           </div>}

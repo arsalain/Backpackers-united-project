@@ -68,78 +68,212 @@ const Navbar2 = () =>{
                 </div>
                 <div className={toggleState === 1 ? "n-right-dropdown-body active-n-right-dropdown-body": "n-right-dropdown-body" }>
                   <div className="n-right-dropdown-karnataka-summer" >
-                  <div className="n-right-dropdown-karnataka-summer-title" >Summer </div> 
-            <div  >
-              <Link to="/trek/kudremukha" style={{ textDecoration: 'none' , color: "black"}} >
-                Kudremukha
-              </Link>
-            </div>
+                  <div className="n-right-dropdown-karnataka-summer-title" >Short Treks</div> 
+          
             <div >
               <Link to="/trek/nethravathi" style={{ textDecoration: 'none' , color: "black"}} >
                 Nethravathi
               </Link>
             </div>
+            <div >
+              <Link to="/trek/paithalamala" style={{ textDecoration: 'none' , color: "black"}} >
+               Paithalamala 
+              </Link>
+            </div>
+            <div >
+              <Link to="/trek/ethina" style={{ textDecoration: 'none' , color: "black"}} >
+              Ethina Bhuja 
+              </Link>
+            </div>
+            <div >
+              <Link to="/trek/skandagiri" style={{ textDecoration: 'none' , color: "black"}} >
+              Skandagiri 
+              </Link>
+            </div>
+            
             <div >
               <Link to="/trek/gokarna" style={{ textDecoration: 'none' , color: "black"}} >
                 Gokarna
               </Link>
             </div>
+            <div  >
+              <Link to="/trek/huttari" style={{ textDecoration: 'none' , color: "black"}} >
+               Huttari Betta 
+              </Link>
             </div>
-            <div className="n-right-dropdown-karnataka-winter" >
-                  <div className="n-right-dropdown-karnataka-winter-title" > Winter</div> 
+
+            </div>
+            <div className="n-right-dropdown-karnataka-summer" >
+                  <div className="n-right-dropdown-karnataka-summer-title" > Long Treks</div> 
             <div  >
               <Link to="/trek/kudremukha" style={{ textDecoration: 'none' , color: "black"}} >
-                
+              Kudremukha
               </Link>
             </div>
             <div >
-              <Link to="/trek/nethravathi" style={{ textDecoration: 'none' , color: "black"}} >
-                Nethravathi
+              <Link to="/trek/kumara" style={{ textDecoration: 'none' , color: "black"}} >
+              Kumara Parvatha
               </Link>
             </div>
             <div >
-              <Link to="/trek/gokarna" style={{ textDecoration: 'none' , color: "black"}} >
-                
+              <Link to="/trek/tadiandamol" style={{ textDecoration: 'none' , color: "black"}} >
+              Tadiandamol
               </Link>
             </div>
+            <div >
+              <Link to="/trek/bramagiri" style={{ textDecoration: 'none' , color: "black"}} >
+              Bramagiri
+              </Link>
+            </div>
+            <div >
+              <Link to="/trek/kurinjal" style={{ textDecoration: 'none' , color: "black"}} >
+              Kurinjal
+              </Link>
+            </div>
+            <div >
+              <Link to="/trek/narasimha" style={{ textDecoration: 'none' , color: "black"}} >
+              Narasimha
+              </Link>
+            </div>
+            </div>
+            <div className="n-right-dropdown-karnataka-summer" >
+                  <div className="n-right-dropdown-karnataka-summer-title" >Waterfall Treks</div> 
+            <div  >
+              <Link to="/trek/bandaje" style={{ textDecoration: 'none' , color: "black"}} >
+              Bandaje Falls
+              </Link>
+            </div>
+            <div >
+              <Link to="/trek/kodachadri" style={{ textDecoration: 'none' , color: "black"}} >
+              Kodachadri
+              </Link>
+            </div>
+            <div >
+              <Link to="/trek/dudhsagar" style={{ textDecoration: 'none' , color: "black"}} >
+              Dudhsagar Trek and Dandeli
+              </Link>
+            </div>
+            <div  >
+              <Link to="/trek/bilikal" style={{ textDecoration: 'none' , color: "black"}} >
+              Bilikal
+              </Link>
+            </div>
+            <div  >
+              <Link to="/trek/arisinagundi" style={{ textDecoration: 'none' , color: "black"}} >
+              Arisinagundi Falls
+              </Link>
+            </div>
+             <div  >
+              <Link to="/trek/arisinagundi" style={{ textDecoration: 'none' , color: "black"}} >
+              Arisinagundi Falls
+              </Link>
+            </div>
+            
             </div>
             </div>
             <div className={toggleState === 2 ? "n-right-dropdown-body active-n-right-dropdown-body": "n-right-dropdown-body" }>
-                  <div className="n-right-dropdown-karnataka-summer" >
-                  <div className="n-right-dropdown-karnataka-summer-title" >Summer </div> 
-            <div  >
-              <Link to="/trek/kudremukha" style={{ textDecoration: 'none' , color: "black"}} >
-                Kudremukha
-              </Link>
-            </div>
+            <div className="n-right-dropdown-karnataka-summer" >
+                  <div className="n-right-dropdown-karnataka-summer-title" >Short Treks</div> 
+          
             <div >
               <Link to="/trek/nethravathi" style={{ textDecoration: 'none' , color: "black"}} >
                 Nethravathi
               </Link>
             </div>
+            <div >
+              <Link to="/trek/paithalamala" style={{ textDecoration: 'none' , color: "black"}} >
+               Paithalamala 
+              </Link>
+            </div>
+            <div >
+              <Link to="/trek/ethina" style={{ textDecoration: 'none' , color: "black"}} >
+              Ethina Bhuja 
+              </Link>
+            </div>
+            <div >
+              <Link to="/trek/skandagiri" style={{ textDecoration: 'none' , color: "black"}} >
+              Skandagiri 
+              </Link>
+            </div>
+            
             <div >
               <Link to="/trek/gokarna" style={{ textDecoration: 'none' , color: "black"}} >
                 Gokarna
               </Link>
             </div>
+            <div  >
+              <Link to="/trek/huttari" style={{ textDecoration: 'none' , color: "black"}} >
+               Huttari Betta 
+              </Link>
             </div>
-            <div className="n-right-dropdown-karnataka-winter" >
-                  <div className="n-right-dropdown-karnataka-winter-title" > Winter</div> 
+
+            </div>
+            <div className="n-right-dropdown-karnataka-summer" >
+                  <div className="n-right-dropdown-karnataka-summer-title" > Long Treks</div> 
             <div  >
               <Link to="/trek/kudremukha" style={{ textDecoration: 'none' , color: "black"}} >
-                
+              Kudremukha
               </Link>
             </div>
             <div >
-              <Link to="/trek/nethravathi" style={{ textDecoration: 'none' , color: "black"}} >
-                Nethravathi
+              <Link to="/trek/kumara" style={{ textDecoration: 'none' , color: "black"}} >
+              Kumara Parvatha
               </Link>
             </div>
             <div >
-              <Link to="/trek/gokarna" style={{ textDecoration: 'none' , color: "black"}} >
-                
+              <Link to="/trek/tadiandamol" style={{ textDecoration: 'none' , color: "black"}} >
+              Tadiandamol
               </Link>
             </div>
+            <div >
+              <Link to="/trek/bramagiri" style={{ textDecoration: 'none' , color: "black"}} >
+              Bramagiri
+              </Link>
+            </div>
+            <div >
+              <Link to="/trek/kurinjal" style={{ textDecoration: 'none' , color: "black"}} >
+              Kurinjal
+              </Link>
+            </div>
+            <div >
+              <Link to="/trek/narasimha" style={{ textDecoration: 'none' , color: "black"}} >
+              Narasimha
+              </Link>
+            </div>
+            </div>
+            <div className="n-right-dropdown-karnataka-summer" >
+                  <div className="n-right-dropdown-karnataka-summer-title" >Waterfall Treks</div> 
+            <div  >
+              <Link to="/trek/bandaje" style={{ textDecoration: 'none' , color: "black"}} >
+              Bandaje Falls
+              </Link>
+            </div>
+            <div >
+              <Link to="/trek/kodachadri" style={{ textDecoration: 'none' , color: "black"}} >
+              Kodachadri
+              </Link>
+            </div>
+            <div >
+              <Link to="/trek/dudhsagar" style={{ textDecoration: 'none' , color: "black"}} >
+              Dudhsagar Trek and Dandeli
+              </Link>
+            </div>
+            <div  >
+              <Link to="/trek/bilikal" style={{ textDecoration: 'none' , color: "black"}} >
+              Bilikal
+              </Link>
+            </div>
+            <div  >
+              <Link to="/trek/arisinagundi" style={{ textDecoration: 'none' , color: "black"}} >
+              Arisinagundi Falls
+              </Link>
+            </div>
+             {/* <div  >
+              <Link to="/trek/arisinagundi" style={{ textDecoration: 'none' , color: "black"}} >
+              Arisinagundi Falls
+              </Link>
+            </div> */}
+            
             </div>
             </div>
             </div>

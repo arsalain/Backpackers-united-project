@@ -26,7 +26,11 @@ const Munarallepy3 = () => {
     const [show1,setShow1] = useState(false)
     const [show2,setShow2] = useState(false)
     const ref = useRef(null);
+    const [activeTab, setActiveTab] = useState(1);
 
+    const handleTabClick = (tabNumber) => {
+      setActiveTab(tabNumber);
+    };
     const handleScroll = () => {
       ref.current?.scrollIntoView({ behavior: 'smooth' });
     };
@@ -498,6 +502,65 @@ We have certified trek leads (Male/Female) accompanying the participants at all 
             </div>
             </div>
         </div>
+        <div className='round-tab-contain'>
+        <div className='round-tab-head-title'>
+          Detail Iternary
+        </div>
+        <div className="round-tabs-container">
+      <div className="round-tabs">
+        <div
+          className={`round-tab ${activeTab === 1 ? 'active' : ''}`}
+          onClick={() => handleTabClick(1)}
+        >
+          Day 0
+        </div>
+        <div
+          className={`round-tab ${activeTab === 2 ? 'active' : ''}`}
+          onClick={() => handleTabClick(2)}
+        >
+          Day 1
+        </div>
+        <div
+          className={`round-tab ${activeTab === 3 ? 'active' : ''}`}
+          onClick={() => handleTabClick(3)}
+        >
+          Day 2
+        </div>
+
+      </div>
+      <div className="round-tab-content">
+        {activeTab === 1 && <div className='round-tab-content-head'>
+          <div className='round-tab-point'> <div className='round-tab-point-icon' >  <TbPointFilled  ></TbPointFilled> </div>  <div className='round-tab-point-text'>Content for Tab 0 </div>
+          </div >
+          <div className='round-tab-point'> <div className='round-tab-point-icon' >  <TbPointFilled  ></TbPointFilled> </div>  <div className='round-tab-point-text'> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Morbi volutpat neque quis blandit cursus.Fusce non tortor eget purus elementum bibendum quis consectetur nisi.</div>
+          </div >
+          <div className='round-tab-point'> <div className='round-tab-point-icon' >  <TbPointFilled  ></TbPointFilled> </div>  <div className='round-tab-point-text'> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Morbi volutpat neque quis blandit cursus.Fusce non tortor eget purus elementum bibendum quis consectetur nisi.</div>
+          </div >
+          </div>}
+        {activeTab === 2 && <div className='round-tab-content-head'>
+          <div className='round-tab-point'> <div className='round-tab-point-icon' >  <TbPointFilled  ></TbPointFilled> </div>   <div className='round-tab-point-text'> Content for Tab 1 </div>
+          </div >
+          <div className='round-tab-point'> <div className='round-tab-point-icon' >  <TbPointFilled  ></TbPointFilled> </div>  <div className='round-tab-point-text'> Suspendisse ultricies urna vel lacus vehicula, sodales faucibus urna maximus.
+Pellentesque in sem finibus, pretium urna a, sodales justo.
+Duis convallis libero vel varius convallis</div>
+          </div >
+       
+          </div>}
+        {activeTab === 3 && <div className='round-tab-content-head'>
+        <div className='round-tab-point'> <div className='round-tab-point-icon' >  <TbPointFilled  ></TbPointFilled> </div>   <div className='round-tab-point-text'> Content for Tab 1 </div>
+          </div >
+          <div className='round-tab-point'> <div className='round-tab-point-icon' >  <TbPointFilled  ></TbPointFilled> </div>  <div className='round-tab-point-text'> Suspendisse ultricies urna vel lacus vehicula, sodales faucibus urna maximus.
+Pellentesque in sem finibus, pretium urna a, sodales justo.
+Duis convallis libero vel varius convallis</div>
+          </div >
+       
+          </div>}
+
+      </div>
+    </div>
+    </div>
         <div className='product-gal'>
           <div className='product-gal-head-title'>Travel Plan</div>
           <div className='product-gal-head-title1'>A weekend in Munar Allepy</div>
