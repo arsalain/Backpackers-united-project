@@ -22,21 +22,22 @@ video{
 }
 
 .video-title{
-    padding-top: 25vh;
+    padding-top: 15vh;
     font-size: 2.813em;
     display: flex;
     align-self: center;
     transition: step-end;
-    font-family: 'Smooch', cursive;
+    font-family: 'Lato', sans-serif;
 }
 
 .video-title1{
-    padding-bottom: 2rem;
+    /* padding-bottom: 2rem; */
     font-size: 3.125em;
     display: flex;
     align-self: center;
     color: #FCB418;
-    font-weight: 400;
+    /* font-family: 'EB Garamond', serif; */
+    font-family: 'Smooch', cursive;
 font-style: bold;
 }
 .video-search{
@@ -89,7 +90,7 @@ font-style: bold;
 }
 .video-rating-icon{
     font-size: 2.5em;
-    padding-left: 1em;
+    /* padding-left: 2em; */
 }
 .video-rating{
     padding-left: 0.625em;

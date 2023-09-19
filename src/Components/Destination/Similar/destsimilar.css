@@ -51,7 +51,7 @@
     display: flex;
     flex-direction: row;
     padding-top: 0.625em;
-    padding-left: 4.688em;
+    justify-content: center;
    
 }
 .dest-sim-card-t {
@@ -68,8 +68,7 @@
     display: flex;
     flex-direction: row;
     padding-top: 0.625em;
-    padding-left: 4.063em;
-    /* justify-content: center; */
+    justify-content: center;
 }
 .dest-sim-card-t1 {
     color: white;
@@ -90,8 +89,7 @@
     display: flex;
     flex-direction: row;
     padding-top: 0.625em;
-    padding-left: 3.438em;
-    /* justify-content: center; */
+    justify-content: center;
 }
 .dest-sim-card-bt{
     display: flex;
@@ -141,22 +139,127 @@
     right: -0.5em ;
     background: none;
 }
-.dest-sim-slide-item{
+
+.dest-sim-slide-item-top{
+    width: 16.625em !important;
+    height: 14em !important;
+    padding-top: 30px;
+}
+.dest-sim-slide-item-container{
     width: 16.625em !important;
     height: 12.5em !important;
+    perspective: 800px;
+    
+   
+}
+.dest-sim-slide-item-container:hover > .dest-sim-slide-item{
+   cursor: pointer;
+   transform: rotateY(180deg);
+
+}
+.dest-sim-slide-item{
+    width: 100%;
+    height: 100%;
     position: relative;
+    transition: transform 1500ms;
+   
+    transform-style: preserve-3d;
+}
+
+.dest-sim-slide-item-front,.dest-sim-slide-item-back{
+    height: 100%;
+    width: 100%;
+    border-radius: 2em;
+    box-shadow: 0 0 5px 2px rgba(50,50,50,0.25);
+    position: absolute;
+  
+    backface-visibility: hidden;
+    
 }
 .dest-sim-slide-item-img{
-    height: 12.5em;
-    width: 16.625em;
-    border-radius: 0.625em;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2em;
+}
+
+.dest-sim-slide-item-back{
+    background-color:#FCB418;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .dest-sim-slide-item-title{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: bold;
-     color: white;
-     font-size: 0.813em;
+    font-weight: 600;
+    font-size: 1.25em;
+}
+
+@media only screen and (max-width: 480px) {
+    .dest-sim{
+        width: auto;
+        padding-bottom: 0;
+        padding-left: 0.625em;
+        padding-right: 0.625em;
+        font-size: 14px;
+    }
+    .dest-sim-title{
+        padding-left: 0;
+        padding-bottom: 0;
+    }
+    .dest-sim-cont{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 1.25em;
+    }
+    .dest-sim-card{
+        margin-left: 0;
+    }
+    .dest-sim-slide{
+        width: auto;
+        padding-top: 1em;
+        margin: 0 0.625em;
+    }
+    .dest-sim-slide-item{
+        margin-left: 4em;
+    }
+    .dest-sim-prev{
+        left: -10px;
+    }
+
+}
+@media only screen and  (min-width:500px) and (max-width: 999px) {
+    .dest-sim{
+        width: auto;
+        font-size: 13px;
+    }
+    .dest-sim-title {
+        padding-left: 1.25em;
+    }
+    .dest-sim-cont{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: 1.25em;
+        margin-right: 1.25em;
+        gap: 0.625em;
+    }
+    .dest-sim-card{
+        margin-left: 0;
+        width: 18.5em;
+    }
+    .dest-sim-card-img{
+        width: 18.5em;
+    }
+    .dest-sim-slide{
+        width: auto;
+        padding-top: 1em;
+        padding-left: 2em;
+        margin: 0 0.625em;
+    }
+    .dest-sim-prev{
+        left: -45px;
+    }
 }

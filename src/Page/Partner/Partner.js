@@ -4,11 +4,12 @@ import "./partner.css"
 import {GiPolarStar} from "react-icons/gi"
 import cp from "../../Images/contact.jpg"
 import Navbar2 from '../../Components/Nav/Navbar/Navbar2'
+import Footer from '../../Components/Nav/Footer/Footer'
 
 const Partner = () => {
   return (
     
-        <div className='PARTNER WITH US '>
+        <div className='partner'>
         <Navbar2 />
      <div className='partner-head'>
         
@@ -67,7 +68,7 @@ const Partner = () => {
 
 
 
-        
+        <Footer />
 
     </div>
 

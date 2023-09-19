@@ -1,6 +1,7 @@
 .dest-ch-body{
     background: black;
     width: 100%;
+    font-size: 16px;
 }
 .dest-ch{
     margin-left: auto;
@@ -24,6 +25,11 @@
     display: flex;
     flex-direction: row;
     gap: 1.875em;
+}
+.dest-ch-card-main{
+        display: flex;
+        flex-direction: row;
+        gap: 1.875em;
 }
 .dest-ch-card{
     height: 12.5em;
@@ -53,4 +59,34 @@
     justify-content: center;
     justify-self: center;
     align-self: center;
+}
+@media only screen and (max-width: 480px) {
+    .dest-ch-body{
+        background: black;
+        width: 100%;
+        font-size: 14px;
+    }
+    .dest-ch-title{
+        padding-top: 1.25em;
+        padding-bottom: 1.25em;
+    }
+    .dest-ch-main{ 
+        gap: 0;
+
+    }
+    .dest-ch-card {
+        height: 10em;
+        width: 10em;
+    }
+    .dest-ch-card-icon {
+        padding-top: 0.5em;
+    }
+}
+@media only screen and  (min-width:500px) and (max-width: 999px) {
+    .dest-ch-body{
+        font-size: 13px;
+    }
+    .dest-ch-title {
+        padding: 1.25em 0;
+    }
 }

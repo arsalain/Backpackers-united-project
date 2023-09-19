@@ -8,6 +8,7 @@ const Destchoose = () => {
       <div className='dest-ch-title'> Why Choose Us
       </div>
       <div className='dest-ch-main'>
+        <div className='dest-ch-card-main' >
         <div className='dest-ch-card'>
            <div className='dest-ch-card-icon' ><BsFillCarFrontFill className='dest-ch-card-icon1'/></div>
            <div className='dest-ch-card-name' >Well rounded Stay Free Transportation</div>
@@ -16,13 +17,16 @@ const Destchoose = () => {
            <div className='dest-ch-card-name1'>destination</div>
         </div>
         <div className='dest-ch-card'>
-           hey 
+           hey 1
+        </div>
+        </div>
+        <div  className='dest-ch-card-main'>
+        <div className='dest-ch-card'>
+           hey 2
         </div>
         <div className='dest-ch-card'>
-           hey 
+           hey 3
         </div>
-        <div className='dest-ch-card'>
-           hey 
         </div>
       </div>
     </div>

@@ -57,7 +57,7 @@ const Kodachadri = () => {
               showEverything: true,
               onlyButton: false,
               showItineraryButton: true,
-              showEnquiryButton: false,
+              showEnquiryButton: true,
               bookNowButtonColor: "#28a745",
               itineraryButtonColor: "#dc3545",
           });

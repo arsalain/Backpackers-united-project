@@ -1,4 +1,4 @@
-import React,{useState,useRef} from 'react'
+import React,{useState,useRef,useEffect} from 'react'
 import "../TrekPages/trekpage.css"
 import Navbar2 from '../../Components/Nav/Navbar/Navbar2'
 import {LuClock9} from "react-icons/lu"
@@ -31,6 +31,41 @@ const Gokarnadandeli3 = () => {
     const handleTabClick = (tabNumber) => {
       setActiveTab(tabNumber);
     };
+    useEffect(() => {
+      // Load the external script
+      const script = document.createElement('script');
+      script.src = 'https://logout.world/static/widget/logout-booking.js';
+      script.async = true;
+      script.onload = initWidget;
+      document.body.appendChild(script);
+
+      return () => {
+          document.body.removeChild(script);
+      };
+  }, []);
+
+  const initWidget = () => {
+      if (window.logout && window.logout.widget) {
+          window.logout.widget.setConfig({
+              eventSlug: "gokarna-dandeli-backpacking-tour-long-weekend-3-days-and-2-night",
+              placement: "#book-container-gokarna3",
+              customClass: "btn-custom",
+              btnId: "logout-bnb",
+              btnId: "logout-bnb",
+              downloadBtnId: "logout-download-button",
+              enquiryBtnId: "logout-enquiry-button",
+              showEverything: true,
+              onlyButton: false,
+              showItineraryButton: true,
+              showEnquiryButton: true,
+              bookNowButtonColor: "#28a745",
+              itineraryButtonColor: "#dc3545",
+          });
+          window.logout.widget.init();
+      }
+  }
+
+
     const handleScroll = () => {
       ref.current?.scrollIntoView({ behavior: 'smooth' });
     };
@@ -622,6 +657,7 @@ Duis convallis libero vel varius convallis</div>
                 If you have any of your own, let us know!</div>
             </div>
         </div>
+        <div id="book-container-gokarna3"></div>
         <Footer />
         </div>
     

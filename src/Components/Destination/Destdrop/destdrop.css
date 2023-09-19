@@ -6,7 +6,7 @@
 }
 .destdrop-main{
     width: 100%;
-    height: 18.75em;
+    height: 60vh;
     object-fit: cover;
     top: 0;
     left: 0;
@@ -44,15 +44,8 @@
     font-size: 2em;
    
 }
-.destdrop-select{
-    margin-top: 0.65em;
-    margin-left: 1em;
-    background-color: #FCB418;
-    color: white;
-    width: 10em;
-    font-size: 1.3em;
 
-}
+
 .destdrop-body-title-main{
     display: flex;
     flex-direction: row;
@@ -67,4 +60,48 @@
     font-size: 1.75em;
     font-weight: bold;
     padding-bottom: 0.625em;
+}
+@media only screen and (max-width: 480px) {
+    .destdrop-head-title{
+        font-size: 2em;
+    }
+    .destdrop-body {
+        width: auto;
+        padding: 1.25em 0.625em;
+    }
+    .destdrop-body-title-main{
+        justify-content: flex-start;
+    }
+    .destdrop-body-title {
+        width: 12em;
+        font-size: 1.35em ;
+}
+.destdrop-select-main{
+    margin-left: 3em;
+
+}
+.destdrop-select option{
+    max-height: 0.2em;
+    min-height: 0.2em;
+    font-size: 0.8em;
+}
+}
+@media only screen and  (min-width:500px) and (max-width: 999px) {
+    .destdrop-body{
+        width: auto;
+        padding-left: 1.25em;
+        /* padding-right: 1.25em; */
+    }
+    .destdrop-body-title{
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    .destdrop-body-title-main{
+        justify-content: space-between;
+    }
+    .destdrop-select{
+        margin-top: 0.2em;
+        font-size: 1em;
+        width: 5em;
+    }
 }

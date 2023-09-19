@@ -1,13 +1,15 @@
 .topslide{
-    max-width: 62.5rem;
+    max-width: 70.5rem;
     margin-left: auto;
     margin-right: auto;
-    font-size: 15px;
+    font-size: 16px;
     padding-top: 3.125em;
     position: relative;
 }
 .topslide-title{
     font-size: 1.875em;
+    display: flex;
+    justify-content: center;
     font-weight: bold;
 }
 .topslide-prev{
@@ -65,5 +67,10 @@
 @media only screen and  (min-width:500px) and (max-width: 999px) {
     .topslide-title {
         margin-left: 0.625em;
+    }
+}
+@media only screen and  (min-width:1366px) and (max-width: 1980px) {
+    .topslide{
+        font-size: 18px;
     }
 }

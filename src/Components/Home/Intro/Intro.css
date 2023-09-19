@@ -16,16 +16,16 @@
 .i-name {
   font-size: 1.75em;
   color: #FCB418;
-  font-family: 'Mansalva';
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
 }
 .i-title{
   font-size: 2.5em;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 .i-title1{
   font-size: 2.5em;
-  font-weight: bold;
+  /* font-weight: bold; */
   padding-bottom: 0.9em;
 }
 .i-discrip1{
@@ -48,7 +48,7 @@
   height: 25em;
   width: 31.25em;
   border-radius: 1.875em;
-  margin-left: 14.063em;
+  margin-left: 8em;
 }
 @media only screen and (max-width: 480px) {
   .i-left {

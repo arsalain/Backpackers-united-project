@@ -32,15 +32,15 @@
     text-align: center;
     position: relative;
     font-size: 0.875em;
-    top: -1em;
+    top: -0.5em;
     font-weight:800;
     color: red;
-    font-family: 'Spectral', serif;
+    font-family: 'EB Garamond', serif;
   }
   .n-name12:before{
     content: "";
     display: block;
-    width: 4em;
+    width: 4.4em;
     height:2px;
     background: black;
     position: absolute;
@@ -50,7 +50,7 @@
   .n-name12:after{
     content: "";
     display: block;
-    width: 4em;
+    width: 4.4em;
     height: 2px;
     background: black;
     position: absolute;
@@ -60,7 +60,7 @@
   .n-name2 {
     font-size: 1.5em;
     font-weight: 800;
-    font-family: 'Spectral', serif;
+    font-family: 'EB Garamond', serif;
     color: black !important;
   }
   .n-img2{

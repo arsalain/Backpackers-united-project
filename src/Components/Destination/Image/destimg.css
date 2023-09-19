@@ -1,22 +1,11 @@
-
 .destimg-body-top{
     display: flex;
     flex-direction: row;
     position: relative;
     gap:0.625em;
+    font-size: 16px;
 }
-.destimg-body-middle{
-    display: flex;
-    flex-direction: row;
-    padding-top: 0.938em;
-    gap:0.625em;
-}
-.destimg-body-last{
-    display: flex;
-    flex-direction: row;
-    padding-top: 0.938em;
-    gap:0.625em;
-}
+
 .destimg-body-img{
     position: relative;
     width: 17.75em;
@@ -85,49 +74,24 @@
     color: lightgrey;
 }
 @media only screen and (max-width: 300px) {
-    .destimg-main{
-        height: 60vh;
-        }
-    .destimg-head-title {
-        top: 25vh;
-        left: 20%;
-    }  
-     .destimg-body {
-        width: auto;
-        padding: 0 0.625em;
-    }
     .destimg-body-top{
         flex-direction: column;
+       
     }
     .destimg-body-img{
         width: auto;
     }
     }
     @media only screen and  (min-width:300px) and (max-width: 480px) {
-    .destimg-main{
-    height: 60vh;
-    }
-    .destimg-head-title {
-            top: 25vh;
-            left: 30%;
-    }
-    .destimg-body {
-        width: auto;
-        padding: 0 1.25em;
-    }
     .destimg-body-top{
         flex-direction: column;
+        padding-left: 2em;
     }
     .destimg-body-img{
-        width: 10em;
-        height: 10em;
+        width: 18em;
+        height: 17em;
     }
-    .destimg-body-name{
-        left: 40%;
-    }
-    .destimg-body-name1{
-        left: 43%;
-    }
+
     .destimg-body-middle{
         flex-direction: column;
     }
@@ -143,8 +107,28 @@
     }
     .dest-ch-main {
         display: flex; 
-        flex-direction:column !important;
-
-        
+        flex-direction:column !important;     
     }
+    
+}
+@media only screen and  (min-width:500px) and (max-width: 999px) {
+
+    .destimg-body-top{
+        font-size: 13px;
+    }
+    .destimg-slide-prev{
+        left: -20px;
+    }
+    .destimg-slide-prev1{
+        left: -20px;
+        color: black;
+    }
+    .destimg-slide-next{
+        right: -20px;
+    }
+    .destimg-slide-next1{
+        right: -20px;
+        color: black;
+    }
+
 }

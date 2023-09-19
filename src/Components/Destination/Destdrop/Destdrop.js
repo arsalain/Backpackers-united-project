@@ -1,4 +1,5 @@
 import React,{useState } from 'react'
+import Select from 'react-select';
 import Navbar2 from '../../Nav/Navbar/Navbar2'
 import dest from "../../../Images/destination.jpeg"
 import hampi from "../../../Images/Hampi.jpeg"
@@ -14,12 +15,19 @@ import wayanad from "../../../Images/wayanad.jpg"
 import "./destdrop.css"
 import Gokarna from '../../../Page/TrekPages/Gokarna'
 import Destimg from '../Image/Destimg'
+const options = [
+  { value: 'destdrop1', label: 'All' },
+  { value: 'destdrop2', label: 'Karnataka' },
+  { value: 'destdrop3', label: 'Kerala' },
+  { value: 'destdrop4', label: 'Tamil Nadu' }
+];
 const Destdrop = () => {
-    const [selectedOption, setSelectedOption] = useState('destdrop1');
+
+    const [selectedOption, setSelectedOption] = useState(options[0]);
 
     // Function to handle the change of the select element
-    const handleSelectChange = (event) => {
-      setSelectedOption(event.target.value);
+    const handleSelectChange = (selectedOption) => {
+      setSelectedOption(selectedOption);
     };
     const karnataka = [ 
         {
@@ -39,7 +47,7 @@ const Destdrop = () => {
     } ,
     {
         id:1 ,
-        name: "chikmangalur",
+        name: "Chikmangalur",
         img: chikmangalur
     } ,
     {
@@ -52,17 +60,17 @@ const Destdrop = () => {
 const TamilNadu = [ 
     {
     id:1 ,
-    name: "kodiakanal",
+    name: "Kodiakanal",
     img: kodiakanol
 } ,
 {
     id:2,
-    name: "ooty",
+    name: "Ooty",
     img: ooty
 } ,
 {
     id:1 ,
-    name: "pondichery",
+    name: "Pondichery",
     img: pondichery
 } ,
 
@@ -71,19 +79,50 @@ const TamilNadu = [
 const Kerala = [ 
     {
     id:1 ,
-    name: "wayanad",
+    name: "Wayanad",
     img: wayanad
 } ,
 {
     id:2,
-    name: "munnar",
+    name: "Munnar",
     img: munar
 } ,
-
+{
+  id:3,
+  name: "Munar-Allerpy",
+  img: munar
+} ,
 
 
 ]
 
+  const isMobileView = window.innerWidth <= 767;
+  const isTabletView = window.innerWidth > 767 && window.innerWidth <= 1024;
+
+  const customStyles = {
+  control: (provided, state) => ({
+    ...provided,
+    border: '1px solid black',
+    borderRadius: '5px',
+    padding:  isMobileView ? '0px' : (isTabletView ? '0' :'10px'),
+    width: isMobileView ? '80px' : (isTabletView ? '100px' : '150px'),
+    boxShadow: state.isFocused ? '0 0 5px rgba(0, 0, 0, 0.2)' : 'none',
+  }),
+  option: (provided, state) => ({
+    ...provided,
+    backgroundColor: state.isSelected ? '#FCB418 ' : 'white',
+    ':hover': {
+      backgroundColor: '#FCB418',
+    },
+   
+  }),
+  menu: (provided) => ({
+    ...provided,
+    boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)',
+    borderRadius: '5px',
+    width: isMobileView ? '80px' : (isTabletView ? '100px' : '150px'),
+  }),
+};
     return (
       <div>
                  <div className='destdrop'>
@@ -97,16 +136,18 @@ const Kerala = [
         <div className='destdrop-body-title-main' >
         <div className='destdrop-body-title'>Choose From A Range of Destinations:</div>
         
-        <div >
-        <select value={selectedOption} onChange={handleSelectChange} className='destdrop-select'>
-          <option value="destdrop1">All</option>
-          <option value="destdrop2">Karnataka</option>
-          <option value="destdrop3">Kerala</option>
-          <option value="destdrop4">Tamil Nadu</option>
-        </select>
+        <div className='destdrop-select-main' >
+        <Select
+      options={options}
+      value= {selectedOption}
+      onChange={handleSelectChange} 
+      styles={customStyles}
+    />
         </div>
   </div>
-  {selectedOption === 'destdrop1' && (
+  {selectedOption && ( 
+    <div >
+  {selectedOption.value === 'destdrop1' && (
     <div >
           <div className='destdrop-list'>
            <div className='destdrop-list-title'> Karnataka </div>
@@ -122,27 +163,30 @@ const Kerala = [
           </div>
          </div>
         )}
-        {selectedOption === 'destdrop2' && (
+        {selectedOption.value === 'destdrop2' && (
           <div className='destdrop-list'>
             <div className='destdrop-list-title'> Karnataka </div>
             <Destimg slides={karnataka} />
           </div>
         )}
   
-        {selectedOption === 'destdrop3' && (
+        {selectedOption.value === 'destdrop3' && (
           <div  className='destdrop-list'>
            <div className='destdrop-list-title'> Kerala</div>
             <Destimg slides={Kerala} />
           </div>
         )}
   
-        {selectedOption === 'destdrop4' && (
+        {selectedOption.value === 'destdrop4' && (
           <div  className='destdrop-list'>
             <div className='destdrop-list-title'> Tamil Nadu </div>
             <Destimg slides={TamilNadu} />
           </div>
         )}
       </div>
+    
+  )}
+    </div>
       </div>
       
     //   </div>

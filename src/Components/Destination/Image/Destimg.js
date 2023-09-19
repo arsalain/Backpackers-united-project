@@ -41,7 +41,8 @@ const Destimg = ({slides}) => {
               slidesToShow: 2,
               slidesToScroll: 1,
               infinite: true,
-              dots: true
+              dots: true,
+              arrows: false,
             }
           },
           {
@@ -50,7 +51,8 @@ const Destimg = ({slides}) => {
               slidesToShow: 1,
               slidesToScroll: 1,
               infinite: true,
-              dots: true
+              dots: true,
+              arrows: false,
             }
           }
         ]

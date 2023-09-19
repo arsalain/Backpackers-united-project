@@ -14,64 +14,47 @@ import coorg from "../../../Images/destcoorg.jpeg"
 import {FaClock} from "react-icons/fa"
 import {BiRupee} from "react-icons/bi"
 import {ImLocation} from "react-icons/im"
-import {MdKeyboardArrowRight,MdKeyboardArrowLeft} from "react-icons/md"
-import Slider from "react-slick";
+
 import Footer from '../../Nav/Footer/Footer'
+import Destsimilarimg from './Destsimilarimg'
 
 
 
 const Destsimilar = () => {
-    
-  const ArrowLeft = (props) => (
-    <button
-        {...props}
-        className={'dest-sim-prev'}><MdKeyboardArrowLeft style={{color:"black"}}/> </button>
-);
-const ArrowRight = (props) => (
-    <button
-        {...props}
-        className={'dest-sim-next'}><MdKeyboardArrowRight style={{color:"black"}}/> </button>
-)
-const sliderRef = React.useRef<Slider>(null);
-    const settings = {
-        infinite: true,
-        autoplay: true,
-        speed: 500,
-        autoplaySpeed: 2000,
-        pauseOnHover: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        swipeToSlide: true,
-        nextArrow: <ArrowRight />,
-        prevArrow: <ArrowLeft />,
-        responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: true
-              }
-            },
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                initialSlide: 1,
-                dots: true
-              }
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
-            }
-          ]
-      };
+
+const Ddata = [
+  {
+    name:"Nethravathi Trek",
+    Dimg: nethravathi
+  },
+  {
+    name:"Chikmagalur Tour",
+    Dimg: chikmangalur
+  },
+  {
+    name:"Paithalamala Trek",
+    Dimg: Paithalamala
+  },
+  {
+    name:"Dhudsagar Trek",
+    Dimg: dudhsagar
+  },
+  {
+    name:"Dandeli Tour",
+    Dimg: dandeli
+  }
+  ,
+  {
+    name:"Kodachadri Trek",
+    Dimg: kodachadri
+  }
+  ,
+  {
+    name:"Coorg Tour",
+    Dimg: coorg
+  }  
+  
+]
   return (
     <div >
     <div className='dest-sim'>
@@ -127,56 +110,9 @@ const sliderRef = React.useRef<Slider>(null);
       </div>
           <div className='dest-sim-slide'>
           <h1> Plan Your Next Holiday</h1>
-          <Slider {...settings} useRef={sliderRef}>
-            <div className='dest-sim-slide-item'>
-                <img src={nethravathi} className='dest-sim-slide-item-img'></img>
-              <div className='dest-sim-slide-item-title'>
-                  Nethravathi Trek
-              </div>
-            </div >
-            <div className='dest-sim-slide-item'>
-                <img src={chikmangalur} className='dest-sim-slide-item-img'></img>
-              <div className='dest-sim-slide-item-title'>
-                  Chikmagalur Tour
-              </div>
-            </div >
-            <div className='dest-sim-slide-item'>
-                <img src={Paithalamala} className='dest-sim-slide-item-img'></img>
-              <div className='dest-sim-slide-item-title'>
-                  Paithalamala Trek
-              </div>
-            </div >
-            <div className='dest-sim-slide-item'>
-                <img src={gokarna} className='dest-sim-slide-item-img'></img>
-              <div className='dest-sim-slide-item-title'>
-                  Gokarna-Murudeshwara Tour
-              </div>
-            </div >
-            <div className='dest-sim-slide-item'>
-                <img src={dudhsagar} className='dest-sim-slide-item-img'></img>
-              <div className='dest-sim-slide-item-title'>
-                  Dhudsagar Trek
-              </div>
-            </div >
-            <div className='dest-sim-slide-item'>
-                <img src={dandeli} className='dest-sim-slide-item-img'></img>
-              <div className='dest-sim-slide-item-title'>
-                Dandeli Tour
-              </div>
-            </div >
-            <div className='dest-sim-slide-item'>
-                <img src={kodachadri} className='dest-sim-slide-item-img'></img>
-              <div className='dest-sim-slide-item-title'>
-                  kodachadri Trek
-              </div>
-            </div >
-            <div className='dest-sim-slide-item'>
-                <img src={coorg} className='dest-sim-slide-item-img'></img>
-              <div className='dest-sim-slide-item-title'>
-                  Coorg Tour
-              </div>
-            </div >
-          </Slider>
+          <Destsimilarimg  slides={Ddata} />
+         
+  
         </div>
         </div>
         <Footer />

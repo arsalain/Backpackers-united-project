@@ -1,4 +1,6 @@
-
+.partner{
+    font-size: 16px;
+}
 .partner-head{
     background-color:grey;
     width:100%;
@@ -48,11 +50,10 @@
     width: 62.5em;
     margin-left: auto;
     margin-right: auto;
-}
-.partner-form{
+}.partner-form{
     margin-top: 3.125em;
     margin-bottom: 3.125em;
-    width: 31.25em;
+    width: 27em;
     display: flex;
     flex-direction: column;
 }
@@ -60,26 +61,29 @@
     display: flex;
     flex-direction: row;
     padding-top: 1.25em;
+   
 }
 .partner-form-name-icon{
-    font-size: 0.938em;
-    padding-bottom: 0.313em;
+    font-size: 0.6em;
+    padding-bottom: 0.6em;
 }
 .partner-form-title{
     padding-top: 0.188em;
+    width: 10em;
 }
 
 .partner-form-title1{
-    width: auto;
+    width: 10em;
     padding-top: 1.25em;
 
 }
 .partner-form-text-area{
-    padding-left: 1.25em;
+    min-width: 19.5em;
+   max-width: 19.5em;
+   min-height: 4em;
 }
 .partner-form-name input{
     width: 18.75em;
-    margin-left: 4.375em;
     height: 1.563em;
     padding-left: 0.625em;
 }
@@ -89,12 +93,11 @@
     padding-top: 1.25em;
 }
 .partner-form-email-icon{
-    font-size: 0.938em;
-    padding-bottom: 0.313em;
+    font-size: 0.6em;
+    padding-bottom: 0.6em;
 }
 .partner-form-email input{
     width: 18.75em;
-    margin-left: 5.188em;
     height: 1.563em;
     padding-left: 0.625em;
 }
@@ -104,12 +107,11 @@
     padding-top: 1.25em;
 }
 .partner-form-number-icon{
-    font-size: 0.938em;
-    padding-bottom: 0.313em;
+    font-size: 0.6em;
+    padding-bottom: 0.6em;
 }
 .partner-form-number input{
     width: 18.75em;
-    margin-left: 1.875em;
     height: 1.563em;
     padding-left: 0.625em;
 }
@@ -121,7 +123,7 @@
 .partner-image{
     display: flex;
     flex-direction: row;
-    padding-top: 12.5em;
+    padding-top: 5.5em;
     padding-left: 12.5em;
 }
 .partner-form-button{
@@ -135,12 +137,12 @@
     border-radius: 0.313em;
     background-color: #FCB418 ;
     height: 1.875em;
-    width: 30em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 32em;
 }
 @media only screen and (max-width: 480px) {
+    .partner{
+        font-size: 14px;
+    }
     .partner-head{
         background-color:grey;
         width:100%;
@@ -160,25 +162,36 @@
     .partner-form {
         display: flex;
         flex-direction: column;
-        width: 30em;
+        width: 24em;
         margin-left: 1.25em;
         margin-right: 1.25em;
 
+    }
+    .partner-title{
+        font-size: 1.5em;
     }
     .partner-form-name {
         width: auto;
     }
     .partner-form-name input {
-        width: auto;
-        
+        width: 13em;
+        padding-left: 0.4em;
+    }
+    .partner-form-email input {
+        width: 13em;
+        padding-left: 0.4em;
+    }
+    .partner-form-number input {
+        width: 13em;
+        padding-left: 0.4em;
+    }
+    .partner-form-text-area {
+        min-width: 13.5em;
+        max-width: 13.5em;
     }
     .partner-form-but {
-        width: auto;
+        width: 30em;
         margin-right: 1.25em;
-        justify-content: center;
-
-
-
     }
 
     .partner-image {
@@ -186,5 +199,44 @@
         align-items: center;
         margin-left: 1.25em;
         margin-right: 1.25em;
+        padding-top: 0;
+        padding-left: 2.5em;
     }
+}
+@media only screen and  (min-width:500px) and (max-width: 999px) {
+        
+    .partner{
+        font-size: 13px;
+      
+    }
+    .partner-body{
+        width: auto;
+        margin-left: 1.25em;
+        margin-right: 1.25em;
+    }
+    .partner-form-row {
+        width: auto;
+        margin-left:  1.25em;
+        margin-right:  1.25em;
+    }
+    .partner-form {
+        width: 30em;
+        margin-bottom: 0;
+
+    }
+    .partner-form-title {
+            width: 8em; 
+    }
+    .partner-form-title1 {
+        width: 8em; 
+}
+    .partner-form-email input {
+        height: 1.6em;
+    }
+.partner-image {
+        padding-left: 3em;
+}
+.partner-form-but{
+    width: 27em;
+}
 }

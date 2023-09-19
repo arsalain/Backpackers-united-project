@@ -31,9 +31,6 @@ const Kodaikanal = () => {
     const handleTabClick = (tabNumber) => {
       setActiveTab(tabNumber);
     };
-    
-
-
     useEffect(() => {
       // Load the external script
       const script = document.createElement('script');
@@ -51,12 +48,12 @@ const Kodaikanal = () => {
       if (window.logout && window.logout.widget) {
           window.logout.widget.setConfig({
               eventSlug: "kodaikanal-backpacking-tour",
-              placement: "#book-container",
+              placement: "#book-container-kodaikanal",
               customClass: "btn-custom",
               btnId: "logout-bnb",
               downloadBtnId: "logout-download-button",
               enquiryBtnId: "logout-enquiry-button",
-              showEverything: false,
+              showEverything: true,
               onlyButton: false,
               showItineraryButton: true,
               showEnquiryButton: true,
@@ -66,7 +63,6 @@ const Kodaikanal = () => {
           window.logout.widget.init();
       }
   }
-    
 
 
     const handleScroll = () => {
@@ -621,7 +617,7 @@ Duis convallis libero vel varius convallis</div>
             </div>
         </div>
         <Footer />
-      <div id="book-container"></div>;
+        <div id="book-container-kodaikanal"></div>;
         </div>
         
     

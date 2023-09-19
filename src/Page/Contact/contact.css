@@ -1,77 +1,82 @@
-
+.contact{
+    font-size: 16px;
+}
 .contact-header{
     background-color: lightgrey;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    height: 300px;
+    height: 18.75em;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .contact-header-title{
     display: flex;
-    padding-top: 50px;
-    font-size: 50px;
+    font-size: 3.125em;
     
 }
 .contact-body{
-    width: 1200px;
+    width: 75em;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 3.125em;
 }
 .contact-body-left{
-    width: 600px;
-    padding-left: 50px;
+    width: 37.5em;
+    padding-left: 3.125em;
 }
 .contact-body-head{
     font-weight: bold;
 }
 .contact-body-head1{
-    height: 2px;
-    width: 100px;
+    height: 0.125em;
+    width: 6.25em;
     background: black;
 }
 .contact-body-email{
-    padding-top: 20px;
+    padding-top: 1.25em;
     float: left;
     font-weight: bold;
 }
 .contact-body-email1{
 color: #FCB418;
-padding-top: 20px;
+padding-top: 1.25em;
 }
 .contact-body-phone{
-    padding-top: 20px;
+    padding-top: 1.25em;
     float:left;
     font-weight: bold;
 }
 .contact-body-phone1{
-    padding-top: 20px;
+    padding-top: 1.25em;
 }
 .contact-body-timing{
     float: left;
     font-weight: bold;
-    padding-top: 20px;
+    padding-top: 1.25em;
 }
 .contact-body-timing1{
-    padding-top: 20px;
-    margin-left: 10px;
+    padding-top: 1.25em;
+    margin-left: 0.625em;
 }
 .contact-body-feed{
-    padding-top: 20px;
+    padding-top: 1.25em;
 }
 .contact-body-email2{
     color: #FCB418;
 }
+.contact-body-img{
+    width: 28.125em;
+    height: 18.75em;
+}
 .contact-form{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 500px;
+    margin-top: 3.125em;
+    margin-bottom: 3.125em;
+    width: 27em;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -83,64 +88,60 @@ padding-top: 20px;
 .contact-form-name{
     display: flex;
     flex-direction: row;
-    padding-top: 20px;
+    padding-top: 1.25em;
 }
 .contact-form-name-icon{
-    font-size: 15px;
-    padding-bottom: 5px;
+    font-size: 0.638em;
+    padding-bottom: 0.613em;
 }
 .contact-form-title{
-    padding-top: 3px;
+    padding-top: 0.188em;
+    width: 10em ;
 }
 .contact-form-name input{
-    width: 300px;
-    margin-left: 70px;
-    height: 25px;
-    padding-left: 10px;
+    width: 18.75em;
+    height: 1.563em;
+    padding-left: 0.625em;
 }
 .contact-form-email{
     display: flex;
     flex-direction: row;
-    padding-top: 20px;
+    padding-top: 1.25em;
 }
 .contact-form-email-icon{
-    font-size: 15px;
-    padding-bottom: 5px;
+    font-size: 0.638em;
+    padding-bottom: 0.613em;
 }
 .contact-form-email input{
-    width: 300px;
-    margin-left: 83px;
-    height: 25px;
-    padding-left: 10px;
+    width: 18.75em;
+    height: 1.563em;
+    padding-left: 0.625em;
 }
 .contact-form-number{
     display: flex;
     flex-direction: row;
-    padding-top: 20px;
+    padding-top: 1.25em;
 }
 .contact-form-number-icon{
-    font-size: 15px;
-    padding-bottom: 5px;
+    font-size: 0.638em;
+    padding-bottom: 0.613em;
 }
 .contact-form-number input{
-    width: 300px;
-    margin-left: 30px;
-    height: 25px;
-    padding-left: 10px;
+    width: 18.75em;
+    height: 1.563em;
+    padding-left: 0.625em;
 }
 .contact-form-area{
     display: flex;
     flex-direction: row;
-    padding-top: 20px;
-    padding-left: 65px;
+    padding-top: 1.25em;
 }
 .contact-form-area textarea{
-    min-width: 310px;
-    max-width: 310px;
-    margin-left: 100px;
-    height: 105px;
-    margin-bottom: 20px;
-    margin-right: 65px;
+    min-width: 19.375em;
+    max-width: 19.375em;
+    /* margin-left: 6.25em; */
+    height: 6.563em;
+    margin-bottom: 1.25em;
 }
 
 .contatc-form-button{
@@ -148,23 +149,125 @@ padding-top: 20px;
     justify-content: center;
 }
 .contact-form-but{
-    margin-top: 30px;
-    margin-bottom: 40px;
+    margin-top: 1.875em;
+    margin-bottom: 2.5em;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.313em;
     background-color: #FCB418 ;
-    height: 30px;
-    width: 480px;
+    height: 1.875em;
+    width: 32em;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .contact-title{
-    font-size: 30px;
+    font-size: 1.875em;
     color: #FCB418;
     font-family:fantasy;
-    padding-bottom: 50px;
+    padding-bottom: 3.125em;
 }
 @media only screen and (max-width: 480px) {
+    .contact{
+        font-size: 14px;
+    }
+    .contact-header{
+        height: 100vh;
+        width: 100vw;
+    }
+    .contact-header-title{
+        font-size: 2.5em;
+    }
+    .contact-body{
+        width: auto;
+        flex-direction: column;
+        padding-top: 1.25em;
+    }
+    .contact-body-left{
+        padding: 1.25em 1.25em;
+        width: auto;
+    }
+    .contact-body-email{
+        padding-top: 0;
+    }
+    .contact-body-email1{
+        padding-top: 0;
+    }
+    .contact-body-phone{
+        padding-top: 0;
+    }
+    .contact-body-phone1{
+        padding-top: 0;
+    }
+    .contact-body-timing{
+        padding-top: 0;
+    }
+    .contact-body-timing1{
+        padding-top: 0;
+    }
+    .contact-body-feed{
+            padding-top: 0;
+    }
+    .contact-body-right{
+        padding: 0 1.25em;
+    }
+    .contact-body-img{
+        width: 24em;
+        height: 18.75em;
+    }
+    .contact-form{
+        width: auto;
+    }
+    .contact-title{
+        padding-bottom: 1em;
+      
+    }
+    .contact-form{
+        width: auto;
+        margin-bottom: 0;
+        padding: 0 1.25em;
+    }
+.contact-form-name input {
+    width: 15em;
+    padding-left: 0.4em;
 }
-
+.contact-form-email input{
+    width: 15em;
+    padding-left: 0.4em;
+}
+.contact-form-number input {
+    width: 15em;
+    padding-left: 0.4em;
+}
+.contact-form-area textarea {
+    min-width: 15.5em;
+    max-width: 15.5em;
+    margin-bottom: 1.25em;
+}
+.contact-form-but{
+    margin: 0;
+    width: 27em;
+}
+}
+@media only screen and  (min-width:500px) and (max-width: 999px) {
+        
+    .contact{
+        font-size: 13px;
+      
+    }
+    .contact-body{
+        width: auto;
+        padding: 1.25em;
+    }
+    .contact-body-left{
+        padding-left: 0;
+    }
+    .contact-title{
+        padding-bottom: 0.625em;
+    }
+    .contact-form{
+        margin-top: 0;
+    }
+    .contact-form-but{
+        width: 30em;
+    }
+}
