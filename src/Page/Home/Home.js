@@ -7,6 +7,7 @@ import Points from "../../Components/Home/Points/Points.js"
 import Book from "../../Components/Home/Book/Book.js"
 import Testimonials from "../../Components/Home/Testimonials/Testimonials.js"
 import Footer from "../../Components/Nav/Footer/Footer.js"
+import Stickywidget from '../../Components/Stickywidget/Stickywidget.js'
 
 const Home = () => {
   const data = [
@@ -51,6 +52,7 @@ const Home = () => {
       <Book />
       <Testimonials slides={data}/>
       <Footer /> 
+      <Stickywidget />
     </div>
   )
 }

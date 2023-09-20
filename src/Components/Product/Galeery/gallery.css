@@ -12,6 +12,7 @@
     
    
 }
+
 .product-gal-body-container:hover > .product-gal-body-card{
    cursor: pointer;
    transform: rotateY(180deg);

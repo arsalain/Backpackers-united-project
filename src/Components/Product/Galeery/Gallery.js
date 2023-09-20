@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import jeepride from "../../../Images/kudremukhjeep.jpg"
-import {BsFillArrowLeftCircleFill,BsFillArrowRightCircleFill} from "react-icons/bs"
+import {PiNumberCircleOneBold} from "react-icons/pi"
 import Slider from "react-slick"
 import "./gallery.css"
 const Gallery = ({slides}) => {

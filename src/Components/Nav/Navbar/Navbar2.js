@@ -61,16 +61,23 @@ const Navbar2 = () =>{
               </Link>
               <div className="n-right-dropdown">
                 <div className="n-right-dropdown-head" >
+                  <div className="n-right-south">
+                    <div className="n-right-south-name">South Indian Treks</div>
                   <div className="n-right-dropdown-karnataka-summer" >
-                  <div className="n-right-dropdown-karnataka-summer-title" >Short Treks</div> 
+                  <div className="n-right-dropdown-karnataka-summer-title" >Karnataka</div> 
+                    <div className="n-short"  >
+              <Link to="/trek/kudremukha" className="n-short-link" >
+              Kudremukha
+              </Link>
+            </div>
             <div className="n-short" >
               <Link to="/trek/nethravathi" className="n-short-link" >
                 Nethravathi
               </Link>
             </div>
-            <div className="n-short">
-              <Link to="/trek/paithalamala" className="n-short-link" >
-               Paithalamala 
+            <div className="n-short" >
+              <Link to="/trek/kodachadri" className="n-short-link" >
+              Kodachadri
               </Link>
             </div>
             <div className="n-short">
@@ -78,12 +85,11 @@ const Navbar2 = () =>{
               Ethina Bhuja 
               </Link>
             </div>
-            <div className="n-short">
-              <Link to="/trek/skandagiri" className="n-short-link" >
-              Skandagiri 
+            <div className="n-short" >
+              <Link to="/trek/tadiandamol" className="n-short-link">
+              Tadiandamol
               </Link>
             </div>
-            
             <div className="n-short">
               <Link to="/trek/gokarna" className="n-short-link">
                 Gokarna
@@ -94,28 +100,30 @@ const Navbar2 = () =>{
                Huttari Betta 
               </Link>
             </div>
-
-            </div>
-            <div className="n-right-dropdown-karnataka-summer" >
-                  <div className="n-right-dropdown-karnataka-summer-title" > Long Treks</div> 
-            <div className="n-short"  >
-              <Link to="/trek/kudremukha" className="n-short-link" >
-              Kudremukha
+            <div className="n-short" >
+              <Link to="/trek/bandaje"className="n-short-link" >
+              Bandaje Falls
               </Link>
             </div>
             <div className="n-short" >
               <Link to="/trek/kumara" className="n-short-link" >
+             Ermai
+              </Link>
+            </div>
+            <div className="n-short">
+              <Link to="/trek/skandagiri" className="n-short-link" >
+              Skandagiri 
+              </Link>
+            </div>
+            </div>
+            </div>
+            <div className="n-vertical-line"></div>
+           
+<div className="n-right-dropdown-south-kerala">
+            <div className="n-right-dropdown-karnataka-summer" >
+          <div className="n-short" >
+              <Link to="/trek/kumara" className="n-short-link" >
               Kumara Parvatha
-              </Link>
-            </div>
-            <div className="n-short" >
-              <Link to="/trek/tadiandamol" className="n-short-link">
-              Tadiandamol
-              </Link>
-            </div>
-            <div className="n-short" >
-              <Link to="/trek/bramagiri" className="n-short-link">
-              Bramagiri
               </Link>
             </div>
             <div className="n-short" >
@@ -130,33 +138,42 @@ const Navbar2 = () =>{
             </div>
             </div>
             <div className="n-right-dropdown-karnataka-summer" >
-                  <div className="n-right-dropdown-karnataka-summer-title" >Waterfall Treks</div> 
-            <div className="n-short" >
-              <Link to="/trek/bandaje"className="n-short-link" >
-              Bandaje Falls
+            <div className="n-right-dropdown-karnataka-summer-title" > Kerala</div> 
+                  <div className="n-short">
+              <Link to="/trek/paithalamala" className="n-short-link" >
+               Paithalamala 
               </Link>
             </div>
+         
+        
             <div className="n-short" >
-              <Link to="/trek/kodachadri" className="n-short-link" >
-              Kodachadri
+              <Link to="/trek/bramagiri" className="n-short-link">
+              Brahmagiri
               </Link>
             </div>
+       
+</div>
+<div className="n-right-dropdown-karnataka-summer" >
+                  <div className="n-right-dropdown-karnataka-summer-title" >TamilNadu</div> 
+         
+          
             <div className="n-short" >
               <Link to="/trek/dudhsagar" className="n-short-link" >
-              Dudhsagar Trek and Dandeli
+              Kotagiri
               </Link>
             </div>
             <div  className="n-short" >
               <Link to="/trek/bilikal" className="n-short-link">
-              Bilikal
+              Vattakanal
               </Link>
             </div>
             <div className="n-short" >
               <Link to="/trek/arisinagundi" className="n-short-link" >
-              Arisinagundi Falls
+              Agasthyamalai
               </Link>
             </div>
             
+            </div>
             </div>
             </div>
             </div>
@@ -173,123 +190,124 @@ const Navbar2 = () =>{
                 <div className={toggleState === 2 ? "n-right-dropdown-tabs active-n-right-dropdown-tabs": "n-right-dropdown-tabs" } onClick={()=> toggleTab(2)}> International
                 </div>
                 </div>
+                <div className="n-right-dropdown-head" >
                 <div className={toggleState === 1 ? "n-right-dropdown-body active-n-right-dropdown-body": "n-right-dropdown-body" }>
                   <div className="n-right-dropdown-karnataka-summer" >
                   <div className="n-right-dropdown-karnataka-summer-title" >Karnataka</div> 
           
-            <div >
+            <div className="n-short">
               <Link to="/tour/chikmagalur" style={{ textDecoration: 'none' , color: "black"}} >
                 Chikmagalur
               </Link>
             </div>
-            <div >
+            <div className="n-short">
               <Link to="/tour/coorg" style={{ textDecoration: 'none' , color: "black"}} >
               Coorg
               </Link>
             </div>
-            <div >
+            <div className="n-short">
               <Link to="/tour/gokarnadandeli" style={{ textDecoration: 'none' , color: "black"}} >
               Gokarna Dandeli
               </Link>
             </div>
-            <div >
+            <div className="n-short">
               <Link to="/tour/gokarnamuru" style={{ textDecoration: 'none' , color: "black"}} >
               Gokarna-Murudeshwara
               </Link>
             </div>  
             
-            <div >
+            <div className="n-short">
               <Link to="/tour/hampi" style={{ textDecoration: 'none' , color: "black"}} >
               Hampi
               </Link>
             </div>
-            <div  >
+            <div  className="n-short">
               <Link to="/tour/coorgmysore/3days-2nights" style={{ textDecoration: 'none' , color: "black"}} >
               Coorg - Mysore Tour
               </Link>
             </div>
-
+            <div className="n-right-dropdown-karnataka-summer1" >
+            <div className="n-right-dropdown-karnataka-summer-title" >Goa</div> 
+            <div className="n-short" >
+              <Link to="/tour/goa/3days-2nights" style={{ textDecoration: 'none' , color: "black"}} >
+              Goa 
+              </Link>
             </div>
-            <div className="n-right-dropdown-karnataka-summer" >
+           </div>
+            </div>
+            <div className="n-right-dropdown-kerala" >
                   <div className="n-right-dropdown-karnataka-summer-title" >Kerala</div> 
-            <div  >
+            <div className="n-short" >
               <Link to="/tour/wayanad" style={{ textDecoration: 'none' , color: "black"}} >
               Wayanad
               </Link>
             </div>
-            <div >
+            <div className="n-short">
               <Link to="/tour/munar" style={{ textDecoration: 'none' , color: "black"}} >
               Munnar
               </Link>
             </div>
-            <div >
+            <div className="n-short">
               <Link to="/tour/munar/3days-2nights" style={{ textDecoration: 'none' , color: "black"}} >
               Munnar Allepy 
               </Link>
             </div>
-            </div>
-            <div className="n-right-dropdown-karnataka-summer" >
+            <div className="n-right-dropdown-karnataka-summer1" >
                   <div className="n-right-dropdown-karnataka-summer-title" >TamilNadu</div> 
-            <div  >
+            <div className="n-short" >
               <Link to="/tour/ooty" style={{ textDecoration: 'none' , color: "black"}} >
               Ooty 
               </Link>
             </div>
-            <div >
+            <div className="n-short" >
               <Link to="/tour/kodaikanal" style={{ textDecoration: 'none' , color: "black"}} >
               Kodaikanal
               </Link>
             </div>
-            <div >
+            <div className="n-short" >
               <Link to="/tour/pondicherry" style={{ textDecoration: 'none' , color: "black"}} >
               Pondicherry
               </Link>
             </div>
             
             </div>
-            <div className="n-right-dropdown-karnataka-summer" >
-                  <div className="n-right-dropdown-karnataka-summer-title" >Goa</div> 
-            <div  >
-              <Link to="/tour/goa/3days-2nights" style={{ textDecoration: 'none' , color: "black"}} >
-              Goa 
-              </Link>
             </div>
+
+        
+              
            
-           
-            
-            </div>
             </div>
             <div className={toggleState === 2 ? "n-right-dropdown-body active-n-right-dropdown-body": "n-right-dropdown-body" }>
             <div className="n-right-dropdown-karnataka-summer" >
                   <div className="n-right-dropdown-karnataka-summer-title" >Thailand</div> 
           
-            <div >
+            <div className="n-short">
               <Link to="/internationaltour/bangkok-pattaya" style={{ textDecoration: 'none' , color: "black"}} >
               Bangkok - Pattaya - Phuket
               </Link>
             </div>
-            <div >
+            <div className="n-short" >
               <Link to="/internationaltour/phuket-krabi/6days-5nights" style={{ textDecoration: 'none' , color: "black"}} >
               Phuket - Krabi Tour
               </Link>
             </div>
-            <div >
+            <div className="n-short" >
               <Link to="/internationaltour/pattaya-phuket" style={{ textDecoration: 'none' , color: "black"}} >
               Pattaya - Phuket
               </Link>
             </div>
-            <div >
+            <div className="n-short">
               <Link to="/internationaltour/phuket-phi" style={{ textDecoration: 'none' , color: "black"}} >
               Phuket Phi Phi Island
               </Link>
             </div>
             
-            <div >
+            <div className="n-short" >
               <Link to="/internationaltour/best-of-bangkok" style={{ textDecoration: 'none' , color: "black"}} >
               Best of Bangakok
               </Link>
             </div>
-            <div  >
+            <div className="n-short"  >
               <Link to="/internationaltour/bangkok-temple-pattaya-coral-island" style={{ textDecoration: 'none' , color: "black"}} >
               Bangkok Temple Tour - Pattaya Coral Island
               </Link>
@@ -303,6 +321,7 @@ const Navbar2 = () =>{
               Best of Vietnam
               </Link>
             </div>  
+            </div>
             </div>
             </div>
             </div>

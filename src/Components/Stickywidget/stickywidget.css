@@ -1,0 +1,102 @@
+.widget-icons-body{
+    position: fixed;
+    top:30%;
+     right:0%;
+     /* width: 200px; */
+     display: flex;
+     flex-direction:column;
+  }
+  .widget-icons
+  {  
+      text-decoration: none;
+      text-transform: uppercase ;
+      /* padding: 10px; */
+      width: 9em;
+      height: 2.5em;
+      font-size: 22px;
+      font-family:'Oswald',sans-serif;
+      margin:2px;
+      text-align: right;
+      border-radius: 20px 0px 0px 20px;
+      transform: translate(130px,120px);
+      background-color: white;
+  }
+  
+  .widget-whatsappicon{
+      /* padding-top: 0.5em; */
+     
+  }
+  .widget-WhatsApp 
+  {
+   color: green;
+   margin-top: 0.2em;
+   margin-left: 0.5em;
+   font-size: 1.25em;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .widget-icons1
+  {  
+      text-decoration: none;
+      text-transform: uppercase ;
+      /* padding: 10px; */
+      width: 9em;
+      height: 2.5em;
+      font-size: 22px;
+      font-family:'Oswald',sans-serif;
+      margin:2px;
+      text-align: right;
+      border-radius: 20px 0px 0px 20px;
+      transform: translate(130px,120px);
+      background-color: white;
+  }
+  .widget-Phone
+  {
+    color:blue;
+    margin-top: 0.2em;
+   margin-left: 0.5em;
+   font-size: 1.25em;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .widget-icons2
+  {  
+      text-decoration: none;
+      text-transform: uppercase ;
+      /* padding: 10px; */
+      width: 9em;
+      height: 2.5em;
+      font-size: 22px;
+      font-family:'Oswald',sans-serif;
+      margin:2px;
+      text-align: right;
+      border-radius: 20px 0px 0px 20px;
+      transform: translate(130px,120px);
+      background-color: white;
+  }
+  .widget-Instagram
+  {
+    color: #dd2a7b;
+    margin-top: 0.3em;
+   margin-left: 0.5em;
+   font-size: 1.25em;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }

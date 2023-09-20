@@ -3,11 +3,12 @@ import "../TrekPages/trekpage.css"
 import Navbar2 from '../../Components/Nav/Navbar/Navbar2'
 import {LuClock9} from "react-icons/lu"
 import {GiLevelThree} from "react-icons/gi"
+import {PiNumberCircleOneBold} from "react-icons/pi"
 import {IoMdArrowDropdown,IoMdArrowDropup} from "react-icons/io"
 import {FaLocationDot} from "react-icons/fa6"
 import {TbPointFilled,TbPoint} from "react-icons/tb"
 import kudremukh from "../../Images/Kudremukha.png"
-import kud from "../../Image/kudremukhmain.jpeg"
+import goa from "../../Image/goa.jpg"
 import stay from "../../Images/satishmullodistay.jpg"
 import KudremukhSight from "../../Images/KudremukhSight.jpg"
 import jeepride from "../../Images/kudremukhjeep.jpg"
@@ -163,7 +164,7 @@ const Goa3 = () => {
     <div >
     
     <div className='product-img'>
-        <img src={kud} className='product-img-main' />
+        <img src={goa} className='product-img-main' />
       <div className='product-img-body'>
         <Navbar2 />
         <div className='product-title-body' >
@@ -612,6 +613,7 @@ Duis convallis libero vel varius convallis</div>
               Goa Inspiration
               </div>
               <div className='similar-intro-line'></div>
+              <div ><PiNumberCircleOneBold /></div>
               <div className='similar-intro-para'>Everyone likes to travel in their own way and we brace it but 
                 Travel enriches the mind and educates us far beyond any textbook or 
                 travel guide.See below some suggestions we have crafted for you.
