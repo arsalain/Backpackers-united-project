@@ -19,7 +19,7 @@
 }
 .test-name {
     font-size: 1.875em;
-    padding-top: 2.5em;
+    padding-top: 1em;
     color: #FCB418;
     font-family: "Mansalva";
     font-weight: bold;
@@ -34,21 +34,33 @@
     font-weight: bold;
    
 }
+.test-dot-main{
+    padding-top: 3em;
+    padding-left: 0.3em;
+    gap: 1.25em;
+    display: flex;
+    flex-direction: row;
+}
+.test-dot{
+    color: lightgrey;
+}
+.test-dot-active{
+    color: black;
+}
+.test-but-icon{
+    font-size: 0.6em;
+}
 .test-right-main{
     display: flex;
     flex-direction: row;
 }
 .test-right {
     position: relative;
- 
-    /* height: 200px; */
 }
 .test-card{
     width: 34.375em;
     display: flex;
     flex-direction: column;
-   
-    /* position: absolute; */
     background: white;
     border-radius: 1.25em;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -85,7 +97,7 @@
 }
 .test-card1{
     width: 34.375em;
-    height: 16.875em;
+    height: 18.875em;
     display: flex;
     flex-direction: column;
     border-radius: 1.25em;
@@ -93,11 +105,10 @@
     z-index: -1;
      left: 2.5em;
      top: 3em;
-    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
     border: 0.063em solid rgb(220, 213, 213);
 }
 .text-card1-name{
-    padding-top: 10.525em;
+    padding-top: 12em;
     padding-left: 1.475em;
     font-size: 1.25em;
     font-weight: bold;
@@ -129,6 +140,8 @@
         padding-left: 1.25em;
         padding-right: 1.25em;
         padding-bottom: 5em;
+        padding-top: 2em;
+        width: auto;
     }
     .test-title{
         font-size: 2.3em;
@@ -161,11 +174,11 @@
     }
     .test-card1{
         width: 23em;
-        height: 21em;
+        height: 25em;
     }
     .text-card1-name{
         font-size: 1.2em;
-        padding-top: 14.8em;
+        padding-top: 18.2em;
         padding-left: 1em;
     }
     .text-card1-name1 {
@@ -174,6 +187,10 @@
     }
     .test-arrows{
         padding-left: 1.2em;
+    }
+    .test-dot-main{
+        justify-content: center;
+        padding-top: 1em;
     }
 }
 @media only screen and  (min-width:500px) and (max-width: 900px) {
@@ -185,5 +202,8 @@
         }
         .test-right-main {
             padding-left: 1em;
+        }
+        .test-dot-main{
+            padding-top: 1.5em;
         }
 }

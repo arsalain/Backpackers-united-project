@@ -12,7 +12,7 @@ const Book = () =>{
             <div className="b-left">
         <div className="b-left1">
             <div className="b-left-head">
-            <div className="b-name">Easy and Fast</div>
+            <div className="b-name">How Do I Book ?</div>
             <div className="b-title">Book Your Next Trip In </div>
             <div className="b-title1">3 Easy Steps</div>
             </div>

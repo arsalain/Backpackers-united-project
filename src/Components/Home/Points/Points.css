@@ -22,7 +22,7 @@
         height: 3.75em;
         width: 3.75em;
         border-radius: 50%;
-        background-color: rgb(220, 171, 12);
+        background-color: #FCB418;
         margin-top: 1.25em;
         display: flex;
         align-items: center;
@@ -35,7 +35,7 @@
         float: left;
         height: 12.5em;
         width: 8.75em;
-        background-color: rgb(45, 44, 44);
+        background-color: black;
         margin-top: -1.25em;
         margin-left: -5em;
         border-radius: 0.625em;
@@ -46,7 +46,7 @@
     .p-num-log {
         font-size: 1.5em;
      
-        color: rgb(214, 162, 48);
+        color:#FCB418;
         padding-top: 1.25em;
         justify-content: center;
         display:flex ;
@@ -55,7 +55,7 @@
     .p-num-icon-dest {
         padding-top: 0.55em;
         font-size: 0.663em;
-        color: rgb(214, 162, 48);
+        color: #FCB418;
     }
   
   
@@ -63,7 +63,7 @@
         float: right;
         height: 5.625em;
         width: 11.25em;
-        background-color: rgb(45, 44, 44);
+        background-color: black;
         margin-right: -3.125em;
         margin-top: 23.75em;
         border-radius: 0.625em;
@@ -71,15 +71,15 @@
         flex-direction: column;
     }
     .p-card-nam-dest{
-        font-size: 1.5em;
-        color: rgb(214, 162, 48);
+        font-size: 1.3em;
+        color: #FCB418;
         display: flex;
         flex-direction: row;
         padding-left: 0.063em;
     }
     .p-card-nam1{
         font-size: 1.5em;
-        color: rgb(214, 162, 48);
+        color: #FCB418;
         display: flex;
         flex-direction: row;
         padding-left: 0.83em;
@@ -87,29 +87,29 @@
     }
     .p-card-nam2{
         font-size: 1.5em;
-        color: rgb(214, 162, 48);
+        color: #FCB418;
         padding-left: 1.8em;
     }
     .p-card-nam-emp{
-        font-size: 1.5em;
-        color: rgb(214, 162, 48);
+        font-size: 1.3em;
+        color: #FCB418;
         padding-left: 1.8em;
         padding-top: -1em;
     }
  
     .p-num-icon {
         font-size: 1.3em;
-        color: rgb(214, 162, 48);
+        color: #FCB418;;
     }  
      .p-num-icon1 {
         padding-top: 0.55em;
      
         font-size: 0.63em;
-        color: rgb(214, 162, 48);
+        color: #FCB418;
     }
     .p-num-log1 {
         padding-left: 0.5em;
-        color: rgb(214, 162, 48);
+        color: #FCB418;;
         justify-content: center;
         display:flex ;
         font-weight: bolder;
@@ -155,7 +155,7 @@
     float: left;
     height: 10.625em;
     width: 9.375em;
-    background-color: rgb(45, 44, 44);
+    background-color: black;
     margin-left: 3.125em;
     border-radius: 0.625em;
     display: flex;
@@ -163,7 +163,7 @@
 }
 .p-num {
     font-size: 2.188em;
-    color: rgb(214, 162, 48);
+    color: #FCB418;;
     padding-top: 0.8em;
     padding-left: 0.5em;
     font-weight: bolder;
@@ -171,17 +171,17 @@
 .p-num-right-icon {
     padding-left: 0.1em;
     font-size: 0.6em;
-    color: rgb(214, 162, 48);
+    color: #FCB418;;
 }
 .p-card-name{
     font-size: 1.25em;
-    color: rgb(214, 162, 48);
+    color: #FCB418;;
     padding-top: 1em;
     padding-left: 0.938em;
 }
 .p-card-name1{
     font-size: 1.25em;
-    color: rgb(214, 162, 48);
+    color: #FCB418;;
     padding-left: 0.938em;
 }
 @media only screen and  (min-width:500px) and (max-width: 999px) {

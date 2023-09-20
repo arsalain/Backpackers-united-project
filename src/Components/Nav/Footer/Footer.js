@@ -7,6 +7,7 @@ import {Link} from "react-router-dom";
 import bplog from "../../../Images/bplogo.jpg"
 const Footer = () => {
 return (
+  <div className="f-body-main" >
     <div className="f-body">
 
         <div className="f-head">
@@ -70,9 +71,10 @@ return (
                 
               
       </div>
-      <div className="f-end"> All rights reserved@backpackersunited.in</div>
+     
         </div>
-
+        <div className="f-end"> All rights reserved@backpackersunited.in</div>
+        </div>
 )
     
 }

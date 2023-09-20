@@ -119,7 +119,7 @@ const Tour = () => {
             imgSrc: Trekhome,
             name: "Gokarna-Murudeshwara Tour",
             link: "/tour/gokarnamuru",
-            link: "/trek/kumara",
+            link: "/tour/gokarnamuru",
             state: "Karnataka",
             day: "2D/1N",
             date: "July 21,2023(Friday)",
@@ -151,7 +151,7 @@ const Tour = () => {
         {
           id:7,
           imgSrc: Trekhome,
-          name: "Chikmagalur Trek",
+          name: "Chikmagalur Tour",
           link: "/tour/chikmagalur",
           state: "Karnataka",
           day: "2D/1N",

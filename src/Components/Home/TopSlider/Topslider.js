@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Slider from "react-slick";
 import {MdKeyboardArrowRight,MdKeyboardArrowLeft} from "react-icons/md"
 import wayanad from "../../../Images/destwayanad.jpg"
@@ -13,6 +13,7 @@ import dandeli from "../../../Images/dandeli.jpg"
 import chikmangalur from "../../../Images/chikmangalur.jpg"
 import coorg from "../../../Images/destcoorg.jpeg"
 import "./topslider.css"
+import Topsliderimg from './Topsliderimg';
 const Topslider = () => {
     const ArrowLeft = (props) => (
         <button
@@ -66,75 +67,62 @@ const Topslider = () => {
       <div className='topslide-title'>Upcoming  Weekend Treks and Tours</div>
       <Slider {...settings} useRef={sliderRef}>
         <div className='topslide-contain'>
-            <img src={nethravathi} className='topslide-contain-img' /> 
+            <Topsliderimg src={nethravathi}  /> 
           <div className='topslide-contain-name'>Nethravathi</div>
-          <div className='topslide-contain-name1'>Trek</div>
         </div>
         <div className='topslide-contain'>
-            <img src={wayanad} className='topslide-contain-img' /> 
+            <Topsliderimg src={wayanad}  /> 
           <div className='topslide-contain-name'>Wayanad</div>
-          <div className='topslide-contain-name1'>Tour(3D/2N)</div>
         </div>
         <div className='topslide-contain'>
-            <img src={gokarna} className='topslide-contain-img' /> 
+            <Topsliderimg src={gokarna} /> 
           <div className='topslide-contain-name'>Kudremukha</div>
-          <div className='topslide-contain-name1'>Trek</div>
         </div>
         <div className='topslide-contain'>
-            <img src={Kudremukh} className='topslide-contain-img' /> 
+            <Topsliderimg src={Kudremukh}  /> 
           <div className='topslide-contain-name'>Gokarna-Dandeli</div>
-          <div className='topslide-contain-name1'>Tour(3D/2N)</div>
         </div>
       
         <div className='topslide-contain'>
-            <img src={Paithalamala} className='topslide-contain-img' /> 
+            <Topsliderimg src={Paithalamala}  /> 
           <div className='topslide-contain-name'>Paithalamala</div>
-          <div className='topslide-contain-name1'>Trek</div>
         </div>
         <div className='topslide-contain'>
-            <img src={coorg} className='topslide-contain-img' /> 
+            <Topsliderimg src={Paithalamala}  /> 
           <div className='topslide-contain-name'>Coorg</div>
-          <div className='topslide-contain-name1'>Tour(3D/2N)</div>
         </div>
         <div className='topslide-contain'>
-            <img src={kodaikanol} className='topslide-contain-img' /> 
+            <Topsliderimg src={kodaikanol}  /> 
           <div className='topslide-contain-name'>Kodachadri</div>
-          <div className='topslide-contain-name1'>Trek</div>
         </div>
         <div className='topslide-contain'>
-            <img src={dudhsagar} className='topslide-contain-img' /> 
+            <Topsliderimg src={dudhsagar}  /> 
           <div className='topslide-contain-name'>Kodaikanol</div>
-          <div className='topslide-contain-name1'>Tour(3D/2N)</div>
         </div>
         <div className='topslide-contain'>
-            <img src={chikmangalur} className='topslide-contain-img' /> 
+            <Topsliderimg src={chikmangalur}  /> 
           <div className='topslide-contain-name'>Bandje</div>
-          <div className='topslide-contain-name1'>Trek</div>
         </div>
         <div className='topslide-contain'>
-            <img src={kodachadri} className='topslide-contain-img' /> 
+            <Topsliderimg src={kodachadri}  /> 
           <div className='topslide-contain-name'>Chikmagulur</div>
-          <div className='topslide-contain-name1'>Tour(3D/2N)</div>
         </div>
         <div className='topslide-contain'>
-            <img src={chikmangalur} className='topslide-contain-img' /> 
+            <Topsliderimg src={chikmangalur}  /> 
           <div className='topslide-contain-name'>Gokarna Beach</div>
-          <div className='topslide-contain-name1'>Trek</div>
         </div>
         <div className='topslide-contain'>
-            <img src={kodachadri} className='topslide-contain-img' /> 
+            <Topsliderimg src={kodachadri}  /> 
           <div className='topslide-contain-name'>Goa</div>
-          <div className='topslide-contain-name1'>Tour(3D/2N)</div>
+          {/* <div className='topslide-contain-name1'>Tour(3D/2N)</div> */}
         </div>
         <div className='topslide-contain'>
-            <img src={kodachadri} className='topslide-contain-img' /> 
+            <Topsliderimg src={kodachadri}  /> 
           <div className='topslide-contain-name'>Kumara Parvatha</div>
-          <div className='topslide-contain-name1'>Trek</div>
         </div>
         <div className='topslide-contain'>
-            <img src={kodachadri} className='topslide-contain-img' /> 
+            <Topsliderimg src={kodachadri}  /> 
           <div className='topslide-contain-name'>Ooty</div>
-          <div className='topslide-contain-name1'>Tour(3D/2N)</div>
         </div>
       </Slider>
     </div>

@@ -47,17 +47,17 @@ const About = () => {
 
                     </div>
                     <hr ></hr>
-                    <div className='about-card-para'>Govind is a visionary travelpreneur with an experience of leading 
-                        more than 200 community trips. He’s fond of all kinds of voyages, 
-                        yet his favourite are motorbiking expeditions, hence he accounts for
-                         30000kms of extreme rides.He can hold a conversation around business
-                         ,human values and almost everything one can think of. The man knows 
-                         how to get down to work and party, equally well.</div>
+                    <div className='about-card-para'>Habeeb ul Haq, our visionary Founder and CEO, 
+                    is not only the driving force behind Backpackers United but also an accomplished 
+                    mountaineer. With a deep-seated passion for travel and a relentless dedication 
+                    to making adventure accessible, Habeeb has scaled some of the world's most 
+                    challenging peaks. His unwavering commitment to sustainable and responsible 
+                    travel sets the tone for our entire team.</div>
                 </div>
                 <div className='about-card'>
                     <img src={bh} className='about-card-img'></img>
-                    <div className='about-card-name'>Habeeb ul haq</div>
-                    <div className='about-card-desig'>CEO,Founder</div>
+                    <div className='about-card-name'> Mohammed Ateeq </div>
+                    <div className='about-card-desig'>SEO and Digital Marketing</div>
                     <div className='about-card-logo'>
                     <img src={link} className='about-card-logo1' ></img>
                             <img src={insta} className='about-card-logo1'></img>
@@ -65,17 +65,15 @@ const About = () => {
 
                     </div>
                     <hr ></hr>
-                    <div className='about-card-para'>Govind is a visionary travelpreneur with an experience of leading 
-                        more than 200 community trips. He’s fond of all kinds of voyages, 
-                        yet his favourite are motorbiking expeditions, hence he accounts for
-                         30000kms of extreme rides.He can hold a conversation around business
-                         ,human values and almost everything one can think of. The man knows 
-                         how to get down to work and party, equally well.</div>
+                    <div className='about-card-para'>Ateeq, our SEO and Digital Marketing Head, 
+                    is the wizard behind our online presence. His expertise in optimizing our 
+                    digital footprint ensures that you discover our adventures and stories 
+                    effortlessly in the digital realm.</div>
                 </div>
                 <div className='about-card'>
                     <img src={bh} className='about-card-img'></img>
-                    <div className='about-card-name'>Habeeb ul haq</div>
-                    <div className='about-card-desig'>CEO,Founder</div>
+                    <div className='about-card-name'>Tejas and Abhinandan</div>
+                    <div className='about-card-desig'>Operations Managers</div>
                     <div className='about-card-logo'>
                     <img src={link} className='about-card-logo1' ></img>
                             <img src={insta} className='about-card-logo1'></img>
@@ -83,96 +81,107 @@ const About = () => {
 
                     </div>
                     <hr ></hr>
-                    <div className='about-card-para'>Govind is a visionary travelpreneur with an experience of leading 
-                        more than 200 community trips. He’s fond of all kinds of voyages, 
-                        yet his favourite are motorbiking expeditions, hence he accounts for
-                         30000kms of extreme rides.He can hold a conversation around business
-                         ,human values and almost everything one can think of. The man knows 
-                         how to get down to work and party, equally well.</div>
+                    <div className='about-card-para'>Tejas and Abhinandan, our dynamic Operations Managers, 
+                    are the backbone of Backpackers United. Their meticulous planning and operational 
+                    expertise ensure that every adventure we craft runs seamlessly and leaves you with 
+                    memories to cherish.</div>
                 </div>
 
                 </div>
                 <div className='about-cards1'>
                 <div className='about-card1'>
                     <img src={bh} className='about-card-img'></img>
-                    <div className='about-card-name'>Habeeb ul haq</div>
-                    <div className='about-card-desig'>CEO,Founder</div>
+                    <div className='about-card-name'>Ashwin</div>
+                    <div className='about-card-desig'>HR Manager</div>
                     <hr ></hr>
-                    <div className='about-card-para'>Govind is a visionary travelpreneur with an experience of leading 
-                        more than 200 community trips. He’s fond of all kinds of voyages, 
-                        yet his favourite are motorbiking expeditions, hence he accounts for
-                         30000kms of extreme rides.He can hold a conversation around business
-                         ,human values and almost everything one can think of. The man knows 
-                         how to get down to work and party, equally well.</div>
+                    <div className='about-card-para'>Ashwin, our HR Manager, is the heart of our team.
+                    His expertise in managing talent and ensuring our team operates like a well-oiled 
+                    machine is instrumental in delivering exceptional experiences to our travelers.</div>
                 </div>
                 <div className='about-card1'>
                     <img src={bh} className='about-card-img'></img>
-                    <div className='about-card-name'>Habeeb ul haq</div>
-                    <div className='about-card-desig'>CEO,Founder</div>
+                    <div className='about-card-name'>Thahir Shariff</div>
+                    <div className='about-card-desig'>Quality and Risk Management</div>
                    
                     <hr ></hr>
-                    <div className='about-card-para'>Govind is a visionary travelpreneur with an experience of leading 
-                        more than 200 community trips. He’s fond of all kinds of voyages, 
-                        yet his favourite are motorbiking expeditions, hence he accounts for
-                         30000kms of extreme rides.He can hold a conversation around business
-                         ,human values and almost everything one can think of. The man knows 
-                         how to get down to work and party, equally well.</div>
+                    <div className='about-card-para'>Tahir, our Quality and Risk Management specialist, 
+                    is dedicated to ensuring that your adventures with us are not only thrilling 
+                    but also safe and of the highest quality. He meticulously manages and mitigates risks, 
+                    ensuring your peace of mind..</div>
                 </div>
                 <div className='about-card1'>
                     <img src={bh} className='about-card-img'></img>
-                    <div className='about-card-name'>Habeeb ul haq</div>
-                    <div className='about-card-desig'>CEO,Founder</div>
+                    <div className='about-card-name'>Bharat and Srikanth</div>
+                    <div className='about-card-desig'>Operations Leads</div>
                     
                     <hr ></hr>
-                    <div className='about-card-para'>Govind is a visionary travelpreneur with an experience of leading 
-                        more than 200 community trips. He’s fond of all kinds of voyages, 
-                        yet his favourite are motorbiking expeditions, hence he accounts for
-                         30000kms of extreme rides.He can hold a conversation around business
-                         ,human values and almost everything one can think of. The man knows 
-                         how to get down to work and party, equally well.</div>
+                    <div className='about-card-para'>Bharat and Srikant, our Operations Leads, are the 
+                    architects of seamless journeys. Their precision and dedication guarantee 
+                    that every adventure we craft is executed flawlessly, leaving you with 
+                    remarkable memories.</div>
                 </div>
 
                 </div>
                 <div className='about-cards1'>
                 <div className='about-card1'>
                     <img src={bh} className='about-card-img'></img>
-                    <div className='about-card-name'>Habeeb ul haq</div>
-                    <div className='about-card-desig'>CEO,Founder</div>
+                    <div className='about-card-name'>Sahil</div>
+                    <div className='about-card-desig'>Sales Executive</div>
                     <hr ></hr>
-                    <div className='about-card-para'>Govind is a visionary travelpreneur with an experience of leading 
-                        more than 200 community trips. He’s fond of all kinds of voyages, 
-                        yet his favourite are motorbiking expeditions, hence he accounts for
-                         30000kms of extreme rides.He can hold a conversation around business
-                         ,human values and almost everything one can think of. The man knows 
-                         how to get down to work and party, equally well.</div>
+                    <div className='about-card-para'>Sahil our Senior Sales Executives, 
+                    are your dedicated travel advisors. With their wealth of knowledge and passion 
+                    for exploration, they're here to guide you in crafting the perfect adventure.</div>
                 </div>
                 <div className='about-card1'>
                     <img src={bh} className='about-card-img'></img>
-                    <div className='about-card-name'>Habeeb ul haq</div>
-                    <div className='about-card-desig'>CEO,Founder</div>
+                    <div className='about-card-name'>Saad</div>
+                    <div className='about-card-desig'>Accountant</div>
                    
                     <hr ></hr>
-                    <div className='about-card-para'>Govind is a visionary travelpreneur with an experience of leading 
-                        more than 200 community trips. He’s fond of all kinds of voyages, 
-                        yet his favourite are motorbiking expeditions, hence he accounts for
-                         30000kms of extreme rides.He can hold a conversation around business
-                         ,human values and almost everything one can think of. The man knows 
-                         how to get down to work and party, equally well.</div>
+                    <div className='about-card-para'>Saad, our Accountant, keeps our financial affairs 
+                    in meticulous order, ensuring that our operations run smoothly and efficiently.</div>
                 </div>
                 <div className='about-card1'>
                     <img src={bh} className='about-card-img'></img>
-                    <div className='about-card-name'>Habeeb ul haq</div>
-                    <div className='about-card-desig'>CEO,Founder</div>
+                    <div className='about-card-name'>Syed Mudasir Hussain</div>
+                    <div className='about-card-desig'>Techie</div>
                     <hr ></hr>
-                    <div className='about-card-para'>Govind is a visionary travelpreneur with an experience of leading 
-                        more than 200 community trips. He’s fond of all kinds of voyages, 
-                        yet his favourite are motorbiking expeditions, hence he accounts for
-                         30000kms of extreme rides.He can hold a conversation around business
-                         ,human values and almost everything one can think of. The man knows 
-                         how to get down to work and party, equally well.</div>
+                    <div className='about-card-para'>Syed Mudasir, our Senior Software Engineer, 
+                    is the tech genius who ensures our digital platforms are cutting-edge and user-friendly, 
+                    making your travel experience seamless.</div>
                 </div>
-
                 </div>
+                <div className='about-cards1'>
+                <div className='about-card1'>
+                    <img src={bh} className='about-card-img'></img>
+                    <div className='about-card-name'>Mohamed Aaqib</div>
+                    <div className='about-card-desig'>Techie</div>
+                    <hr ></hr>
+                    <div className='about-card-para'>Mohamed Aaqib, our Senior Software Engineer, 
+                    is the tech genius who ensures our digital platforms are cutting-edge and user-friendly, 
+                    making your travel experience seamless.</div>
+                </div>
+                <div className='about-card1'>
+                    <img src={bh} className='about-card-img'></img>
+                    <div className='about-card-name'>Shadab</div>
+                    <div className='about-card-desig'>Sales Executive</div>
+                    <hr ></hr>
+                    <div className='about-card-para'>Shadab our Senior Sales Executives, 
+                    are your dedicated travel advisors. With their wealth of knowledge and passion 
+                    for exploration, they're here to guide you in crafting the perfect adventure.</div>
+                </div>
+                <div className='about-card1'>
+                    <img src={bh} className='about-card-img'></img>
+                    <div className='about-card-name'>Jafar Pasha</div>
+                    <div className='about-card-desig'>Branch Head(Thailand)</div>
+                    <hr ></hr>
+                    <div className='about-card-para'>
+Jaffer Pasha, our Thailand Branch Head, leads our operations and endeavors in the beautiful land of 
+Thailand. With extensive knowledge of the region and a passion for providing exceptional travel 
+experiences, Jaffer ensures that your adventures in Thailand are unforgettable.
+                </div>
+                </div>
+        </div>
         </div>
       </div>
       <Footer />

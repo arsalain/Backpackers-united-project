@@ -33,7 +33,7 @@
     margin-left: auto;
     margin-right: auto;
     padding-top: 3.75em; 
-    width: 40em;
+    width: 55em;
 }
 
 .i-dest-card{
@@ -61,13 +61,21 @@
     align-items: center;
 }
 .card-name3{
-    margin-top: 0.938em;
+  
     margin-left: 0.65em !important;
     display: flex;
     align-items: center;
     float: left;
 }
-
+.card-but {
+    margin-top: 0.938em;
+}
+.card-but1 {
+    width: 5em;
+    height: 2em;
+    background-color: #FCB418;
+    border-radius: 0.625em;
+}
 .i-dest-prev{
     border: none;
     font-size: 3.125em;
@@ -157,7 +165,6 @@
     margin-left: 130px !important;
 }
 .card-name3{
-    margin-top: 15px;
     margin-left: 12px !important;
     float: left;
 }

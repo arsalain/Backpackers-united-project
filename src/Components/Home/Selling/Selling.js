@@ -5,6 +5,7 @@ import {MdKeyboardArrowRight,MdKeyboardArrowLeft} from "react-icons/md"
 import hampi from "../../../Images/hampi.jpg"
 import wayanad from "../../../Images/wayanad.jpg"
 import kumara from "../../../Images/kumara.jpg"
+import ooty from "../../../Images/ooty.jpeg"
 import { BiDollar } from "react-icons/bi";
 import {IoNavigateSharp} from "react-icons/io5"
 const Selling = () => {
@@ -22,7 +23,7 @@ const Selling = () => {
     const settings = {
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         nextArrow: <ArrowRight />,
         prevArrow: <ArrowLeft />,
@@ -32,7 +33,7 @@ const Selling = () => {
               settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,
-                infinite: true
+                arrows: false
               }
             },
             {
@@ -49,6 +50,7 @@ const Selling = () => {
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
+                dots: true
               }
             }
           ]
@@ -67,6 +69,11 @@ const Selling = () => {
         name: "Kumara parvatha",
         amount: "3,200",
         img: kumara
+      } ,
+      {
+        name: "Ooty",
+        amount: "3,200",
+        img: ooty
       } 
       ]
     return (
@@ -74,7 +81,7 @@ const Selling = () => {
 <div className="i-dest">
     <div className="i-dest1">
         <div className="i-dest-t1">Top Selling</div>
-        <div className="i-dest-t2">Top Destinations</div>
+        <div className="i-dest-t2">Destinations</div>
     </div>
     <div className="i-destt">
     <Slider {...settings} useRef={sliderRef}>
@@ -85,7 +92,11 @@ const Selling = () => {
                 <div className="card-name1">{index.name}</div>
                 <div className="card-name2"><BiDollar />{index.amount}</div>
     </div>
+    <div className="card-but">
             <div className="card-name3"><IoNavigateSharp  />April 2023</div>
+            <button className="card-but1">Discover</button>
+            {/* <div className="card-but1"><</div> */}
+            </div>
         </div>
 ))}
         </Slider>

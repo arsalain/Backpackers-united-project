@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import "./Testimonials.css"
 import boy from "../../../Images/raviimg.jpeg"
 import {IoIosArrowUp,IoIosArrowDown} from "react-icons/io"
+import {BsFillCircleFill} from "react-icons/bs"
 const Testimonials = ({slides}) => {
     const [currentIndex, setCurrentIndex] = useState(0)
     console.log(slides,"data")
@@ -15,14 +16,26 @@ const Testimonials = ({slides}) => {
         const newIndex = isLast ? 0 : currentIndex + 1;
         setCurrentIndex(newIndex)
     }
-     
-  
+     const updateIndex = (newIndex) =>{
+        setCurrentIndex(newIndex);
+     }
   return (
     <div className='t-body'>
         <div className='test-left'>
             <div className='test-name' >Testimonials</div>
             <div className='test-title'>{slides[currentIndex].title1}</div>
             <div className='test-title1'>{slides[currentIndex].title2}</div>
+            <div className='test-dot-main'>
+            <div className={`${currentIndex === 0 ? "test-dot-active": "test-dot"}`} onClick={() =>{
+               updateIndex(0)
+            }} ><BsFillCircleFill className='test-but-icon'/></div>
+            <div className={`${currentIndex === 1 ? "test-dot-active": "test-dot"}`}onClick={() =>{
+               updateIndex(1)
+            }} ><BsFillCircleFill className='test-but-icon'/></div>
+            <div className={`${currentIndex === 2 ? "test-dot-active": "test-dot"}`} onClick={() =>{
+               updateIndex(2)
+            }} ><BsFillCircleFill className='test-but-icon'/></div>
+            </div>
             </div>
             <div className='test-right-main' >
         <div  className='test-right'>
