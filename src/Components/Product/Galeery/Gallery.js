@@ -46,23 +46,35 @@ const Gallery = ({slides}) => {
   return (
     <div className='product-gal-body'>
     <Slider {...settings} useRef={sliderRef}    >
-    {slides.map((index)=>(
-   <div className='product-gal-body-top'>
-      
-      <div className='product-gal-body-container'>
-    <div  className= 'product-gal-body-card'>
-    <div className='product-gal-body-front'>
-    <img src={index.Gimg} className='product-gal-body-top-img'></img></div>
-  <div className='product-gal-body-back'>
-  <div className='product-gal-body-top-title' >  {index.Gname}</div>
-  <div className='product-gal-body-line'></div>
-   <div className='product-gal-body-back-para' >{index.Gpara}</div> 
-    
-    </div>
-  </div>
-  </div>
-  </div>
-    ))}
+    {slides.map((index)=>{
+       if (!index.Gimg || !index.Gname || !index.Gpara) {
+        return null;
+      }
+      return (
+        <div className="product-gal-body-top" key={index.id}>
+          <div className="product-gal-body-container">
+            <div className="product-gal-body-card">
+              <div className="product-gal-body-front">
+                <img
+                  src={index.Gimg}
+                  className="product-gal-body-top-img"
+                  alt={index.Gname}
+                />
+              </div>
+              <div className="product-gal-body-back">
+                <div className="product-gal-body-top-title">
+                  {index.Gname}
+                </div>
+                <div className="product-gal-body-line"></div>
+                <div className="product-gal-body-back-para">
+                  {index.Gpara}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )
+      })}
     </Slider>
   </div>
   )

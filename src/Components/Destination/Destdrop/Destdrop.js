@@ -13,7 +13,6 @@ import munar from "../../../Images/munar.jpg"
 import chikmangalur from "../../../Images/chikmangalur.jpg"
 import wayanad from "../../../Images/wayanad.jpg"
 import "./destdrop.css"
-import Gokarna from '../../../Page/TrekPages/Gokarna'
 import Destimg from '../Image/Destimg'
 const options = [
   { value: 'destdrop1', label: 'All' },

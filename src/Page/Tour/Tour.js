@@ -12,6 +12,7 @@ import { Link } from "react-router-dom";
 
 const Tour = () => {
   const [searchInput, setSearchInput] = useState("")
+
     const recommendedtours = [
         {
           id:1,

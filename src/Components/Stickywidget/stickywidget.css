@@ -19,7 +19,8 @@
       text-align: right;
       border-radius: 20px 0px 0px 20px;
       transform: translate(130px,120px);
-      background-color: white;
+      background-color: rgba(211, 211, 211, 0.5); 
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
   .widget-whatsappicon{
@@ -32,7 +33,7 @@
    margin-top: 0.2em;
    margin-left: 0.5em;
    font-size: 1.25em;
-    background-color: black;
+    background-color: white;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -53,7 +54,8 @@
       text-align: right;
       border-radius: 20px 0px 0px 20px;
       transform: translate(130px,120px);
-      background-color: white;
+      background-color: rgba(211, 211, 211, 0.5); 
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   .widget-Phone
   {
@@ -61,7 +63,7 @@
     margin-top: 0.2em;
    margin-left: 0.5em;
    font-size: 1.25em;
-    background-color: black;
+    background-color: white;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -83,7 +85,8 @@
       text-align: right;
       border-radius: 20px 0px 0px 20px;
       transform: translate(130px,120px);
-      background-color: white;
+      background-color: rgba(211, 211, 211, 0.5); 
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   .widget-Instagram
   {
@@ -91,7 +94,7 @@
     margin-top: 0.3em;
    margin-left: 0.5em;
    font-size: 1.25em;
-    background-color: black;
+    background-color: white;
     width: 40px;
     height: 40px;
     border-radius: 50%;

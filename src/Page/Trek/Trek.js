@@ -1,5 +1,5 @@
 import "./trek.css"
-import React ,{ useState} from 'react'
+import React ,{ useState,useEffect} from 'react'
 import {FaSearch} from "react-icons/fa";
 import Footer from '../../Components/Nav/Footer/Footer.js'
 import Navbar2 from '../../Components/Nav/Navbar/Navbar2.js'
@@ -7,275 +7,66 @@ import Trekhome from "../../Image/TrekHome.jpg"
 import Trekslider from "../../Components/Trekslider/Trekslider";
 import searchResult from  "../../searchdata.json"
 import { Link } from "react-router-dom";
+import axios from 'axios';
 
 const Trek = () =>{
     const [searchInput, setSearchInput] = useState("")
-    
-    const recommendedtreks = [
-      {
-        id:1,
-        imgSrc: Trekhome,
-        name: "Ethina Bhuja Trek",
-        link: "/trek/ethina",
-        state: "Karnataka",
-        day: "2D/2N",
-        date: "July 21,2023(Friday)",
-        person:"Per Person",
-        amount: "3600"
-      },
-      {
-        id:2,
-        imgSrc: Trekhome,
-        name: "Skandagiri Trek",
-        link: "/trek/skandagiri",
-        state: "Karnataka",
-        day: "1D/1N",
-        date: "July 21,2023(Friday)",
-        person:"Per Person",
-        amount: "1499"
-      },
-      {
-        id:3,
-        imgSrc: Trekhome,
-        name: "Gokarna Beach Trek",
-        link: "/trek/gokarna",
-        state: "Karnataka",
-        day: "2D/3N",
-        date: "July 21,2023(Friday)",
-        person:"Per Person",
-        amount: "3499"
-      },
-      {
-        id:4,
-        imgSrc: Trekhome,
-        name: "Tadiandamol Trek",
-        link: "/trek/tadiandamol",
-        state: "Karnataka",
-        day: "2D/2N",
-        date: "July 21,2023(Friday)",
-        person:"Per Person",
-        amount: "3799"
-      },
-      {
-        id:5,
-        imgSrc: Trekhome,
-        name: "Dudhsagar Trek and Dandeli Exploration",
-        link: "/trek/dudhsagar",
-        state: "Karnataka",
-        day: "2D/2N",
-        date: "July 21,2023(Friday)",
-        person:"Per Person",
-        amount: "4799"
-      },
-      {
-        id:6,
-        imgSrc: Trekhome,
-        name: "Kumara Parvatha Trek",
-        link: "/trek/kumara",
-        state: "Karnataka",
-        day: "2D/3N",
-        date: "July 21,2023(Friday)",
-        person:"Per Person",
-        amount: "3900"
-      },
-    ]
-    const longtreks = [
-      {
-        id:1,
-        imgSrc: Trekhome,
-        name: "Kudremukha Trek",
-        link: "/trek/kudremukha",
-        state: "Karnataka",
-        day: "2D/2N",
-        date: "July 21,2023(Friday)",
-        person:"Per Person",
-        amount: "3799"
-      },
-      {
-        id:2,
-        imgSrc: Trekhome,
-        name: "Kumara Parvatha Trek",
-        link: "/trek/kumara",
-        state: "Karnataka",
-        day: "2D/3N",
-        date: "July 21,2023(Friday)",
-        person:"Per Person",
-        amount: "3900"
-      },
- 
-      {
-        id:3,
-        imgSrc: Trekhome,
-        name: "Tadiandamol Trek",
-        link: "/trek/tadiandamol",
-        state: "Karnataka",
-        day: "2D/2N",
-        date: "July 21,2023(Friday)",
-        person:"Per Person",
-        amount: "3799"
-      },
-      {
-        id:4,
-        imgSrc: Trekhome,
-        name: "Bramagiri Trek",
-        link: "/trek/bramagiri",
-        state: "Karnataka",
-        day: "2D/2N",
-        date: "July 21,2023(Friday)",
-        person:"Per Person",
-        amount: "3799"
-      },
-      {
-        id:5,
-        imgSrc: Trekhome,
-        name: "Kurinjal Trek",
-        link: "/trek/kurinjal",
-        state: "Karnataka",
-        day: "2D/2N",
-        date: "July 21,2023(Friday)",
-        person:"Per Person",
-        amount: "3799"
-      },
+    const [trekrecom,settrekrecom] = useState([])
+    const [treklong,settreklong] = useState([])
+    const [trekshort,settrekshort] = useState([])
+    const [trekwaterfall,settrekwaterfall] = useState([])
+    const getTrekrecom = async() =>{
+      const apiUrl = 'http://localhost:4000/trek/gettrekrecom';
+      axios.get(apiUrl)
+      .then((response) => {
+        settrekrecom(response.data)
+      })
+      .catch((error) => {
+        console.error('Error fetching data:', error);
+      });
+    }
+    const getTreklong = async() =>{
+       const apiUrl = 'http://localhost:4000/trek/gettreklong';
+       axios.get(apiUrl)
+       .then((response) => {
+        settreklong(response.data)
+       })
+       .catch((error) => {
+         console.error('Error fetching data:', error);
+       });
+    }
+    const getTrekshort = async() =>{
+      // const response = await axios.get("http://localhost:4000/trek/gettrekshort")
+      // settrekshort(response.data)
+      const apiUrl = 'http://localhost:4000/trek/gettrekshort';
+      axios.get(apiUrl)
+      .then((response) => {
+        settrekshort(response.data)
+        // console.log("responsedata",response.data)
+      })
+      .catch((error) => {
+        console.error('Error fetching data:', error);
+      });
+    }
+    const getTrekwaterfall = async() =>{
+      // const response = await axios.get("http://localhost:4000/trek/gettrekwaterfall")
+      // settrekwaterfall(response.data)
+      const apiUrl = 'http://localhost:4000/trek/gettrekwaterfall';
+      axios.get(apiUrl)
+      .then((response) => {
+        settrekwaterfall(response.data)
+      })
+      .catch((error) => {
+        console.error('Error fetching data:', error);
+      });
+    }
+   useEffect(()=>{
+ getTrekrecom()
+ getTreklong()
+getTrekshort()
+getTrekwaterfall()
+ })
   
-      {
-        id:6,
-        imgSrc: Trekhome,
-        name: "Narasimha Parvatha Trek",
-        link: "/trek/narasimha",
-        state: "Karnataka",
-        day: "2D/2N",
-        date: "July 21,2023(Friday)",
-        person:"Per Person",
-        amount: "3900"
-      },
-    ]
-    const shorttreks = [
-      {
-        id:1,
-        imgSrc: Trekhome,
-        name: "Nethravathi Trek",
-        link: "/trek/nethravathi",
-        state: "Karnataka",
-        day: "2D/2N",
-        date: "July 21,2023(Friday)",
-        person:"Per Person",
-        amount: "3799"
-      },
-      {
-        id:2,
-        imgSrc: Trekhome,
-        name: "Paithalamala Trek",
-        link: "/trek/paithalamala",
-        state: "Kerala",
-        day: "2D/2N",
-        date: "July 21,2023(Friday)",
-        person:"Per Person",
-        amount: "4999"
-      },
-      {
-        id:3,
-        imgSrc: Trekhome,
-        name: "Ethina Bhuja Mansoon Trek",
-        link: "/trek/ethina",
-        state: "Karnataka",
-        day: "2D/2N",
-        date: "July 21,2023(Friday)",
-        person:"Per Person",
-        amount: "3600"
-      },
-      {
-        id:4,
-        imgSrc: Trekhome,
-        name: "Skandagiri Trek",
-        link: "/trek/skandagiri",
-        state: "Karnataka",
-        day: "1D/1N",
-        date: "July 21,2023(Friday)",
-        person:"Per Person",
-        amount: "1499"
-      },
-   
-      {
-        id:5,
-        imgSrc: Trekhome,
-        name: "Gokarna Beach Trek",
-        link: "/trek/gokarna",
-        state: "Karnataka",
-        day: "2D/3N",
-        date: "July 21,2023(Friday)",
-        person:"Per Person",
-        amount: "3799"
-      },
-      {
-        id:6,
-        imgSrc: Trekhome,
-        name: "Huttari Betta Trek",
-        link: "/trek/huttari",
-        state: "Karnataka",
-        day: "1D/1N",
-        date: "July 21,2023(Friday)",
-        person:"Per Person",
-        amount: "999"
-      }
-    
-    ]
-    const waterfalltreks = [
-      {
-        id:1,
-        imgSrc: Trekhome,
-        name: "Bandaje Falls Trek",
-        link: "/trek/bandaje",
-        state: "Karnataka",
-        day: "2D/2N",
-        date: "July 21,2023(Friday)",
-        person:"Per Person",
-        amount: "3799"
-      },
-      {
-        id:2,
-        imgSrc: Trekhome,
-        name: "kodachadri Trek",
-        link: "/trek/kodachadri",
-        state: "Karnataka",
-        day: "2D/2N",
-        date: "July 21,2023(Friday)",
-        person:"Per Person",
-        amount: "3800"
-      },
-      {
-        id:3,
-        imgSrc: Trekhome,
-        name: "Dudhsagar Trek and Dandeli Exploration",
-        link: "/trek/dudhsagar",
-        state: "Karnataka",
-        day: "2D/2N",
-        date: "July 21,2023(Friday)",
-        person:"Per Person",
-        amount: "4799"
-      },
-      {
-        id:4,
-        imgSrc: Trekhome,
-        name: "Bilikal Trek",
-        link: "/trek/bilikal",
-        state: "Kerala",
-        day: "2D/2N",
-        date: "July 21,2023(Friday)",
-        person:"Per Person",
-        amount: "3799"
-      },
-      {
-        id:5,
-        imgSrc: Trekhome,
-        name: "Arisinagundi Falls Trek",
-        link: "/trek/arisinagundi",
-        state: "Karnataka",
-        day: "2D/2N",
-        date: "July 21,2023(Friday)",
-        person:"Per Person",
-        amount: "3799"
-      },
-    ]
   return (
     <div >
     <div className="trek">
@@ -306,22 +97,22 @@ const Trek = () =>{
           
           <div className='trek-recom-title'>Recommended Treks </div>
     
-          <Trekslider  slides={recommendedtreks} />
+          <Trekslider  slides={trekrecom} />
       </div>
    
       <div className='trek-recom'>
           <div className='trek-recom-title'>Long Treks </div>
-          <Trekslider  slides={longtreks} />
+          <Trekslider  slides={treklong} />
       </div>
       <div className='trek-recom'>
           <div className='trek-recom-title'>Short Treks </div>
 
-          <Trekslider  slides={shorttreks} />
+          <Trekslider  slides={trekshort} />
       </div>
       <div className='trek-recom'>
           <div className='trek-recom-title'>Waterfall Treks </div>
        
-          <Trekslider  slides={waterfalltreks} />
+          <Trekslider  slides={trekwaterfall} />
       </div>
       <Footer />
     </div>
