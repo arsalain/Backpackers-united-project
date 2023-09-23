@@ -1,8 +1,7 @@
 import React from 'react'
-import Navbar1 from '../../Components/Nav/Navbar/Navbar1'
 import "./career.css"
 import {GiPolarStar} from "react-icons/gi"
-import cp from "../../Images/contact.jpg"
+import cp from "../../Image/careers.jpg"
 import Navbar2 from '../../Components/Nav/Navbar/Navbar2'
 import Footer from '../../Components/Nav/Footer/Footer'
 
@@ -18,8 +17,7 @@ const Career = () => {
         
         </div> 
         <div className='careers-body'>
-      <div className='careers-body-para'>Who We Are?
-.</div>
+      <div className='careers-body-para'>Who We Are?</div>
     <div className='careers-body-para1'>Backpackers United is a passionate community of travelers who believe in the transformative power of travel. We're dedicated to empowering backpackers across the globe with resources, tips, and a supportive network of fellow adventurers.
 </div>
 <div className='careers-body-para2'>Why Join Us?

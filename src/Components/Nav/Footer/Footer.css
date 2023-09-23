@@ -38,9 +38,10 @@ float: left;
 }
 
 .f-name {
+  /* text-align: center; */
 font-size: 1.5em;
 font-weight: bold;
-font-family: 'Montserrat', sans-serif;
+font-family: 'Lato', sans-serif;
 }
 .f-name2{
   width: 13em;
@@ -54,7 +55,7 @@ margin-left: 2.5em;
     .f-logo-name-main{
       display: flex;
       flex-direction: column;
-      width: 11.875em;
+      width:10.4em;
       padding-left: 0.313em;
       padding-top: 0.313em;
     }
@@ -62,15 +63,16 @@ margin-left: 2.5em;
       text-align: center;
       position: relative;
       font-size: 0.875em;
-      top: -0.375em;
+      top: -0.300em;
       font-weight:500;
       color: red;
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Lato', sans-serif;
+      font-weight: bold;
     }
     .f-name1:before{
       content: "";
       display: block;
-      width: 4.8em;
+      width: 4em;
       height: 0.125em;
       background: white;
       position: absolute;
@@ -80,7 +82,7 @@ margin-left: 2.5em;
     .f-name1:after{
       content: "";
       display: block;
-      width: 4.8em;
+      width: 4em;
       height: 0.125em;
       background: white;
       position: absolute;

@@ -8,7 +8,7 @@
   }
   .widget-icons
   {  
-      text-decoration: none;
+      color: green;
       text-transform: uppercase ;
       /* padding: 10px; */
       width: 9em;
@@ -102,4 +102,25 @@
     justify-content: center;
     align-items: center;
   
+  }
+  .w-link-whatsapp{
+    color: green;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .w-link-phone{
+    color:blue;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .w-link-insta{
+    color: #dd2a7b;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }

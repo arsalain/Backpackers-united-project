@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar1 from '../../Components/Nav/Navbar/Navbar1'
 import "./partner.css"
 import {GiPolarStar} from "react-icons/gi"
 import cp from "../../Images/contact.jpg"

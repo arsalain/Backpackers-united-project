@@ -1,7 +1,7 @@
 import React from 'react'
 import "./about.css"
 import Footer from '../../Components/Nav/Footer/Footer'
-import bh from "../../Images/ab.jpg"
+import bh from "../../Image/about.jpg"
 import insta from "../../Images/instagram.png"
 import link from "../../Images/linkedin.png"
 import whatsapp from "../../Images/whatsapp1.png"
@@ -15,7 +15,7 @@ const About = () => {
          <div className='about-head-title'>ABOUT US  </div> 
         </div>
         <div className='about-head-para'>
-            <div className='about-head-title'>What we do?</div>
+            <div className='about-head-title1'>What we do?</div>
             <div className='about-head-des'>Welcome to Backpackers United – your one-stop destination for incredible, 
                 life-changing travel experiences! Established in 2017, our community has quickly 
                 grown into a thriving hub for passionate travelers seeking unique adventures off the

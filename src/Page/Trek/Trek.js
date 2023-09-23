@@ -86,7 +86,7 @@ getTrekwaterfall()
             const fullname = item.name.toLowerCase()
             return searchTerm && fullname.startsWith(searchTerm)
           }).map((list)=>(
-               <div className='trek-search-field-name' ><Link to={list.link} className="trek-search-link">{list.name} </Link></div>
+               <div className='trek-search-field-name' ><Link to={list.link} className="trek-search-link" >{list.name} </Link></div>
              ))} 
       
           </div>

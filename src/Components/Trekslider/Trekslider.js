@@ -9,29 +9,27 @@ import {Link} from "react-router-dom";
 
 
 const Trekslider = ({slides}) => {
-      const [currentslide, setCurrentSlide] = useState(0);
-      const totalslides = ((slides.length -2 )* 2) % slides.length
 
 
           const ArrowLeft = (props) => (
             <div
                 {...props}
-                className={currentslide === 0 ? 'trek-slide-prev1' :'trek-slide-prev'}>  <MdKeyboardArrowLeft /> </div>
+                className={'trek-slide-prev'}>  <MdKeyboardArrowLeft /> </div>
         );
         const ArrowRight = (props) => (
             <div
                 {...props}
-                className={currentslide === totalslides ?  'trek-slide-next1': 'trek-slide-next'}><MdKeyboardArrowRight /> </div>
+                className={ 'trek-slide-next'}><MdKeyboardArrowRight /> </div>
         )
       
         const settings = {
-          infinite: false,
+          infinite: true,
           speed: 500,
           slidesToShow: 4 ,
           slidesToScroll: 1,
-          afterChange: (index) => setCurrentSlide(index),
           nextArrow: <ArrowRight />,
           prevArrow: <ArrowLeft />,
+          swipeToSlide: true,
           responsive: [
               {
                 breakpoint: 1024,

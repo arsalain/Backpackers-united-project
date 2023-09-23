@@ -2,7 +2,7 @@
     font-size: 16px;
 }
 .contact-header{
-    background-color: lightgrey;
+    background-color:#ffa60096;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -136,6 +136,10 @@ padding-top: 1.25em;
     flex-direction: row;
     padding-top: 1.25em;
 }
+.contact-form-title1{
+    padding-top: 0.188em;
+    width: 10em ;
+}
 .contact-form-area textarea{
     min-width: 19.375em;
     max-width: 19.375em;
@@ -163,8 +167,7 @@ padding-top: 1.25em;
 .contact-title{
     font-size: 1.875em;
     color: #FCB418;
-    font-family:fantasy;
-    padding-bottom: 3.125em;
+    padding-bottom: 1.125em;
 }
 @media only screen and (max-width: 480px) {
     .contact{

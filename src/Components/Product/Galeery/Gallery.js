@@ -20,7 +20,8 @@ const Gallery = ({slides}) => {
             settings: {
               slidesToShow: 3,
               slidesToScroll: 1,
-              infinite: true
+              infinite: true,
+              dots:true
             }
           },
           {
@@ -28,7 +29,8 @@ const Gallery = ({slides}) => {
             settings: {
               slidesToShow: 2,
               slidesToScroll: 1,
-              infinite: true
+              infinite: true,
+              dots:true
             }
           },
           {
@@ -36,7 +38,8 @@ const Gallery = ({slides}) => {
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
-              infinite: true
+              infinite: true,
+              dots: true
             }
           }
         ]

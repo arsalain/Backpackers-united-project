@@ -32,105 +32,85 @@ const Trekpage = () => {
     const [show4,setShow4] = useState(false)
     const [activeTab, setActiveTab] = useState(1);
     const [productData, setProductData] = useState({});
-    
-    console.log("trekid",id) 
     const handleTabClick = (tabNumber) => {
       setActiveTab(tabNumber);
     };
     const events = [
-      { eventSlug: "kudremukh-trek-t4to", placement: "#book-container-kudremukh" }
+      { eventSlug: productData.eventSlug, placement:  productData.placement }
       // ... any other events
     ];
-    useEffect(() => {
-        // const fetchData = async () => {
-          // try {
-          //   const response = await axios.get(`http://localhost:4000/trek/get/${trekId}`);
-          //   setProductData(response.data);
-          //   console.log("response",response.data)
-          // } catch (error) {
-          //   console.error('Error fetching item:', error);
-          // }
-        //   const apiUrl = `https://localhost:4000/trek/get/${id}`;
-        //   axios.get(apiUrl)
-        //   .then((response) => {
-        //     setProductData(response.data)
-        //     console.log("response",response.data)
-        //   })
-        //   .catch((error) => {
-        //     console.error('Error fetching data:', error);
-        //   });
-        // };
+  
+      useEffect(() => {
+    const fetchData = async () => {
         const apiUrl = `http://localhost:4000/trek/get/${id}`;
         axios.get(apiUrl)
         .then((response) => {
           setProductData(response.data)
-          console.log("response",response.data)
         })
         .catch((error) => {
           console.error('Error fetching data:', error);
-        });
-        // fetchData();
-      }, [id]);
-    useEffect(() => {
-      // Load the external script
-      const script = document.createElement('script');
-      script.src = 'https://logout.world/static/widget/logout-booking.js';
-      script.async = true;
-      script.onload = initWidget;
-      document.body.appendChild(script);
-
-      return () => {
-          document.body.removeChild(script);
-      };
-  }, []);
-
-  const initWidget = () => {
-      if (window.logout && window.logout.widget) {
-        events.map(event => {
-          window.logout.widget.setConfig({
-              eventSlug: event.eventSlug,
-              placement: event.placement,
-              customClass: "btn-custom",
-              btnId: "logout-bnb",
-              downloadBtnId: "logout-download-button",
-              enquiryBtnId: "logout-enquiry-button",
-              showEverything: true,
-              onlyButton: false,
-              showItineraryButton: true,
-              showEnquiryButton: true,
-              bookNowButtonColor: "#28a745",
-              itineraryButtonColor: "#dc3545",
-          });
-          window.logout.widget.init();
-        })
+        }); 
       }
-  }
+        fetchData()
+      }, [id]);
+  
+    useEffect(() => {
+ 
+        const script = document.createElement('script');
+        script.src = 'https://logout.world/static/widget/logout-booking.js';
+        script.async = false;
+        script.onload = initWidget;
+        document.body.appendChild(script);
+  
+      return () => {
+        document.body.removeChild(script);
+      };
+    }, [id])
+    // "kudremukh-trek-t4to"
+    console.log(productData.eventSlug,"Slug")
+    const initWidget = () => {
+      if (window.logout && window.logout.widget) {
+              window.logout.widget.setConfig({
+                  eventSlug: 'kudremukh-trek-t4to',
+                  placement:'#book-container-kudremukh',
+                  customClass: 'btn-custom',
+                  btnId: 'logout-bnb',
+                  downloadBtnId: 'logout-download-button',
+                  enquiryBtnId: 'logout-enquiry-button',
+                  showEverything: true,
+                  onlyButton: false,
+                  showItineraryButton: true,
+                  showEnquiryButton: true,
+                  bookNowButtonColor: '#28a745',
+                  itineraryButtonColor: '#dc3545',
+              });
+              window.logout.widget.init();
+      }
+    }
+
+
   const data = [
     {
-      id:productData.reviewid1,
+      id: `/blogs/${productData.reviewid1}`,
       imgSrc:`http://localhost:4000/uploads/${productData.reviewimg1}`,
+      imgalt: productData.reviewalt1,
       title: productData.reviewtitle1,
       para: productData.reviewpara1,
     },
     {
-      id:productData.reviewid2,
+      id: `/blogs/${productData.reviewid2}`,
       imgSrc:`http://localhost:4000/uploads/${ productData.reviewimg2}`,
+      imgalt: productData.reviewalt2,
       title: productData.reviewtitle2,
       para: productData.reviewpara2,
     },
     {
-      id:productData.reviewid3,
+      id: `/blogs/${productData.reviewid3}`,
       imgSrc:`http://localhost:4000/uploads/${productData.reviewimg3}` ,
+      imgalt: productData.reviewalt3,
       title: productData.reviewtitle3,
       para: productData.reviewpara3,
-    },
-    {
-      id:productData.reviewid4,
-      imgSrc:`http://localhost:4000/uploads/${productData.reviewimg4}` ,
-      title: productData.reviewtitle4,
-      para: productData.reviewpara4,
-    },
-   
+    }
   ]
   const Gdata = [
     {
@@ -215,7 +195,7 @@ const Trekpage = () => {
   return (
     <>
      
-     <div >
+     <div className='product'>
     
     <div className='product-img'>
         <img src={`http://localhost:4000/uploads/${productData.testimage}`}  className='product-img-main' />
@@ -908,6 +888,8 @@ const Trekpage = () => {
           </div>
       </div>
       <div id="book-container-kudremukh"></div>
+      <div id="book-container"></div>
+  
       <Footer />
       </div>
  

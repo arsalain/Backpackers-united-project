@@ -1,10 +1,8 @@
-.privacy-dummy{
-    height: 3.75em;
-
+.Privacy{
+    font-size: 16px;
 }
-
 .privacy-head {
-    background-color:grey;
+    background-color:#ffa60096;
     width:100%;
     height: 25em;
      display: flex; 
@@ -77,8 +75,10 @@
     
 
 @media only screen and (max-width: 480px) {
+    .Privacy{
+        font-size: 14px;
+    }
     .privacy-head{
-        background-color:grey;
         width:100%;
         height: 100vh;
     
@@ -92,8 +92,11 @@
 }
 
 @media only screen and  (min-width:500px) and (max-width: 900px) {
+    .Privacy{
+        font-size: 13px;
+    }
     .privacy-head{
-    background-color:grey;
+        background-color:#ffa60096;
     width:100%;
     height: 20em;
      

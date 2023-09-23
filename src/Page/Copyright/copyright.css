@@ -1,6 +1,8 @@
-
+.CopyrightPolicy{
+    font-size: 16px;
+}
 .Copy-head{
-    background-color:grey;
+    background-color:#ffa60096;
     width:100%;
     height: 25em;
      display: flex; 
@@ -39,8 +41,10 @@
     margin-top: 0.313em;
 }
 @media only screen and (max-width: 480px) {
+    .CopyrightPolicy{
+        font-size: 14px;
+    }
     .Copy-head{
-        background-color:grey;
         width:100%;
         height: 100vh;
     
@@ -54,8 +58,10 @@
 }
 
 @media only screen and  (min-width:500px) and (max-width: 900px) {
+    .CopyrightPolicy{
+        font-size: 13px;
+    }
     .Copy-head{
-    background-color:grey;
     width:100%;
     height: 20em;
      

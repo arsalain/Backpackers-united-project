@@ -16,10 +16,14 @@ const Review = ({slides}) => {
         const newIndex = isLast ? 0 : currentIndex + 1;
         setCurrentIndex(newIndex)
     }
+    // if (!slides[currentIndex].imgSrc || !slides[currentIndex].title || !slides[currentIndex].para) {
+    //   return null;
+    // }
   return (
     <div>
-        <div className='reviews-left'>
+            <div className='reviews-left'>
               <img src= {slides[currentIndex].imgSrc} className='reviews-left-img'></img>
+            
                 <div className='reviews-left-arrows'>
                   <IoIosArrowDropleft  onClick={goToPrev}/>
                   <IoIosArrowDropright  onClick={goToNext} />
@@ -28,12 +32,12 @@ const Review = ({slides}) => {
                   <div className='reviews-left-title' >
                      { slides[currentIndex].title}
                   </div>
-                  {/* <br /> */}
                   <div className='reviews-left-para' >
-                  { slides[currentIndex].para} ....... <div ><Link to={slides[currentIndex].id}><button className='reviews-left-para-read'>Read More</button></Link></div>
+                  { slides[currentIndex].para}....... <div ><Link to={slides[currentIndex].id}><button className='reviews-left-para-read'>Read More</button></Link></div>
                   </div>
                 </div>
             </div>
+          
     </div>
   )
 }
