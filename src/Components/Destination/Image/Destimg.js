@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import {BsArrowLeftSquareFill,BsArrowRightSquareFill} from "react-icons/bs"
+import {MdKeyboardArrowRight,MdKeyboardArrowLeft} from "react-icons/md"
 import Slider from "react-slick";
 import "./destimg.css"
 const Destimg = ({slides}) => {
@@ -8,12 +8,12 @@ const Destimg = ({slides}) => {
     const ArrowLeft = (props) => (
         <button
             {...props}
-            className={currentSlide === 0 ? 'destimg-slide-prev1' :'destimg-slide-prev'}>  <BsArrowLeftSquareFill /> </button>
+            className={currentSlide === 0 ? 'destimg-slide-prev1' :'destimg-slide-prev'}>  <MdKeyboardArrowLeft /> </button>
     );
     const ArrowRight = (props) => (
         <button
             {...props}
-            className={currentSlide === totalSlides ?  'destimg-slide-next1': 'destimg-slide-next'}><BsArrowRightSquareFill /> </button>
+            className={currentSlide === totalSlides ?  'destimg-slide-next1': 'destimg-slide-next'}><MdKeyboardArrowRight /> </button>
     )
   
     const settings = {

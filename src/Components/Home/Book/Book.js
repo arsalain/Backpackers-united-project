@@ -4,8 +4,10 @@ import leh from "../../../Images/ladakh.jpg"
 import {RiLeafFill} from "react-icons/ri"
 import {GiPaperPlane} from "react-icons/gi"
 import {GiFoldedPaper} from "react-icons/gi"
-import {BsFillBuildingsFill} from "react-icons/bs"
+import {BsFillBuildingsFill,BsFillCalendar2WeekFill} from "react-icons/bs"
 import {AiOutlineHeart} from "react-icons/ai"
+import {FaPlaneDeparture} from "react-icons/fa"
+import {MdPayments} from "react-icons/md"
 const Book = () =>{
     return (
         <div className="b-body">
@@ -18,7 +20,7 @@ const Book = () =>{
             </div>
             </div>
             <div className="b-left-body">
-                <div className="b-box"></div>
+                <div className="b-box"><FaPlaneDeparture className="b-box-icon"/></div>
                 <div className="b-box-des"> 
                 <div className="b-box-name">Choose Destination</div>
                 <div className="b-box-para">Discover your next adventure with
@@ -26,7 +28,7 @@ const Book = () =>{
                 </div>
             </div>
             <div className="b-left-body">
-                <div className="b-box1"></div>
+                <div className="b-box1"><MdPayments className="b-box-icon"/></div>
                 <div className="b-box-des"> 
                 <div className="b-box-name">Make Payment</div>
                 <div className="b-box-para">Securely and conveniently make payments
@@ -34,7 +36,7 @@ const Book = () =>{
                 </div>
             </div>
             <div className="b-left-body">
-                <div className="b-box2"></div>
+                <div className="b-box2"><BsFillCalendar2WeekFill className="b-box-icon"/></div>
                 <div className="b-box-des"> 
                 <div className="b-box-name">Reach Pick Up point on Selected Date</div>
                 <div className="b-box-para">Arrive at your designated pick-up point

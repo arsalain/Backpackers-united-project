@@ -78,7 +78,7 @@ const Ddata = [
         <div className='dest-sim-card'>
             <img src={Kudremukh} className='dest-sim-card-img'/>
             <div >
-            <div className='dest-sim-card-name' >Kudremukh Trek</div>
+            <div className='dest-sim-card-name' >Kudremukha Trek</div>
             </div>
             <div className='dest-sim-card-amount1'>
             <div className='dest-sim-card-t'><ImLocation className='dest-sim-card-t-icon'/>Karnataka
@@ -94,7 +94,7 @@ const Ddata = [
         </div>
         <div className='dest-sim-card'>
             <img src={kodaikanol} className='dest-sim-card-img'/>
-            <div className='dest-sim-card-name' >kodaikanal Tour</div>
+            <div className='dest-sim-card-name' >Kodaikanal Tour</div>
             <div className='dest-sim-card-amount2'>
             <div className='dest-sim-card-t'><ImLocation className='dest-sim-card-t-icon'/>Tamil Nadu
                 </div>

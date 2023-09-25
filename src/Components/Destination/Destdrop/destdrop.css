@@ -1,3 +1,6 @@
+.destdrop1{
+font-size: 16px;
+}
 .destdrop{
     margin: 0;
     width: 100%;
@@ -66,8 +69,14 @@
         margin-left: 1.25em;
 }
 @media only screen and (max-width: 480px) {
+    .destdrop1{
+        font-size: 14px;
+        }
     .destdrop-head-title{
         font-size: 2em;
+    }
+    .destdrop-list-title{
+        font-size: 1.25em;
     }
     .destdrop-body {
         width: auto;
@@ -91,6 +100,9 @@
 }
 }
 @media only screen and  (min-width:500px) and (max-width: 999px) {
+    .destdrop1{
+        font-size: 13px;
+        }
     .destdrop-body{
         width: auto;
         padding-left: 1.25em;
@@ -108,4 +120,10 @@
         font-size: 1em;
         width: 5em;
     }
+}
+@media only screen and  (min-width:1400px) and (max-width: 2000px) {
+
+    .destdrop1{
+        font-size: 18px;
+        }
 }

@@ -32,8 +32,7 @@
   padding-bottom: 0.9em;
 }
 .i-discrip1{
-  font-size: 1.125em;
-  max-width: 25em; 
+  max-width: 30em; 
   padding-bottom: 2.4em;
 }
 
@@ -51,7 +50,7 @@
   height: 25em;
   width: 31.25em;
   border-radius: 1.875em;
-  margin-left: 8em;
+  margin-left: 4em;
 }
 @media only screen and (max-width: 480px) {
   .i-left {
@@ -63,7 +62,7 @@
     flex-direction: column;
     height: auto;
     width: auto;
-    font-size: 12px;
+    font-size: 14px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 1.25em;
@@ -93,6 +92,7 @@
     flex-direction: row;
     height: auto;
     width: auto; 
+    font-size: 13px;
   }
   .i-name{
     font-size: 1.25em;
@@ -105,12 +105,11 @@
     margin-right: auto;
 
   }
-  .i-right-img{
-    height: 15em;
-    width: 18em;
-    margin-left:  1.25em;;
-    margin-right:  2.25em;;
-   margin-top: 3.25em;
-
-  }
+  .i-right-img {
+    height: 21em;
+    width: 20em;
+    margin-left: 1.25em;
+    margin-right: 2.25em;
+    margin-top: 2em;
+}
 }

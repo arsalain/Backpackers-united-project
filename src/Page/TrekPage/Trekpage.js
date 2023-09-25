@@ -32,6 +32,7 @@ const Trekpage = () => {
     const [show4,setShow4] = useState(false)
     const [activeTab, setActiveTab] = useState(1);
     const [productData, setProductData] = useState({});
+    let fetchedData = null;
     const handleTabClick = (tabNumber) => {
       setActiveTab(tabNumber);
     };
@@ -42,17 +43,43 @@ const Trekpage = () => {
   
       useEffect(() => {
     const fetchData = async () => {
+ 
         const apiUrl = `http://localhost:4000/trek/get/${id}`;
+
         axios.get(apiUrl)
         .then((response) => {
+          fetchedData= response.data.eventSlug
+        
           setProductData(response.data)
+          
         })
         .catch((error) => {
           console.error('Error fetching data:', error);
         }); 
       }
+      
+    
         fetchData()
       }, [id]);
+      const initWidget = () => {
+        if (window.logout && window.logout.widget && productData?.eventSlug ) {
+                window.logout.widget.setConfig({
+                    eventSlug: productData.eventSlug,
+                    placement:'#book-container-kudremukh',
+                    customClass: 'btn-custom',
+                    btnId: 'logout-bnb',
+                    downloadBtnId: 'logout-download-button',
+                    enquiryBtnId: 'logout-enquiry-button',
+                    showEverything: true,
+                    onlyButton: false,
+                    showItineraryButton: true,
+                    showEnquiryButton: true,
+                    bookNowButtonColor: '#28a745',
+                    itineraryButtonColor: '#dc3545',
+                });
+                window.logout.widget.init();
+        }
+      }
   
     useEffect(() => {
  
@@ -65,29 +92,12 @@ const Trekpage = () => {
       return () => {
         document.body.removeChild(script);
       };
-    }, [id])
+    }, [id,initWidget])
     // "kudremukh-trek-t4to"
+    
     console.log(productData.eventSlug,"Slug")
-    const initWidget = () => {
-      if (window.logout && window.logout.widget) {
-              window.logout.widget.setConfig({
-                  eventSlug: 'kudremukh-trek-t4to',
-                  placement:'#book-container-kudremukh',
-                  customClass: 'btn-custom',
-                  btnId: 'logout-bnb',
-                  downloadBtnId: 'logout-download-button',
-                  enquiryBtnId: 'logout-enquiry-button',
-                  showEverything: true,
-                  onlyButton: false,
-                  showItineraryButton: true,
-                  showEnquiryButton: true,
-                  bookNowButtonColor: '#28a745',
-                  itineraryButtonColor: '#dc3545',
-              });
-              window.logout.widget.init();
-      }
-    }
-
+    // console.log(fetchedData,"Slug1")
+   
 
   const data = [
     {

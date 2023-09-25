@@ -18,7 +18,8 @@ const Intro = () => {
           <div className="i-discrip1">
           We are experienced in bringing Adventures to stay their journey, with all outdoor 
           destinations in the world as our specialties. Start your adenture now! Nature has already 
-          already called you!
+          already called you!Are you ready to answer the call of the wild and embrace the thrill 
+          of a lifetime? 
           </div>
         <div className="i-bot"> <button className="i-button">Explore</button>
         </div>

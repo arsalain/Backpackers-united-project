@@ -10,16 +10,24 @@ import {Link} from "react-router-dom";
 
 const Trekslider = ({slides}) => {
 
+  const sliderRef = React.useRef();
 
+  const goToPrev = () => {
+    sliderRef.current.slickPrev();
+  };
+
+  const goToNext = () => {
+    sliderRef.current.slickNext();
+  };
           const ArrowLeft = (props) => (
-            <div
-                {...props}
-                className={'trek-slide-prev'}>  <MdKeyboardArrowLeft /> </div>
+            <button 
+                onClick={props.onClick}
+                className={'trek-slide-prev'}>  <MdKeyboardArrowLeft /> </button>
         );
         const ArrowRight = (props) => (
-            <div
-                {...props}
-                className={ 'trek-slide-next'}><MdKeyboardArrowRight /> </div>
+            <button
+                onClick={props.onClick}
+                className={ 'trek-slide-next'}><MdKeyboardArrowRight /> </button>
         )
       
         const settings = {

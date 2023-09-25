@@ -123,7 +123,7 @@ const Kerala = [
   }),
 };
     return (
-      <div>
+      <div className='destdrop1'>
                  <div className='destdrop'>
         <img src={dest} className='destdrop-main' />
       <div className='destdrop-head'>

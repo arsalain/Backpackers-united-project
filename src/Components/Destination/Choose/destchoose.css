@@ -15,8 +15,8 @@
     color: #fcb148;
     font-weight: bold;
     font-size: 1.75em;
-    padding-top: 2.5em;
-    padding-bottom: 2.5em;
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
     display: flex;
     justify-content: center;
     
@@ -32,8 +32,8 @@
         gap: 1.875em;
 }
 .dest-ch-card{
-    height: 12.5em;
-    width: 12.5em;
+    height: 18.5em;
+    width: 17.5em;
     background: white;
     margin-bottom: 2.5em;
     border-radius: 0.625em;
@@ -52,19 +52,19 @@
     color: #fcb148;
     padding-left: 1.25em;
     padding-right: 1.25em;
+    padding-top: 0.625em;
+    text-align: center;
     
 }
 .dest-ch-card-name1{
-    display: flex;
-    justify-content: center;
-    justify-self: center;
-    align-self: center;
+    padding: 1.25em 0.625em;
+    text-align: center;
 }
 @media only screen and (max-width: 480px) {
     .dest-ch-body{
         background: black;
         width: 100%;
-        font-size: 14px;
+        font-size: 10px;
     }
     .dest-ch-title{
         padding-top: 1.25em;
@@ -75,8 +75,16 @@
 
     }
     .dest-ch-card {
-        height: 10em;
-        width: 10em;
+        height: 18em;
+        width: 17em;
+    }
+    .dest-ch-card-icon1{
+        padding-top: 0.225em;
+    }
+    .dest-ch-card-name{
+        padding-top: 0;}
+    .dest-ch-card-name1{
+        padding-top: 0.625;
     }
     .dest-ch-card-icon {
         padding-top: 0.5em;
@@ -84,9 +92,19 @@
 }
 @media only screen and  (min-width:500px) and (max-width: 999px) {
     .dest-ch-body{
-        font-size: 13px;
+        font-size: 10px;
     }
     .dest-ch-title {
         padding: 1.25em 0;
+    }
+    .dest-ch-card {
+        height: 20em;
+        width: 17em;
+    }
+}
+@media only screen and  (min-width:1400px) and (max-width: 2000px) {
+
+    .dest-ch-body{
+        font-size: 18px;
     }
 }

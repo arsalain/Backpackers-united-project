@@ -6,7 +6,7 @@ import hampi from "../../../Images/hampi.jpg"
 import wayanad from "../../../Images/wayanad.jpg"
 import kumara from "../../../Images/kumara.jpg"
 import ooty from "../../../Images/ooty.jpeg"
-import { BiDollar } from "react-icons/bi";
+import { FaRupeeSign } from "react-icons/fa";
 import {IoNavigateSharp} from "react-icons/io5"
 const Selling = () => {
     const ArrowLeft = (props) => (
@@ -66,7 +66,7 @@ const Selling = () => {
         img: wayanad
       } ,
       {
-        name: "Kumara parvatha",
+        name: "Kumara Parvatha",
         amount: "3,200",
         img: kumara
       } ,
@@ -90,7 +90,7 @@ const Selling = () => {
             <img src={index.img}></img>
             <div className="card-name">
                 <div className="card-name1">{index.name}</div>
-                <div className="card-name2"><BiDollar />{index.amount}</div>
+                <div className="card-name2"><FaRupeeSign />{index.amount}</div>
     </div>
     <div className="card-but">
             <div className="card-name3"><IoNavigateSharp  />April 2023</div>

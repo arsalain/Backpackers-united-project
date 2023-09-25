@@ -4,6 +4,7 @@
     margin-right: auto;
     padding-top: 0.352em;
     padding-bottom: 5.625em;
+    font-size: 16px;
     display: flex;
     flex-direction: column;
 }
@@ -20,7 +21,7 @@
 .dest-sim-card{
     display: flex;
     flex-direction: column;
-    height: 28.125em;
+    height: 29.125em;
     width: 22.5em;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin-left: 3.125em;
@@ -101,7 +102,7 @@
 .dest-sim-card-but{
     background-color: #fcb418;
     width: 6.25em;
-    height: 2.5em;
+    height: 3em;
     border-radius: 1.25em;
     font-weight: bold;
 
@@ -109,7 +110,7 @@
 .dest-sim-card-but1{
     background-color: #fcb418;
     width: 6.25em;
-    height: 2.5em;
+    height: 3em;
     border-radius: 1.25em;
     margin-left: 0.625em;
     font-weight: bold;
@@ -262,4 +263,10 @@
     .dest-sim-prev{
         left: -45px;
     }
+}
+@media only screen and  (min-width:1400px) and (max-width: 2000px) {
+
+    .dest-sim{
+        font-size: 18px;
+        }
 }

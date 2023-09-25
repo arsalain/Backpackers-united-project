@@ -50,6 +50,13 @@
     background-color: rgb(192, 177, 45);
     border-radius: 0.625em;
     margin-top: 0.80em !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.b-box-icon{
+    font-size: 1.8em;
+    color: white;
 }
 .b-box-des{
     padding-left: 1.25em;
@@ -71,6 +78,9 @@
     background-color: rgb(185, 84, 34);
     border-radius: 0.625em;
     margin-top: 0.80em !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .b-box2{
     height: 3.125em;
@@ -78,6 +88,9 @@
     background-color: rgb(34, 37, 185);
     border-radius: 0.625em;
     margin-top: 0.80em !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .b-right{
     float: right;
