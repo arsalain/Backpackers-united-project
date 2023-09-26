@@ -1,7 +1,6 @@
-.faq-dummy{
-    height: 5.75em;
-
-   }
+.faq{
+    font-size: 16px;
+}
 .faq-head{
   background-color:#ffa60096;
   width:100%;
@@ -159,3 +158,9 @@
          }
       
      }
+     @media only screen and  (min-width:1400px) and (max-width: 2000px) {
+
+        .faq{
+            font-size: 18px;
+        }
+    }

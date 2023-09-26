@@ -12,7 +12,10 @@
     cursor: pointer;
     background-color: #f0f0f0;
   }
-  
+  .qfaq-accordion-title{
+    font-size: 1.125em;
+    font-weight: bold;
+  }
   
   .qfaq-content {
     padding: 10px;

@@ -1,3 +1,7 @@
+.tour-main{
+    font-size: 16px
+}
+
 .tour{
     margin: 0;
     width: 100vw;
@@ -166,3 +170,9 @@ color: black;
             padding-right: 1em;
         }
     }
+    @media only screen and  (min-width:1200px) and (max-width: 2000px) {
+        .tour-main{
+            font-size: 18px
+        }
+        
+                }

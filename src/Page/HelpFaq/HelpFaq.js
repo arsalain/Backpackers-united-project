@@ -8,7 +8,7 @@ import Footer from '../../Components/Nav/Footer/Footer'
 
 const HelpFaq = () => {
   return (
-    <>
+    <div className='faq'>
       <Navbar2 />
       <div className='faq-head'>
         <div className='faq-head-title'>FAQs</div>
@@ -33,7 +33,7 @@ const HelpFaq = () => {
         />
       </div>
       <Footer />
-    </>
+      </div>
   );
 }
 

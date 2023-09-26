@@ -33,14 +33,19 @@ const Navbar2 = () =>{
   return (
     <>
     <div className= {navbar ? "n-wrapper2 active" : "n-wrapper2"}  >
+ 
       <div className="n-left12">
-      <div ><img  className="n-img2" src={bplog}></img></div>
+   
+      <div >   <Link to='/' className="n-logo-link"><img  className="n-img2" src={bplog}></img></Link></div>
       <div className="n-left2">
-        
+        <Link to='/'  className="n-logo-link">
         <div className="n-name2">BACKPACKERS</div>
         <div className="n-name12">UNITED</div>
+        </Link>
       </div>
+
       </div>
+    
       <div className="n-right2">
         <div className={toggle ? "n-list2 active": "n-list2 "}>
           <ul  style={{ listStyleType: "none" }}>

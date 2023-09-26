@@ -1,3 +1,6 @@
+.trek-card{
+    font-size: 16px
+}
 .trek-card-link{
 text-decoration: none !important;
 color: black;
@@ -167,3 +170,9 @@ color: black;
         color: black;
     }
 }
+@media only screen and  (min-width:1400px) and (max-width: 2000px) {
+    .trek-card{
+        font-size: 18px
+    }
+    
+            }

@@ -68,7 +68,7 @@ getTrekwaterfall()
  })
   
   return (
-    <div >
+    <div className="trek-main">
     <div className="trek">
    <img src={Trekhome} className="trekimg"/>
     <div className='trek-body'>

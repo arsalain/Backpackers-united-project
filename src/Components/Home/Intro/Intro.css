@@ -113,3 +113,13 @@
     margin-top: 2em;
 }
 }
+@media only screen and  (min-width:1400px) and (max-width: 2000px) {
+
+  .Intro {
+      font-size: 18px;
+  } 
+   .i-right-img {
+
+    margin-left: 10em;
+
+}}

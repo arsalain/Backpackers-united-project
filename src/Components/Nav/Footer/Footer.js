@@ -2,10 +2,14 @@ import React from "react";
 import "./Footer.css"
 import {ImFacebook2} from "react-icons/im"
 import {AiOutlineTwitter,AiFillInstagram} from "react-icons/ai"
+import { IoLogoWhatsapp} from "react-icons/io"
+import { AiTwotonePhone} from "react-icons/ai"
+import { BsInstagram} from "react-icons/bs"
 import {GrInstagram} from "react-icons/gr"
 import {Link} from "react-router-dom";
 import bplog from "../../../Images/bplogo.jpg"
 const Footer = () => {
+  const phoneNumber = "+91 8310180586"
 return (
   <div className="f-body-main" >
     <div className="f-body">
@@ -13,20 +17,20 @@ return (
         <div className="f-head">
           <div className="f-bottom">
             <div className="f-logo">
-        <img className="f-img" src={bplog}></img>
+            <Link to='/' className="f-logo-link">  <img className="f-img" src={bplog}></img> </Link>
         <div className="f-left">
       <div className="f-logo-name-main">
-        <div className="f-name">BACKPACKERS</div>
-        <div className="f-name1">UNITED</div>
+      <Link to='/' className="f-logo-link"><div className="f-name">BACKPACKERS</div>
+        <div className="f-name1">UNITED</div> </Link>
         </div>
         <div className="f-name2" >Book your trip in minute, get full
             Control for much longer</div>
       </div>
       </div>
       <div className="f-footer">
-                <div className="f-dot"><ImFacebook2  className="f-dot-icon"/></div>
-                <div className="f-dot1"><GrInstagram  className="f-dot-icon" /></div>
-                <div className="f-dot1"><AiOutlineTwitter  className="f-dot-icon" /></div>
+                <div className="f-dot"><Link to='https://api.whatsapp.com/send/?phone=918310180586&text&type=phone_number&app_absent=0' className="f-dot-icon"><IoLogoWhatsapp /></Link></div>
+                <div className="f-dot1"><Link to={`tel:${phoneNumber}`} className="f-dot-icon" ><AiTwotonePhone /></Link></div>
+                <div className="f-dot1"><Link to='https://www.instagram.com/backpackers_united_/'className="f-dot-icon1" ><BsInstagram /></Link></div>
                 </div>
       </div>
       <div className="f-mid-main">

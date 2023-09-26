@@ -45,6 +45,7 @@
         width: 240px !important;
         border: 1px solid rgb(220, 213, 213);
         border-radius: 20px;
+        font-size: 16px;
     }
     .int-card-body{
         min-height: 100px !important;
@@ -164,3 +165,9 @@
             color: black;
         }
     }
+    @media only screen and  (min-width:1400px) and (max-width: 2000px) {
+        .int-card{
+            font-size: 18px
+        }
+        
+                }

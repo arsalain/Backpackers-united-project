@@ -1,3 +1,6 @@
+.trek-main{
+    font-size: 16px;
+}
 .trek{
         margin: 0;
         width: 100vw;
@@ -70,8 +73,8 @@ color: black;
         margin-right: auto;
         display: flex;
         flex-direction: column; 
-         max-width: 68.75em;
-         padding-left: 3.125em;
+         width: 68.75em;
+         /* padding-left: 3.125em; */
          position: relative;
        
 }
@@ -158,4 +161,10 @@ color: black;
                 padding-left: 1em;
                 padding-right: 1em;
             }
+        }
+        @media only screen and  (min-width:1200px) and (max-width: 2000px) {
+.trek-main{
+    font-size: 18px
+}
+
         }

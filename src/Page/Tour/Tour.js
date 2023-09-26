@@ -366,7 +366,7 @@ const Tour = () => {
         },
       ]
   return (
-    <div >
+    <div className='tour-main'>
     <div className="tour">
    <div className='tourbody'>
    <img src={TourHome} className="tourimg"/>

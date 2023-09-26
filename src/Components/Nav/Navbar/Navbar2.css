@@ -9,7 +9,9 @@
   color: white;
   background-color:  rgba(0,0,0,0.12);
 }
-
+.n-logo-link{
+  text-decoration: none;
+}
 .n-wrapper2.active{
   background-color: #FCB418 ;
   color: #FCB418 !important;

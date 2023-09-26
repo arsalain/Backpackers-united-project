@@ -274,3 +274,9 @@ padding-top: 1.25em;
         width: 30em;
     }
 }
+@media only screen and  (min-width:1400px) and (max-width: 2000px) {
+
+    .contact{
+        font-size: 18px;
+    }
+}

@@ -11,14 +11,6 @@ import {Link} from "react-router-dom";
 const Trekslider = ({slides}) => {
 
   const sliderRef = React.useRef();
-
-  const goToPrev = () => {
-    sliderRef.current.slickPrev();
-  };
-
-  const goToNext = () => {
-    sliderRef.current.slickNext();
-  };
           const ArrowLeft = (props) => (
             <button 
                 onClick={props.onClick}

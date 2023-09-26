@@ -8,6 +8,7 @@
     font-size: 16px;
     display: flex;
     flex-direction: row;
+
 }
 .test-left {
     float: left;
@@ -208,4 +209,10 @@
         .test-dot-main{
             padding-top: 1.5em;
         }
+}
+@media only screen and  (min-width:1400px) and (max-width: 2000px) {
+
+    .t-body{
+        font-size: 18px;
+    } 
 }

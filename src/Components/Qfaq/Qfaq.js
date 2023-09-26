@@ -10,7 +10,7 @@ const Qfaq = ({ title, content }) => {
   return (
     <div className="qfaq">
       <div className="qfaq-header" onClick={toggleAccordion}>
-      <div className="accordion-title">{title}</div>
+      <div className="qfaq-accordion-title">{title}</div>
       <div >
       {isOpen ? <FaMinus />: 
                   <FaPlus />}
