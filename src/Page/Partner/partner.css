@@ -54,6 +54,9 @@
     margin-top: 3.125em;
     margin-bottom: 3.125em;
     width: 27em;
+    border: 2px solid #ccc;
+    padding: 1.25em;
+    border-radius: 1.25em;
     display: flex;
     flex-direction: column;
 }
@@ -162,9 +165,9 @@
     .partner-form {
         display: flex;
         flex-direction: column;
-        width: 24em;
-        margin-left: 1.25em;
-        margin-right: 1.25em;
+        width: 23em;
+        margin-left: 0.625em;
+        margin-right: 0.625em;
 
     }
     .partner-title{

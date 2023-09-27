@@ -14,11 +14,11 @@ import Blogs from './Page/blogs/Blogs';
 import Career from './Page/Career/Career';
 import HelpFaq from './Page/HelpFaq/HelpFaq';
 import Partner from './Page/Partner/Partner';
-import Trekpage from './Page/TrekPage/Trekpage';
 
 const Home = lazy(() => import('./Page/Home/Home'));
 const About = lazy(() => import('./Page/About/About'));
 const Contact= lazy(() => import('./Page/Contact/Contact'));
+const Trekpage= lazy(() => import('./Page/TrekPage/Trekpage'));
 function App() {
   return (
     <div className="App">

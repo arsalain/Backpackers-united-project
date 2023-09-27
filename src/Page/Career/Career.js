@@ -1,11 +1,34 @@
-import React from 'react'
+import React,{useState} from 'react'
 import "./career.css"
 import {GiPolarStar} from "react-icons/gi"
 import cp from "../../Image/careers.jpg"
 import Navbar2 from '../../Components/Nav/Navbar/Navbar2'
 import Footer from '../../Components/Nav/Footer/Footer'
-
+import axios from "axios"
 const Career = () => {
+  const [careerData, setCareerData] = useState({
+    caname: '',
+    caemail: '',
+    canumber: '',
+    camessage: '',
+  });
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setCareerData({ ...careerData, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post('http://localhost:4000/form/career/', careerData);
+      alert('Career form submitted successfully!');
+      setCareerData({ caname: '', caemail: '', canumber: '', camessage: '' });
+    } catch (error) {
+      console.error('Error submitting contact form:', error);
+      alert('Error submitting contact form.');
+    }
+  };
+
   return (
     
         <div className='Careers'>
@@ -68,26 +91,27 @@ const Career = () => {
 </div>
 <div className='career-form-row'>
 <div className='career-form'>
+  <form onSubmit={handleSubmit} >
         <div className='career-title'>Reach Out to Us</div>
             <div className='career-form-name'>
-                <div className='career-form-title' >Full Name <GiPolarStar className='career-form-name-icon'></GiPolarStar></div>
-                <input type="text" name="fname" placeholder='Enter Name' ></input>
+                <div className='career-form-title' ><label for="caname">Full Name</label> <GiPolarStar className='career-form-name-icon'></GiPolarStar></div>
+                <input type="text" name="caname" placeholder='Enter Name' value={careerData.caname} onChange={handleChange} ></input>
             </div>
             <div className='career-form-email'>
-                <div className='career-form-title'  >Email ID <GiPolarStar className='career-form-email-icon'></GiPolarStar></div>
-                <input type="email" name="fname" placeholder='Enter Email'  ></input>
+                <div className='career-form-title'  ><label for="caemail">Email ID</label> <GiPolarStar className='career-form-email-icon'></GiPolarStar></div>
+                <input type="email" name="caemail" placeholder='Enter Email' value={careerData.caemail} onChange={handleChange}  ></input>
             </div>
             <div className='career-form-number'>
-                <div className='career-form-title'  >Mobile Number <GiPolarStar className='career-form-number-icon'></GiPolarStar></div>
-                <input type="tel" name="fname" placeholder='Enter Phone Number'  ></input>
+                <div className='career-form-title'  ><label for="canumber">Mobile Number</label>  <GiPolarStar className='career-form-number-icon'></GiPolarStar></div>
+                <input type="tel" name="canumber" placeholder='Enter Phone Number'  value={careerData.canumber} onChange={handleChange} ></input>
             </div>
             <div className='career-form-area'>
-                <div className='career-form-title'  >Why should we Hire you? </div>
-                <textarea className='career-form-text-area'/>
+                <div className='career-form-title'  ><label for="camessage">Why should we Hire you? </label> </div>
+                <textarea name="camessage"  className='career-form-text-area' value={careerData.camessage} onChange={handleChange}/>
              </div>
           
-             <div className='career-form-button'><button className='career-form-but'>Submit</button></div> 
-            </div>
+             <div className='career-form-button'><button type="submit" className='career-form-but'>Submit</button></div> 
+             </form> </div>
              <div >
              <img src={cp} className='career-image' ></img>
              </div>

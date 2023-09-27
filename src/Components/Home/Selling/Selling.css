@@ -52,33 +52,40 @@
 .card-name{
     padding-top: 0.625em;
     font-weight: bold;
+    display: flex;
+    justify-content: space-between;
 }
 .card-name1{
     float: left;
-    padding-left: 1.25em;
+    padding-left: 1em;
 }
 .card-name2{
-    margin-left: 10em !important;
+    /* margin-left: 10em !important; */
+    padding-right: 0.625em;
     display: flex;
     align-items: center;
 }
 .card-name3{
   
-    margin-left: 1.25em !important;
+    margin-left: 0.625em !important;
+    padding-top: 0.3em;
     display: flex;
     align-items: center;
     float: left;
 }
+
 .card-but {
     margin-top: 0.938em;
-   
+  
+    /* align-items: center; */
 }
 .card-but1 {
-    width: 5em;
+  
+    width: 3em;
     height: 2em;
     background-color: #FCB418;
     border-radius: 0.625em;
-    margin-left: 2em;
+    /* margin-left: 2em; */
 }
 .i-dest-prev{
     border: none;

@@ -66,7 +66,7 @@ const About = () => {
                     travel sets the tone for our entire team.</div>
                 </div>
                 <div className='about-card'>
-                    <img src={tejas} className='about-card-img'></img>
+                    <img src={aswin} className='about-card-img'></img>
                     <div className='about-card-name'> Ashwin</div>
                     <div className='about-card-desig'>Human Resources</div>
                     <div className='about-card-logo'>
@@ -112,7 +112,7 @@ experiences, Jaffer ensures that your adventures in Thailand are unforgettable.
                 </div>
                 </div>
                 <div className='about-card1'>
-                    <img src={aswin} className='about-card-img'></img>
+                    <img src={tejas} className='about-card-img'></img>
                     <div className='about-card-name'>Tejas</div>
                     <div className='about-card-desig'>Operations</div>
                     <hr ></hr>

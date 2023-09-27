@@ -484,6 +484,7 @@
   }
   .similar-card-left-img{
     height: 12.5em;
+    width: auto;
   }
   .similar-card-left-line{
     content: "";
@@ -523,6 +524,7 @@
   }
   .similar-card-center-img{
     height: 12.5em;
+    width: auto;
   }
   .similar-card-center-line{
     content: "";
@@ -560,6 +562,7 @@
   }
   .similar-card-right-img{
     height: 12.5em;
+    width: auto;
   }
   .similar-card-right-line{
     content: "";

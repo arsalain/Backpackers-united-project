@@ -93,8 +93,8 @@ const Selling = () => {
                 <div className="card-name2"><FaRupeeSign />{index.amount}</div>
     </div>
     <div className="card-but">
-            <div className="card-name3"><IoNavigateSharp  />April 2023</div>
-            <button className="card-but1">Discover</button>
+            <div className="card-name3"><IoNavigateSharp className="card-name3-icon" />September 2023</div>
+            <button className="card-but1">Go</button>
             {/* <div className="card-but1"><</div> */}
             </div>
         </div>

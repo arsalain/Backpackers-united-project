@@ -1,10 +1,34 @@
-import React from 'react'
+import React,{useState} from 'react'
 import "./contact.css"
 import {GiPolarStar} from "react-icons/gi"
 import Footer from '../../Components/Nav/Footer/Footer'
 import cp from "../../Image/contact.jpg"
 import Navbar2 from '../../Components/Nav/Navbar/Navbar2'
+import axios from "axios"
 const Contact = () => {
+  const [contactData, setContactData] = useState({
+    cname: '',
+    cemail: '',
+    cnumber: '',
+    cmessage: '',
+  });
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setContactData({ ...contactData, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post('http://localhost:4000/form/contact/', contactData);
+      alert('Contact form submitted successfully!');
+      setContactData({ cname: '', cemail: '', cnumber: '', cmessage: '' });
+    } catch (error) {
+      console.error('Error submitting contact form:', error);
+      alert('Error submitting contact form.');
+    }
+  };
+
   return (
     <div className='contact'>
       <Navbar2 />
@@ -30,25 +54,26 @@ const Contact = () => {
         </div>
         </div>
         <div className='contact-form'>
+          <form onSubmit={handleSubmit}>
         <div className='contact-title'>Reach Out to Us</div>
             <div className='contact-form-name'>
                 <div className='contact-form-title' ><label for="cname">Full Name</label> <GiPolarStar className='contact-form-name-icon'></GiPolarStar></div>
-                <input type="text" name="cname" placeholder='Enter Name' ></input>
+                <input type="text" name="cname"  value={contactData.cname} onChange={handleChange} placeholder='Enter Name' required></input>
             </div>
             <div className='contact-form-email'>
                 <div className='contact-form-title'  ><label for="cemail">Email ID</label> <GiPolarStar className='contact-form-email-icon'></GiPolarStar></div>
-                <input type="email" name="cemail" placeholder='Enter Email'  ></input>
+                <input type="email" name="cemail"  value={contactData.cemail} onChange={handleChange} placeholder='Enter Email'  required></input>
             </div>
             <div className='contact-form-number'>
                 <div className='contact-form-title'  ><label for="ctel">Mobile Number</label> <GiPolarStar className='contact-form-number-icon'></GiPolarStar></div>
-                <input type="tel" name="ctel" placeholder='Enter Phone Number'  ></input>
+                <input type="tel" name="cnumber"  value={contactData.cnumber} onChange={handleChange} placeholder='Enter Phone Number'  required></input>
             </div>
             <div className='contact-form-area'>
                 <div className='contact-form-title1'  ><label for="carea">Message </label></div>
-                <textarea name= "carea"/>
+                <textarea name= "cmessage" value={contactData.cmessage} onChange={handleChange}/>
              </div>
-             <div className='contatc-form-button'><button className='contact-form-but'>Submit</button></div>
-             
+             <div className='contatc-form-button'><button className='contact-form-but' type="submit">Submit</button></div>
+             </form> 
         </div>
       
       <Footer />

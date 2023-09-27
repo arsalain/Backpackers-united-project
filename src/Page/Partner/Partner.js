@@ -1,11 +1,34 @@
-import React from 'react'
+import React,{useState} from 'react'
 import "./partner.css"
 import {GiPolarStar} from "react-icons/gi"
 import cp from "../../Images/contact.jpg"
 import Navbar2 from '../../Components/Nav/Navbar/Navbar2'
 import Footer from '../../Components/Nav/Footer/Footer'
+import axios from "axios"
 
 const Partner = () => {
+    const [partnerData, setPartnerData] = useState({
+        pname: '',
+        pemail: '',
+        pnumber: '',
+        pmessage: '',
+      });
+      const handleChange = (e) => {
+        const { name, value } = e.target;
+        setPartnerData({ ...partnerData, [name]: value });
+      };
+    
+      const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+          await axios.post('http://localhost:4000/form/partner/', partnerData);
+          alert('Partner form submitted successfully!');
+          setPartnerData({ pname: '', pemail: '', pnumber: '', pmessage: '' });
+        } catch (error) {
+          console.error('Error submitting contact form:', error);
+          alert('Error submitting contact form.');
+        }
+      };
   return (
     
         <div className='partner'>
@@ -39,26 +62,27 @@ const Partner = () => {
 </div>
 <div className='partner-form-row'>
 <div className='partner-form'>
+<form onSubmit={handleSubmit}>
         <div className='partner-title'>Reach Out to Us</div>
             <div className='partner-form-name'>
-                <div className='partner-form-title' >Full Name <GiPolarStar className='partner-form-name-icon'></GiPolarStar></div>
-                <input type="text" name="fname" placeholder='Enter Name' ></input>
+                <div className='partner-form-title' ><label for="pname">Full Name</label>  <GiPolarStar className='partner-form-name-icon'></GiPolarStar></div>
+                <input type="text" name="pname"  value={partnerData.pname} onChange={handleChange} placeholder='Enter Name' required></input>
             </div>
             <div className='partner-form-email'>
-                <div className='partner-form-title'  >Email ID <GiPolarStar className='partner-form-email-icon'></GiPolarStar></div>
-                <input type="email" name="fname" placeholder='Enter Email'  ></input>
+                <div className='partner-form-title'  ><label for="pemail">Email ID</label> <GiPolarStar className='partner-form-email-icon'></GiPolarStar></div>
+                <input type="email" name="pemail"  value={partnerData.pemail} onChange={handleChange} placeholder='Enter Email'  required></input>
             </div>
             <div className='partner-form-number'>
-                <div className='partner-form-title'  >Mobile Number <GiPolarStar className='partner-form-number-icon'></GiPolarStar></div>
-                <input type="tel" name="fname" placeholder='Enter Phone Number'  ></input>
+                <div className='partner-form-title'  ><label for="pnumber">Mobile Number</label> <GiPolarStar className='partner-form-number-icon'></GiPolarStar></div>
+                <input type="tel" name="pnumber"  value={partnerData.pnumber} onChange={handleChange} placeholder='Enter Phone Number'  required></input>
             </div>
             <div className='partner-form-area'>
-                <div className='partner-form-title1'  >Message</div>
-                <textarea className='partner-form-text-area'/>
+                <div className='partner-form-title1'  ><label for="pmesssage">Message </label></div>
+                <textarea name= "pmessage" value={partnerData.pmessage} onChange={handleChange} className='partner-form-text-area '/>
              </div>
           
-             <div className='partner-form-button'><button className='partner-form-but'>Submit</button></div> 
-            </div>
+             <div className='partner-form-button'><button type="submit" className='partner-form-but'>Submit</button></div> 
+          </form>  </div>
              <div >
              <img src={cp} className='partner-image' ></img>
              </div>
